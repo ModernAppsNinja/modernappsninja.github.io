@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Courses on ModernApps Ninja Home</title>
-    <link>http://modernappsninja.github.io/course/</link>
+    <link>https://modernappsninja.github.io/course/</link>
     <description>Recent content in Our Courses on ModernApps Ninja Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 VMware</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 15:27:17 +0600</lastBuildDate><atom:link href="http://modernappsninja.github.io/course/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Nov 2020 15:27:17 +0600</lastBuildDate><atom:link href="https://modernappsninja.github.io/course/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vSphere with Tanzu 101</title>
-      <link>http://modernappsninja.github.io/course/vspheretanzu101/</link>
+      <link>https://modernappsninja.github.io/course/vspheretanzu101/</link>
       <pubDate>Mon, 23 Nov 2020 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/vspheretanzu101/</guid>
+      <guid>https://modernappsninja.github.io/course/vspheretanzu101/</guid>
       <description>About Course vSphere with Tanzu: application-focused management for streamlined development, agile operations, and accelerated innovation.</description>
     </item>
     
     <item>
       <title>Introduction to the VMware Tanzu Portfolio</title>
-      <link>http://modernappsninja.github.io/course/introtanzuportfolio/</link>
+      <link>https://modernappsninja.github.io/course/introtanzuportfolio/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/introtanzuportfolio/</guid>
+      <guid>https://modernappsninja.github.io/course/introtanzuportfolio/</guid>
       <description>About Course Welcome to the Introduction to the VMware Tanzu Portfolio Course.</description>
     </item>
     
     <item>
       <title>ModernApps Ninja 101</title>
-      <link>http://modernappsninja.github.io/course/modernappsninja101/</link>
+      <link>https://modernappsninja.github.io/course/modernappsninja101/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/modernappsninja101/</guid>
+      <guid>https://modernappsninja.github.io/course/modernappsninja101/</guid>
       <description>About Course The ModernApps Ninja program is much more than just the learning portal and is really intended to be an active community of professionals learning and working towards applying new skills in cloud native technologies.</description>
     </item>
     
     <item>
       <title>Tanzu Kubernetes Grid 101</title>
-      <link>http://modernappsninja.github.io/course/tkg101/</link>
+      <link>https://modernappsninja.github.io/course/tkg101/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/tkg101/</guid>
+      <guid>https://modernappsninja.github.io/course/tkg101/</guid>
       <description>About Course This Course provides an introductory technical overview of VMware Tanzu Kubernetes Grid including all editions.</description>
     </item>
     
     <item>
       <title>Tanzu Mission Control 101</title>
-      <link>http://modernappsninja.github.io/course/tmc101/</link>
+      <link>https://modernappsninja.github.io/course/tmc101/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/tmc101/</guid>
+      <guid>https://modernappsninja.github.io/course/tmc101/</guid>
       <description>About Course This course provides an introduction to VMware Tanzu Mission Control.</description>
     </item>
     
     <item>
       <title>Tanzu Mission Control 201</title>
-      <link>http://modernappsninja.github.io/course/tmc201/</link>
+      <link>https://modernappsninja.github.io/course/tmc201/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://modernappsninja.github.io/course/tmc201/</guid>
+      <guid>https://modernappsninja.github.io/course/tmc201/</guid>
       <description>About Course Tanzu Mission Control 201 follows the TMC 101 course to provide the next level of technical overview and hands on exercises exploring the features of Tanzu Mission ControlRequirements Before taking this course, please complete the Tanzu Mission Control 101 Course</description>
     </item>
     
