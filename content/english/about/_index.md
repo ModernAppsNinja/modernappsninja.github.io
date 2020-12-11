@@ -4,7 +4,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # about image
-image: "images/about/about-page.jpg"
+image: ""
 # meta description
 description : "About the ModernApps Ninja Community"
 ---

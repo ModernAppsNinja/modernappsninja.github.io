@@ -5,7 +5,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "This Course Provides an Introduction and Overview of the VMware vSPhere Portfolio"
+description : "This Course Provides an Introduction and Overview of the VMware Tanzu Portfolio"
 # course thumbnail
 image: "images/courses/introtanzuportfolio.jpg"
 # taxonomy
@@ -13,7 +13,7 @@ category: "Tanzu"
 # teacher
 teacher: "Hanzo Hattori"
 # duration
-duration : "~3 Hours Month"
+duration : "~3 Hours"
 # weekly
 # weekly : "03 hours"
 # course fee
@@ -24,6 +24,7 @@ apply_url : "https://www.modernapps.ninja/courses/course-v1:modernapps+COU-TP653
 type: "course"
 ---
 
+This course provides a high level introduction to the the Tanzu Family of products, the vision for the portfolio, and a brief introduction to each of the products & solutions in the portfolio. 
 
 ### About Course
 

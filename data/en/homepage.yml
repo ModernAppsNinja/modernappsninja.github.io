@@ -94,16 +94,12 @@ cta:
 
 ######################## Success story #############################
 success_story:
-  enable : false
+  enable : true
   bg_image : "images/backgrounds/success-story.jpg"
   title : "Success Stories"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
-            
-            
-  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+  content : "Many of our participants learned to make their first Github Commit through the Ninja Program. One participant reported that he had never made a Github commit and learned how to as he became an active contributor in the Ninja Community - and has since gone on to become a committer to Kubernetes and other leading open source projects!"
   # video link
-  video_link : "https://www.youtube.com/watch?v=ResipmZmpDU"
+  video_link : "https://www.youtube.com/watch?v=GlVSmFtIs1s&t=5s"
 
 
 ############################# event ################################
@@ -127,7 +123,7 @@ funfacts:
 
     # funfact item loop
     - name : "Participants"
-      count : "875"
+      count : "906"
 
     # funfact item loop
 #    - name : "SATISFIED CLIENT"

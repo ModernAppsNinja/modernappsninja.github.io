@@ -5,7 +5,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "vSphere with Tanzu 101 e-learning course"
+description : "This Course provides a technical introduction to vSphere with Tanzu"
 # course thumbnail
 image: "images/courses/vspheretanzu101.jpg"
 # taxonomy

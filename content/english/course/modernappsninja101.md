@@ -5,7 +5,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "This course provides an introduction to the ModernApps Ninja learning community."
+description : "This course provides an introduction to the ModernApps Ninja community."
 # course thumbnail
 image: "images/courses/modernappsninja101.jpg"
 # taxonomy
