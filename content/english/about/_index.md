@@ -6,18 +6,21 @@ bg_image: "images/backgrounds/page-title.jpg"
 # about image
 image: "images/about/about-page.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "About the ModernApps Ninja Community"
 ---
 
-## ABOUT OUR JOURNY
+## About the ModernApps Ninja Community
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet consectetur,
-adipisicing elit. Saepe ipsa illo quod veritatis, magni debitis fugiat dolore voluptates! Consequatur,
-aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis sint optio similique.
-Et amet magni facilis vero corporis quos.
+The ModernApps Ninja Program is a knowledge sharing community anchored by the Tanzu team at VMware. The community enjoys broad participation from VMware experts who help contribute and maintain elearning courses, lab guides and knowledge sharing assets for the community. 
 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum, dolor sit amet consectetur
-adipisicing elit. Ipsum a, facere fugit error accusamus est officiis vero in, nostrum laboriosam corrupti
-explicabo, cumque repudiandae deleniti perspiciatis quae consectetur enim. Laboriosam!
+What makes the ModernApps Ninja program different from other learning programs is our participative, knowledge sharing community. While VMware experts provide and oversee learning materials, community participants are invited to participate in the maintenance and administration of these production assets, which are built and maintained using foundational technologies and best practices for devops and modern application platforms. 
+
+Information Technology and Application Development are undergoing transformative change and have significant differences from legacy operations and development. As IT professionals embark on this modernization journey, many professionals are faceing new technology and transformation efforts with very limited experience and are often expected to take a course and then go implement new technologies in production. 
+
+For those already working and experienced in modern application environments, the rapid pace of change and new innovation is a challenge for anyone to keep up with. Open Source is the center of these new technologies, and the rapid innovation found in open source is clearly centered in the large and diverse communities that come together to make open source possible. 
+
+The pace of innovation driven by open source was not possible in earlier and more closed development, it's ony possible through community. Likewise, keeping pace with and experiencing all the benefits of new innovation cannot be done alone, it must be a community effort. 
+
+The ModernApps Ninja Community is designed based on these new realities and we strive to bring powerful learning and knowledge sharing assets freely to our open community. We invite anyone interested to join and participate, whether to take courses and try out lab guides, or to take the next step and learn to contribute and participate in our modern infrastructure and platform development and operations, where we teach real, hands on skills on the production educational assets that power the community.
+
+Thank you for your interest in the ModernApps Ninja Community!
