@@ -19,7 +19,7 @@ duration : "~3 Hours"
 # course fee
 fee : "Free!"
 # apply url
-apply_url : "https://www.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/about"
+apply_url : "https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/about"
 # type
 type: "course"
 ---

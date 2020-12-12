@@ -19,7 +19,7 @@ duration : "~1 Hour"
 # course fee
 fee : "Free!"
 # apply url
-apply_url : "https://www.modernapps.ninja/courses/course-v1:modernapps+COU-MN7417+Perpetual/about"
+apply_url : "https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-MN7417+Perpetual/about"
 # type
 type: "course"
 ---

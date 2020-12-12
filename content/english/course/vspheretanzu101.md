@@ -19,7 +19,7 @@ duration : "~6 Hours"
 # course fee
 fee : "Free!"
 # apply url
-apply_url : "https://www.modernapps.ninja/courses/course-v1:modernapps+COU-VT7933+Perpetual/about"
+apply_url : "https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-VT7933+Perpetual/about"
 # type
 type: "course"
 ---

@@ -12,7 +12,7 @@ slider:
       button:
         enable : true
         label : "Register now"
-        link : "https://www.modernapps.ninja/register?next=%2F"
+        link : "https://lms.modernapps.ninja/register?next=%2F"
 
     # slider item loop
     - title : "Welcome to ModernApps Ninja"
@@ -23,7 +23,7 @@ slider:
       button:
         enable : true
         label : "Register now"
-        link : "https://www.modernapps.ninja/register?next=%2F"
+        link : "https://lms.modernapps.ninja/register?next=%2F"
 
     # slider item loop
     - title : "Welcome to ModernApps Ninja"
@@ -34,7 +34,7 @@ slider:
       button:
         enable : true
         label : "Register now"
-        link : "https://www.modernapps.ninja/register?next=%2F"
+        link : "https://lms.modernapps.ninja/register?next=%2F"
 
 
 ############################### Banner feature ###############################
