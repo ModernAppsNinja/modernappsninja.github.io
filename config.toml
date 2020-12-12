@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://modernappsninja.github.io/"
+baseURL = "https://modernappsninja.ninja/"
 title = "ModernApps Ninja Home"
 theme = "educenter-hugo"
 # themesDir = "../.."
