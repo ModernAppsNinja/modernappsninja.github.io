@@ -31,7 +31,7 @@ vSphere with Tanzu: application-focused management for streamlined development, 
 
 ### Requirements
 
-We recommend taking the Introduction to VMware Tanzu Portfolio and vSphere with Tanzu 101 course prior to taking the vSphere with Tanzu 201 course.
+We recommend taking the Introduction to VMware Tanzu Portfolio and vSphere with Tanzu 101 courses prior to taking the vSphere with Tanzu 201 course.
 
 We also recommend completing the ModernApps Ninja 101 course to learn about the community resources available to support this course and maximize your learning experience.
 
