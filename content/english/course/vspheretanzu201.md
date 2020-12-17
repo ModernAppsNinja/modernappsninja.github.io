@@ -13,7 +13,7 @@ category: "Tanzu Kubernetes Grid"
 # teacher
 # teacher: "Art Fewell, Peg Eaton"
 # duration
-duration : "~6 Hours"
+duration : "~3 Hours"
 # weekly
 # weekly : "03 hours"
 # course fee
