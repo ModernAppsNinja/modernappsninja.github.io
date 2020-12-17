@@ -135,6 +135,48 @@ name = "courses"
 url = "course"
 weight = 2
 
+[[Languages.en.menu.main]]
+name = "Tanzu Links"
+identifier = "Tanzu Links"
+weight = 3
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Tanzu.VMware.com"
+URL = "https://tanzu.vmware.com/"
+weight = 3001
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Tanzu Developer Center"
+URL = "https://tanzu.vmware.com/developer/"
+weight = 3002
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Tanzu Content Library"
+URL = "https://tanzu.vmware.com/content-library/"
+weight = 3003
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Free Cloud Native eBooks"
+URL = "https://tanzu.vmware.com/content/ebooks/"
+weight = 3004
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Tanzu Github Org"
+URL = "https://github.com/vmware-tanzu/"
+weight = 3005
+
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "ModernApps Ninja Github Org"
+URL = "https://github.com/modernappsninja/"
+weight = 3006
+
+
 #[[Languages.en.menu.main]]
 #weight = 3
 #name = "Pages"
