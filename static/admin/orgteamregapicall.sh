@@ -7,7 +7,7 @@ team_id="$(
     curl -s                                                               \
          -H "Authorization: token $GITHUB_OAUTH_TOKEN"                    \
          "https://api.github.com/orgs/$org_login/teams"                   |\
-      jq 'map(select(.name=="'Members'")) | .[].id'
+      jq 'map(select(.name=="Members")) | .[].id'
 )"
 json='{
   "role": "direct_member",
