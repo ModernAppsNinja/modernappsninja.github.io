@@ -2,7 +2,7 @@
 json='{
   "role": "direct_member",
   "team_ids":[4370857],
-  "invitee_id":$requesting_user_id
+  "invitee_id":'$requesting_user_id'
 }'
 
 # Send invitation
