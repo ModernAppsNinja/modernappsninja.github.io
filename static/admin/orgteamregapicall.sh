@@ -4,7 +4,7 @@ team_id="$(
     curl -s                                                               \
          -H "Authorization: token $GITHUB_OAUTH_TOKEN"                    \
          "https://api.github.com/orgs/$org_name/teams"                   |\
-      jq 'map(select(.name=="'$team_name'")) | .[].id'
+      jq 'map(select(.name=="Members")) | .[].id'
 )"
 
 json='{
