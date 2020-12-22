@@ -1,12 +1,4 @@
 # Assuming you have `export GITHUB_OAUTH_TOKEN=...` in your env
-
-team_id="$(
-    curl -s                                                               \
-         -H "Authorization: token $GITHUB_OAUTH_TOKEN"                    \
-         "https://api.github.com/orgs/$org_name/teams"                   |\
-      jq 'map(select(.name=="Members")) | .[].id'
-)"
-
 json='{
   "role": "direct_member",
   "team_ids":['4370857'],
