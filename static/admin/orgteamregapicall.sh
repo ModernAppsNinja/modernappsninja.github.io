@@ -1,10 +1,16 @@
 # Assuming you have `export GITHUB_OAUTH_TOKEN=...` in your env
 
-# Define inputs
+team_id="$(
+    curl -s                                                               \
+         -H "Authorization: token $GITHUB_OAUTH_TOKEN"                    \
+         "https://api.github.com/orgs/$org_name/teams"                   |\
+      jq 'map(select(.name=="'$team_name'")) | .[].id'
+)"
+
 json='{
   "role": "direct_member",
   "team_ids":['4370857'],
-  "invitee_id":"'$requesting_user_id'"
+  "invitee_id":$requesting_user_id
 }'
 
 # Send invitation
