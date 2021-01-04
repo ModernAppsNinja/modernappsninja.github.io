@@ -9,8 +9,8 @@ description : "This Course Provides an Introduction and Overview of the VMware T
 # course thumbnail
 image: "images/courses/introtanzuportfolio.jpg"
 # taxonomy
-# categories: ["Tanzu Portfolio"]
-# tags: ["Tanzu Portfolio", "Tanzu Mission Control", "Tanzu Kubernetes Grid", "vSphere with Tanzu"]
+categories: ["Tanzu Portfolio"]
+tags: ["Tanzu Portfolio", "Tanzu Mission Control", "Tanzu Kubernetes Grid", "vSphere with Tanzu"]
 # teacher
 teacher: "Ninja Admins"
 # duration
