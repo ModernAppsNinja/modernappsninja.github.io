@@ -9,9 +9,10 @@ description : "This course provides an introduction to the ModernApps Ninja comm
 # course thumbnail
 image: "images/courses/modernappsninja101.jpg"
 # taxonomy
-category: "ModernApps Ninja"
+# categories: ["ModernApps Ninja"]
+# tags: ["ModernApps Ninja"]
 # teacher
-teacher: "Hanzo Hattori"
+teacher: "Ninja Admins"
 # duration
 duration : "~1 Hour"
 # weekly
