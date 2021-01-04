@@ -9,9 +9,10 @@ description : "This Course Provides an Introduction and Overview of the VMware T
 # course thumbnail
 image: "images/courses/introtanzuportfolio.jpg"
 # taxonomy
-category: "Tanzu"
+# categories: ["Tanzu Portfolio"]
+# tags: ["Tanzu Portfolio", "Tanzu Mission Control", "Tanzu Kubernetes Grid", "vSphere with Tanzu"]
 # teacher
-teacher: "Hanzo Hattori"
+teacher: "Ninja Admins"
 # duration
 duration : "~3 Hours"
 # weekly
