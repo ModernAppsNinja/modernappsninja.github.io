@@ -9,8 +9,8 @@ description : "This course provides an introduction to the ModernApps Ninja comm
 # course thumbnail
 image: "images/courses/modernappsninja101.jpg"
 # taxonomy
-# categories: ["ModernApps Ninja"]
-# tags: ["ModernApps Ninja"]
+categories: ["ModernApps Ninja"]
+tags: ["ModernApps Ninja"]
 # teacher
 teacher: "Ninja Admins"
 # duration

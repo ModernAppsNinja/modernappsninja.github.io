@@ -9,9 +9,10 @@ description : "This Course provides a technical dive into vSphere with Tanzu usi
 # course thumbnail
 image: "images/courses/vspheretanzu201.jpg"
 # taxonomy
-category: "Tanzu Kubernetes Grid"
+categories: ["vSphere with Tanzu"]
+tags: ["vSphere with Tanzu", "Tanzu Portfolio"]
 # teacher
-# teacher: "Art Fewell, Peg Eaton"
+teacher: "Ninja Admins"
 # duration
 duration : "~3 Hours"
 # weekly
