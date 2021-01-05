@@ -22,6 +22,9 @@
 - id: latest_article
   translation: Latest Article
 
+- id: latest_course
+  translation: Latest Courses
+
 - id: categories
   translation: Categories
 
