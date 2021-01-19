@@ -1,0 +1,134 @@
+name: new member added workfow
+on:
+  repository_dispatch:
+    types: [org_member_change]
+
+jobs:
+  new_member_added:
+    name: new member added job
+    runs-on: ubuntu-latest
+    if: github.event.client_payload.action == 'added'
+    steps:
+      - name: cat payload file
+        run: cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: echo client_payload.action variable
+        run: echo ${{ github.event.client_payload.action }}
+      - name: echo if added
+        if: github.event.client_payload.action == 'added'
+        run: echo "the webhook action was added"
+      - name: echo if removed
+        if: github.event.client_payload.action == 'removed'
+        run: echo "the webhook action was removed"
+      - name: echo client_payload.action variable
+        run: echo ${{ github.event.client_payload.action }}
+      - name: initialize git
+        run: |
+          git config --global user.name modernappsninjabot
+          git config --global user.email modernappsninjabot@gmail.com
+          git init
+      - name: curl member record file
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/OpenLearnOnline/admin-private/main/registrations/${{ github.event.client_payload.member_login }}_${{ github.event.client_payload.member_github_id }}.json" \
+          -o /tmp/member_record.json
+      - name: clone member_repo_template
+        run: |
+          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/member_repo_template.git
+      - name: create hub config file
+        run: |
+          echo "---" > ~/.config/hub
+          echo "github.com: " >> ~/.config/hub
+          echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
+          echo "  user: modernappsninjabot" >> ~/.config/hub
+          cat ~/.config/hub
+      - name: extract firstName from member_record and set as first_name
+        run: |
+          echo $(echo first_name=$(echo $(cat /tmp/member_record.json | jq '.firstName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo $first_name
+      - name: extract lastName from member_record and set as last_name
+        run: |
+          echo $(echo last_name=$(echo $(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo $last_name
+      - name: extract twitterUsername from member_record and set as twitter_username
+        run: |
+          echo $(echo twitter_username=$(echo $(cat /tmp/member_record.json | jq '.twitterUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo $twitter_username
+      - name: extract linkedinUsername from member_record and set as linkedin_username
+        run: |
+          echo $(echo linkedin_username=$(echo $(cat /tmp/member_record.json | jq '.linkedinUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo $linkedin_username
+      - name: set member login as member_login
+        run: |
+          echo $(echo member_login="${{ github.event.client_payload.member_login }}") >> $GITHUB_ENV
+          echo $member_login
+      - name: set organization name for new repository creation as repo_org_name
+        run: |
+          echo repo_org_name="modernappsninjas" >> $GITHUB_ENV
+      - name: envsubst config.toml file
+        run: |
+          cd member_repo_template
+          envsubst <"config.toml" > config.toml.tmp
+          mv -f config.toml.tmp config.toml
+          cat config.toml
+      - name: envsubst homepage.yml file
+        run: |
+          cd member_repo_template
+          envsubst <"data/en/homepage.yml" > /tmp/homepage.yml.tmp
+          mv -f /tmp/homepage.yml.tmp data/en/homepage.yml
+          cat data/en/homepage.yml
+      - name: envsubst git config file
+        run: |
+          cd member_repo_template
+          envsubst <"static/admin/git_config_template.txt" > /tmp/git_config
+          mv -f /tmp/git_config .git/config
+          cat .git/config
+      - name: create new member repository
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -d '{"name":"${{ github.event.client_payload.member_login }}"}' \
+          "https://api.github.com/orgs/modernappsninjas/repos" \
+          -o /tmp/member_repo_create_curl_response.json
+          cat /tmp/member_repo_create_curl_response.json
+      - name: prep local directory for new member repo content
+        run: |
+          cp -R member_repo_template ${{ github.event.client_payload.member_login }}
+          cd ${{ github.event.client_payload.member_login }}
+          sudo rm -r .git/
+          git init
+          git add .
+          git commit -m "initial setup for ${{ github.event.client_payload.member_login }} member repo"
+          git branch -M main
+          git remote add origin https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninjas/${{ github.event.client_payload.member_login }}.git
+          git push -u origin main
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: initial hugo build
+        run: |
+          cd ${{ github.event.client_payload.member_login }}
+          echo "public" >> .gitignore
+          git checkout --orphan gh-pages
+          git reset --hard
+          git commit --allow-empty -m "Initializing gh-pages branch"
+          git push origin gh-pages
+          git checkout main
+          sudo rm -rf public
+          git worktree add -B gh-pages public origin/gh-pages
+          hugo --minify
+          cd public
+          git add --all
+          git commit -m "Publishing to gh-pages"
+          cd ..
+          git push origin gh-pages
+      - name: enable github pages for new member repo
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.switcheroo-preview+json" \
+          -d '{"source":{"branch":"gh-pages","path":"/"}}' \
+          "https://api.github.com/repos/modernappsninjas/${{ github.event.client_payload.member_login }}/pages" \
+          -o /tmp/member_repo_enable_pages_response.json
+          cat /tmp/member_repo_enable_pages_response.json
