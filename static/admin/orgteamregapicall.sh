@@ -1,7 +1,7 @@
 # Assuming you have `export GITHUB_OAUTH_TOKEN=...` in your env
 json='{
   "role": "direct_member",
-  "team_ids":[4370857],
+  "team_ids":[4367056],
   "invitee_id":'$requesting_user_id'
 }'
 
