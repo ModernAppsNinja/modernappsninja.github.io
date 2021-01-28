@@ -11,7 +11,16 @@ description : "Tanzu Labs"
 
 ## Tanzu Labs
 
-| [![vSphere with Tanzu](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png){{ $image := $resource.Resize "60x" }}](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [![vSphere with Tanzu - Lightning Lab](https://gethugothemes.com/wp-content/uploads/edd/2019/09/agen-hugo-theme.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8897) | [![VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS) - Getting started](https://gethugothemes.com/wp-content/uploads/edd/2019/09/redlab-hugo-thumbnail.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) |
+
+<figure>
+  <img src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png"  />
+  <figcaption>
+      <h4>vSphere with Tanzu</h4>
+  </figcaption>
+</figure>
+
+
+| [![vSphere with Tanzu](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [![vSphere with Tanzu - Lightning Lab](https://gethugothemes.com/wp-content/uploads/edd/2019/09/agen-hugo-theme.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8897) | [![VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS) - Getting started](https://gethugothemes.com/wp-content/uploads/edd/2019/09/redlab-hugo-thumbnail.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) |
 |:---:|:---:|:---:|
 | **A**  | **B**  | **C**  |
 
