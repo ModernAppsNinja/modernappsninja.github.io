@@ -179,7 +179,7 @@ weight = 3006
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
 name = "Labs"
-URL = "about/labs.html"
+URL = "about/labs"
 weight = 3007
 
 #[[Languages.en.menu.main]]
