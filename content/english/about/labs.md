@@ -12,7 +12,7 @@ description : "Tanzu Labs"
 ## Tanzu Labs
 
 
-{{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" title="vSphere with Tanzu" width="100" height="100" link="https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811" >}} 
+{{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" link="https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811" title="vSphere with Tanzu" width="90" height="90" >}} 
 
 
 
