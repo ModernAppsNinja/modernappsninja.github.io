@@ -176,6 +176,11 @@ name = "ModernApps Ninja Github Org"
 URL = "https://github.com/modernappsninja/"
 weight = 3006
 
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Labs"
+URL = "about/labs.html"
+weight = 3007
 
 #[[Languages.en.menu.main]]
 #weight = 3
