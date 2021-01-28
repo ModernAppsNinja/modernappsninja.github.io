@@ -12,7 +12,7 @@ description : "Tanzu Labs"
 ## Tanzu Labs
 
 
-{{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" title="vSphere with Tanzu" > $image := $resource.Resize "40x"}} 
+{{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" title="vSphere with Tanzu" style="max-width: 100%; width: auto; height: auto;" > }} 
 
 
 
