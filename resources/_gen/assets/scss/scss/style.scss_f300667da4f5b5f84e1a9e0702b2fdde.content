@@ -165,7 +165,9 @@ ul {
 
 img {
   vertical-align: middle;
-  border: 0; }
+  border: 0;
+  width: 100%;
+  height: 100%; }
 
 a,
 a:hover,

@@ -1,39 +1,56 @@
-name: new member added workfow
+name: create new course workfow
 on:
-  repository_dispatch:
-    types: [org_member_change]
-
+  workflow_dispatch:
+    inputs:
+      course_title:
+        description: 'Course Title'
+        required: true
+        default: 'The title of your course'
+      course_short_title:
+        description: 'Course Short Title - up to 26 chars, no spaces, chars must be valid to use in URL'
+        required: true
+        default: 'courseshortname'
+      code_stub:
+        description: 'Enter Two Uppercase Letters of your choice, no special chars. This will be prepended to a random number to create your content ID'
+        required: true
+        default: 'AB'
+      course_description:
+        description: 'One line Course Description'
+        required: true
+        default: 'The title of your course'
+      course_tags:
+        description: 'Enter tags as an array including brackets, example: ["tag1","tag2"]'
+        required: true
+        default: 'The title of your course'
+      course_duration:
+        description: 'Enter approximate number of hours to complete the course, whole numbers only'
+        required: true
+        default: '3'
 jobs:
-  new_member_added:
-    name: new member added job
+  create_new_course:
+    name: create new course job
     runs-on: ubuntu-latest
-    if: github.event.client_payload.action == 'added'
+    if: env. == 'false'
     steps:
       - name: cat payload file
         run: cat /home/runner/work/_temp/_github_workflow/event.json
-      - name: echo client_payload.action variable
-        run: echo ${{ github.event.client_payload.action }}
-      - name: echo if added
-        if: github.event.client_payload.action == 'added'
-        run: echo "the webhook action was added"
-      - name: echo if removed
-        if: github.event.client_payload.action == 'removed'
-        run: echo "the webhook action was removed"
-      - name: echo client_payload.action variable
-        run: echo ${{ github.event.client_payload.action }}
       - name: initialize git
         run: |
           git config --global user.name modernappsninjabot
           git config --global user.email modernappsninjabot@gmail.com
           git init
+      - name: set repository name for source template to be copied as source_repo_name
+        run: |
+          echo source_repo_name="vSphereTanzu101_VT7933" >> $GITHUB_ENV
+          echo ${{ env.source_repo_name }}
       - name: curl member record file
         run: |
           curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          "https://raw.githubusercontent.com/modernappsninja/admin-private/main/userdata/members/${{ github.event.client_payload.member_login }}_${{ github.event.client_payload.member_github_id }}.json" \
+          "https://raw.githubusercontent.com/modernappsninja/admin-private/main/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.json" \
           -o /tmp/member_record.json
-      - name: clone member_repo_template
+      - name: clone ninja_course_template
         run: |
-          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/member_repo_template.git
+          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/${{ env.source_repo_name }}.git
       - name: create hub config file
         run: |
           echo "---" > ~/.config/hub
@@ -49,24 +66,9 @@ jobs:
         run: |
           echo $(echo last_name=$(echo $(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ))) >> $GITHUB_ENV
           echo $last_name
-      - name: extract twitterUsername from member_record and set as twitter_username
-        run: |
-          echo $(echo twitter_username=$(echo $(cat /tmp/member_record.json | jq '.twitterUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
-          echo $twitter_username
-      - name: extract linkedinUsername from member_record and set as linkedin_username
-        run: |
-          echo $(echo linkedin_username=$(echo $(cat /tmp/member_record.json | jq '.linkedinUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
-          echo $linkedin_username
-      - name: set member login as member_login
-        run: |
-          echo $(echo member_login="${{ github.event.client_payload.member_login }}") >> $GITHUB_ENV
-          echo $member_login
-      - name: set organization name for new repository creation as repo_org_name
-        run: |
-          echo repo_org_name="modernappsninjas" >> $GITHUB_ENV
       - name: envsubst config.toml file
         run: |
-          cd member_repo_template
+          cd ${{ env.source_repo_name }}
           envsubst <"config.toml" > config.toml.tmp
           mv -f config.toml.tmp config.toml
           cat config.toml
@@ -87,7 +89,7 @@ jobs:
           curl -X POST \
           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
           -d '{"name":"${{ github.event.client_payload.member_login }}"}' \
-          "https://api.github.com/orgs/modernappsninjas/repos" \
+          "https://api.github.com/orgs/modernappsninja/repos" \
           -o /tmp/member_repo_create_curl_response.json
           cat /tmp/member_repo_create_curl_response.json
       - name: prep local directory for new member repo content
