@@ -30,7 +30,8 @@ course_short_title: vcta_am_study_guide
 course_repo_name: vcta_am_study_guide_AM4923
 ---
 
-## This Guide is Currently Under Construction. Please Check Back Soon for Updates.
+### This Guide is Currently Under Construction. Please Check Back Soon for Updates.
+<br>
 
 ### About This ModernApps Ninja Guide
 
