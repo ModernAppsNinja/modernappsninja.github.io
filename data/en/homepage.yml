@@ -40,7 +40,7 @@ slider:
 ############################### Banner feature ###############################
 banner_feature:
   enable : true
-  image : "images/banner/banner-feature.jpg"
+  image : "images/banner/banner-feature.png"
   feature_item:
     # feature item loop
     - name : "Free Tanzu Courses"
@@ -67,7 +67,7 @@ banner_feature:
 about:
   enable : true
   title : "About ModernApps Ninja"
-  image : "images/about/about-us.jpg"
+  image : "images/about/about-us.png"
   content : "The ModernApps Ninja Community is dedicated to building a community of students and practitioners of Cloud Native Technologies. The community seeks to provide practical educational experiences that help enrich and maximize the knowledge sharing potential for community participants and contributors."
   button:
     enable : true
