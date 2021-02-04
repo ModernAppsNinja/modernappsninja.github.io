@@ -3,7 +3,7 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 <!-- about -->
-<section class="section">
+<section class="section bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -20,15 +20,15 @@
 <!-- funfacts -->
 {{ if $data.homepage.funfacts.enable }}
 {{ with $data.homepage.funfacts }}
-<section class="section-sm bg-primary">
+<section class="section-sm bg-secondary">
   <div class="container">
     <div class="row">
       <!-- funfacts item -->
       {{ range .funfact_item }}
       <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
         <div class="text-center">
-          <h2 class="count text-white" data-count="{{ .count }}">0</h2>
-          <h5 class="text-white">{{ .name }}</h5>
+          <h2 class="count text-muted" data-count="{{ .count }}">0</h2>
+          <h5 class="text-muted">{{ .name }}</h5>
         </div>
       </div>
       {{ end }}

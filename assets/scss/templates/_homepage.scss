@@ -6,7 +6,7 @@
 }
 
 .feature-blocks {
-  margin-top: -100px;
+  /*margin-top: -100px;*/
   padding-left: 70px;
   padding-top: 80px;
   padding-right: 30%;
@@ -208,7 +208,7 @@
 }
 
 .bg-footer {
-  background-color: #182b45;
+  background-color: $primary-color;
 }
 
 .logo-footer {
@@ -218,7 +218,7 @@
 
 .footer {
   border-color: #494a43 !important;
-  padding-top: 275px;
+  padding-top: 75px;
 }
 
 /* /footer */

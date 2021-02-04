@@ -119,7 +119,7 @@ a h4{
     top: 0;
     left: 0;
     background: $secondary-color;
-    opacity: .8;
+    /*opacity: .8;*/
   }
 }
 
@@ -144,7 +144,7 @@ a h4{
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: $text-color-dark !important;
 }
 
 .text-color {
@@ -160,7 +160,7 @@ a h4{
 }
 
 .text-muted {
-  color: #b5b5b7 !important;
+  color: #61717d !important;
 }
 
 .text-dark {

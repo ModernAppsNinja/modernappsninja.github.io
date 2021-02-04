@@ -56,7 +56,7 @@ contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
 google_analitycs_id = "UA-162817887-1" # your id
 # top header
-top_header = true
+top_header = false
 
 # Preloader
 [params.preloader]
@@ -142,45 +142,45 @@ weight = 3
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
-name = "Tanzu.VMware.com"
-URL = "https://tanzu.vmware.com/"
-weight = 3001
+name = "VMware Hands-on Labs"
+URL = "https://hol.vmware.com/"
+weight = 3010
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
 name = "Tanzu Developer Center"
 URL = "https://tanzu.vmware.com/developer/"
-weight = 3002
+weight = 3015
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
 name = "Tanzu Content Library"
 URL = "https://tanzu.vmware.com/content-library/"
-weight = 3003
+weight = 3020
 
-[[Languages.en.menu.main]]
-parent = "Tanzu Links"
-name = "Free Cloud Native eBooks"
-URL = "https://tanzu.vmware.com/content/ebooks/"
-weight = 3004
+#[[Languages.en.menu.main]]
+#parent = "Tanzu Links"
+#name = "Free Cloud Native eBooks"
+#URL = "https://tanzu.vmware.com/content/ebooks/"
+#weight = 3004
 
-[[Languages.en.menu.main]]
-parent = "Tanzu Links"
-name = "Tanzu Github Org"
-URL = "https://github.com/vmware-tanzu/"
-weight = 3005
+#[[Languages.en.menu.main]]
+#parent = "Tanzu Links"
+#name = "Tanzu Documentation"
+#URL = "https://github.com/vmware-tanzu/"
+#weight = 3005
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
 name = "ModernApps Ninja Github Org"
 URL = "https://github.com/modernappsninja/"
-weight = 3006
+weight = 3005
 
-[[Languages.en.menu.main]]
-parent = "Tanzu Links"
-name = "Labs"
-URL = "about/labs"
-weight = 3007
+#[[Languages.en.menu.main]]
+#parent = "Tanzu Links"
+#name = "Labs"
+#URL = "about/labs"
+#weight = 3007
 
 #[[Languages.en.menu.main]]
 #weight = 3

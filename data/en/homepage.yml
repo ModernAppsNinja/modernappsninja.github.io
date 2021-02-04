@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/banner/banner-1.jpg"
+  bg_image : #"images/banner/banner-1.jpg"
   slider_item:
     # slider item loop
     - title : "Welcome to ModernApps Ninja"
@@ -45,7 +45,7 @@ banner_feature:
     # feature item loop
     - name : "Free Tanzu Courses"
       icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja provides free elearning courses for the [VMware Tanzu Portfolio](https://tanzu.vmware.com/)"
+      content : "ModernApps Ninja provides free elearning courses for the [VMware Tanzu Portfolio](https://tanzu.vmware.com/) and Cloud Native Technologies"
 
     # feature item loop
     - name : "Hands On Training"
@@ -60,7 +60,7 @@ banner_feature:
     # feature item loop
     - name : "Learn Practical Devops"
       icon : "ti-write" # icon pack : https://themify.me/themify-icons
-      content : "[Join our community](https://lms.modernapps.ninja/register?next=%2F), participate and contribute to get real experience with devops, learn how to make github commits and enhance your professional portfolio"
+      content : "Get real experience with devops, learn to make github commits and enhance your professional portfolio"
 
 
 ############################## about ##################################
@@ -115,15 +115,15 @@ funfacts:
   funfact_item:
     # funfact item loop
     - name : "Project Contributors"
-      count : "84"
+      count : "227"
 
     # funfact item loop
     - name : "COURSES"
-      count : "6"
+      count : "7"
 
     # funfact item loop
     - name : "Participants"
-      count : "906"
+      count : "1013"
 
     # funfact item loop
 #    - name : "SATISFIED CLIENT"
