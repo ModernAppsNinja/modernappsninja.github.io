@@ -156,13 +156,13 @@ weight = 3015
 parent = "Tanzu Links"
 name = "Tanzu Content Library"
 URL = "https://tanzu.vmware.com/content-library/"
-weight = 3020
+weight = 3025
 
-#[[Languages.en.menu.main]]
-#parent = "Tanzu Links"
-#name = "Free Cloud Native eBooks"
-#URL = "https://tanzu.vmware.com/content/ebooks/"
-#weight = 3004
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "VMware Kube Academy"
+URL = "https://kube.academy"
+weight = 3020
 
 #[[Languages.en.menu.main]]
 #parent = "Tanzu Links"
