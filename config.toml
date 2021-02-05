@@ -154,8 +154,8 @@ weight = 3015
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
-name = "Tanzu Content Library"
-URL = "https://tanzu.vmware.com/content-library/"
+name = "vSphere with Tanzu Tech Zone"
+URL = "https://core.vmware.com/tanzu"
 weight = 3025
 
 [[Languages.en.menu.main]]
