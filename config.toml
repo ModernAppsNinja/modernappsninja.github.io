@@ -167,7 +167,7 @@ weight = 3020
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
 name = "Tanzu Documentation"
-URL = "https://docs.pivotal.io/"
+URL = "https://docs.vmware.com/en/VMware-Tanzu/index.html"
 weight = 3030
 
 [[Languages.en.menu.main]]
