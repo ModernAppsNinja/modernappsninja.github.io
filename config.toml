@@ -142,14 +142,14 @@ weight = 3
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
-name = "VMware Hands-on Labs"
-URL = "https://hol.vmware.com/"
+name = "Tanzu Hands-on Labs"
+URL = "https://labs.hol.vmware.com/HOL/catalogs/catalog/1886"
 weight = 3010
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
-name = "Tanzu Developer Center"
-URL = "https://tanzu.vmware.com/developer/"
+name = "Tanzu Developer Center Workshops"
+URL = "https://tanzu.vmware.com/developer/workshops/"
 weight = 3015
 
 [[Languages.en.menu.main]]
@@ -160,15 +160,15 @@ weight = 3025
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
-name = "VMware Kube Academy"
-URL = "https://kube.academy"
+name = "Kube Academy Courses"
+URL = "https://kube.academy/courses"
 weight = 3020
 
-#[[Languages.en.menu.main]]
-#parent = "Tanzu Links"
-#name = "Tanzu Documentation"
-#URL = "https://github.com/vmware-tanzu/"
-#weight = 3005
+[[Languages.en.menu.main]]
+parent = "Tanzu Links"
+name = "Tanzu Documentation"
+URL = "https://docs.pivotal.io/"
+weight = 3030
 
 [[Languages.en.menu.main]]
 parent = "Tanzu Links"
