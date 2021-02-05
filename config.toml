@@ -136,48 +136,48 @@ url = "course"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Tanzu Links"
-identifier = "Tanzu Links"
+name = "Learn More"
+identifier = "Learn More"
 weight = 3
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "Tanzu Hands-on Labs"
 URL = "https://labs.hol.vmware.com/HOL/catalogs/catalog/1886"
 weight = 3010
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "Tanzu Developer Center Workshops"
 URL = "https://tanzu.vmware.com/developer/workshops/"
 weight = 3015
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "vSphere with Tanzu Tech Zone"
 URL = "https://core.vmware.com/tanzu"
 weight = 3025
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "Kube Academy Courses"
 URL = "https://kube.academy/courses"
 weight = 3020
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "Tanzu Documentation"
 URL = "https://docs.vmware.com/en/VMware-Tanzu/index.html"
 weight = 3030
 
 [[Languages.en.menu.main]]
-parent = "Tanzu Links"
+parent = "Learn More"
 name = "ModernApps Ninja Github Org"
 URL = "https://github.com/modernappsninja/"
 weight = 3005
 
 #[[Languages.en.menu.main]]
-#parent = "Tanzu Links"
+#parent = "Learn More"
 #name = "Labs"
 #URL = "about/labs"
 #weight = 3007
