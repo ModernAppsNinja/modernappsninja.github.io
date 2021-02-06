@@ -27,7 +27,6 @@ jobs:
   create_new_course:
     name: create new course job
     runs-on: ubuntu-latest
-    if: env. == 'false'
     steps:
       - name: cat payload file
         run: cat /home/runner/work/_temp/_github_workflow/event.json
