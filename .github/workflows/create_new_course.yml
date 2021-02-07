@@ -268,7 +268,7 @@ jobs:
         run: |
           cd ${{ env.source_repo_name }}
           envsubst <"static/admin/assets/coursecards/course_meta.yml" > /tmp/course_meta.yml.tmp
-          mv -f /tmp/course_meta,yml.tmp static/admin/assets/coursecards/course_meta.yml
+          mv -f /tmp/course_meta.yml.tmp static/admin/assets/coursecards/course_meta.yml
           cat static/admin/assets/coursecards/course_meta.yml
       # - name: create new member repository
       #   run: |
