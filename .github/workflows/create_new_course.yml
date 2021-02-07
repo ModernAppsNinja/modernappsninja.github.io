@@ -80,11 +80,11 @@ jobs:
           echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
       - name: initialize content_id_candidate value for course id creation
         run: |
-          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
-      - name: Course ID create Attempt 1
-        run: |
           echo $content_id_ready
           echo $content_id_random
+          echo content_id_candidate=${{ github.event.inputs.code_stub }}${{ env.content_id_random }}) >> $GITHUB_ENV
+      - name: Course ID create Attempt 1
+        run: |
           echo $content_id_candidate
           # curl content id index to see if content_id_candidate is already present
           curl \
