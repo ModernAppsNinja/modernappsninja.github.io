@@ -80,7 +80,7 @@ jobs:
           echo $content_id_ready
           shuf --help
           shuf -i 1001-9799 -n1
-          echo content_id_random=$(shuf -i 1001-9799 -n1)) >> $GITHUB_ENV
+          echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
           echo $content_id_random
           echo content_id_tentative=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
           echo $content_id_random
