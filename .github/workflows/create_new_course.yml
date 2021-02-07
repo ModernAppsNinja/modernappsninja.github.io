@@ -13,7 +13,7 @@ on:
       code_stub:
         description: 'Enter Two lowercase Letters of your choice, no special chars. This will be prepended to a random number to create your content ID'
         required: true
-        default: 'AB'
+        default: 'ab'
       course_description:
         description: 'One line Course Description'
         required: true
@@ -66,7 +66,7 @@ jobs:
               curl -X PUT \
                 -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
                 -H "Accept: application/vnd.github.v3+json" \
-                -d '{"message": "Adding new content ID: ${{ env.content_id }} For Course Title: ${{ github.event.inputs.course_title }}", "content": "'$(echo "course_repo_name: ${{ env.course_repo_name }}") | base64 -w 0 )'"}' \
+                -d '{"message": "Adding new content ID: ${{ env.content_id }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
                 "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id }}" \
                 -o /tmp/content_id_post_response.json
               cat /tmp/content_id_post_response.json
