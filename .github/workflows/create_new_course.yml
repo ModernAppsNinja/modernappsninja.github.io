@@ -21,7 +21,7 @@ on:
       course_tags:
         description: 'Enter each tag in quotes, comma seperated, example: "tag1","tag2"'
         required: true
-        default: 
+        default: '"tag1","tag2"'
 
 jobs:
   create_new_course:
@@ -43,7 +43,7 @@ jobs:
           # set content loop counter to 0
           echo content_id_loop=0 >> $GITHUB_ENV
           # use while loop to repeat content id random selection until unique value is found
-          while [ $content_id_loop -eq 0 ]; do
+          while [ "$content_id_loop" -eq "0" ]; do
             echo content_id_random=$(echo $(shuf -i 1001-9799 -n1)) >> $GITHUB_ENV
             echo content_id_tentative=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
             # curl content id index to see if tentative ID is available
