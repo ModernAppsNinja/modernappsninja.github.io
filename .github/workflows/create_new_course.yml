@@ -82,7 +82,7 @@ jobs:
         run: |
           echo $content_id_ready
           echo $content_id_random
-          echo content_id_candidate=${{ github.event.inputs.code_stub }}${{ env.content_id_random }}) >> $GITHUB_ENV
+          echo content_id_candidate=${{ github.event.inputs.code_stub }}${{ env.content_id_random }} >> $GITHUB_ENV
       - name: Course ID create Attempt 1
         run: |
           echo $content_id_candidate
