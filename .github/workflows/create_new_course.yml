@@ -121,60 +121,101 @@ jobs:
       - name: Course ID create Attempt 2
         if: env.content_id_ready == '0'
         run: |
-          echo content_id_random=$(echo $(shuf -i 1001-9799 -n1)) >> $GITHUB_ENV
-          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+          echo $content_id_random
+          echo $content_id_candidate
           # curl content id index to see if candidate ID is available
           curl \
             -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
           # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
-          if [ $(wc -l <"/tmp/check_content_id") -ge 5 ]
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
           then
-            echo "this ID is in use"
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
           else
             echo "this id value is not yet in use, please proceed"
             echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
             # set the content id ready value to 1
             echo content_id_ready=1 >> $GITHUB_ENV
             # create course_repo_name
-            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id }} >> $GITHUB_ENV
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
             # post the new content id file to the content id index collection
             curl -X PUT \
               -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
-              -d '{"message": "Adding new content ID: ${{ env.content_id }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
-              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id }}" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
               -o /tmp/content_id_post_response.json
             cat /tmp/content_id_post_response.json
           fi
+      - name: initialize content_id_candidate value for course id creation attempt 3
+        if: env.content_id_ready == '0'
+        run: |
+          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
       - name: Course ID create Attempt 3
         if: env.content_id_ready == '0'
         run: |
-          echo content_id_random=$(echo $(shuf -i 1001-9799 -n1)) >> $GITHUB_ENV
-          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+          echo $content_id_random
+          echo $content_id_candidate
           # curl content id index to see if candidate ID is available
           curl \
             -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
           # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
-          if [ $(wc -l <"/tmp/check_content_id") -ge 5 ]
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
           then
-            echo "this ID is in use"
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
           else
             echo "this id value is not yet in use, please proceed"
             echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
             # set the content id ready value to 1
             echo content_id_ready=1 >> $GITHUB_ENV
             # create course_repo_name
-            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id }} >> $GITHUB_ENV
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
             # post the new content id file to the content id index collection
             curl -X PUT \
               -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
-              -d '{"message": "Adding new content ID: ${{ env.content_id }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
-              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id }}" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+          fi
+      - name: initialize content_id_candidate value for course id creation attempt 4
+        if: env.content_id_ready == '0'
+        run: |
+          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+      - name: Course ID create Attempt 4
+        if: env.content_id_ready == '0'
+        run: |
+          echo $content_id_random
+          echo $content_id_candidate
+          # curl content id index to see if candidate ID is available
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
+          # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
+          then
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+          else
+            echo "this id value is not yet in use, please proceed"
+            echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # set the content id ready value to 1
+            echo content_id_ready=1 >> $GITHUB_ENV
+            # create course_repo_name
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # post the new content id file to the content id index collection
+            curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
               -o /tmp/content_id_post_response.json
             cat /tmp/content_id_post_response.json
           fi
@@ -226,9 +267,9 @@ jobs:
       - name: envsubst course metadata file
         run: |
           cd ${{ env.source_repo_name }}
-          envsubst <"static/admin/assets/course_meta.yml" > /tmp/course_meta.yml.tmp
-          mv -f /tmp/course_meta,yml.tmp static/admin/assets/course_meta.yml
-          cat .git/config
+          envsubst <"static/admin/assets/coursecards/course_meta.yml" > /tmp/course_meta.yml.tmp
+          mv -f /tmp/course_meta,yml.tmp static/admin/assets/coursecards/course_meta.yml
+          cat static/admin/assets/coursecards/course_meta.yml
       # - name: create new member repository
       #   run: |
       #     curl -X POST \
