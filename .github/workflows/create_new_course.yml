@@ -18,11 +18,6 @@ on:
         description: 'One line Course Description'
         required: true
         default: 'The description of your course'
-      course_tags:
-        description: 'Enter each tag in quotes, comma seperated, example: "tag1","tag2"'
-        required: true
-        default: '\'"tag1","tag2"\''
-
 jobs:
   create_new_course:
     name: create new course job
