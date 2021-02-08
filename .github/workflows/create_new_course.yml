@@ -55,6 +55,8 @@ jobs:
           echo $code_stub
           echo course_description:
           echo $course_description
+          echo inputs.course_tags:
+          echo ${{ github.event.inputs.course_tags }}
           echo course_tags:
           echo $course_tags
 ## For content ID creation, he while based logic below is preferred over current method, however, actions does not currently support loops in bash
