@@ -40,11 +40,11 @@ jobs:
           echo current_date=$(date -u +"%Y-%m-%dT%TZ") >> $GITHUB_ENV
       - name: set envars for inputs
         run: |
-          echo course_title=${{ env.course_title }} >> $GITHUB_ENV
-          echo course_short_title=${{ env.course_short_title }} >> $GITHUB_ENV
-          echo code_stub=${{ env.code_stub }} >> $GITHUB_ENV
-          echo course_description=${{ env.course_description }} >> $GITHUB_ENV
-          echo course_tags=${{ env.course_tags }} >> $GITHUB_ENV
+          echo course_title=${{ github.event.inputs.course_title }} >> $GITHUB_ENV
+          echo course_short_title=${{ github.event.inputs.course_short_title }} >> $GITHUB_ENV
+          echo code_stub=${{ github.event.inputs.code_stub }} >> $GITHUB_ENV
+          echo course_description=${{ github.event.inputs.course_description }} >> $GITHUB_ENV
+          echo course_tags=${{ github.event.inputs.course_tags }} >> $GITHUB_ENV
       - name: check envars for inputs
         run: |
           echo course_title:
