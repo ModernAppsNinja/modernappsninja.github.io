@@ -38,6 +38,25 @@ jobs:
       - name: set envar current_date with current date
         run: |
           echo current_date=$(date -u +"%Y-%m-%dT%TZ") >> $GITHUB_ENV
+      - name: set envars for inputs
+        run: |
+          echo course_title=${{ env.course_title }} >> $GITHUB_ENV
+          echo course_short_title=${{ env.course_short_title }} >> $GITHUB_ENV
+          echo code_stub=${{ env.code_stub }} >> $GITHUB_ENV
+          echo course_description=${{ env.course_description }} >> $GITHUB_ENV
+          echo course_tags=${{ env.course_tags }} >> $GITHUB_ENV
+      - name: check envars for inputs
+        run: |
+          echo course_title:
+          echo $course_title
+          echo course_short_title:
+          echo $course_short_title
+          echo code_stub:
+          echo $code_stub
+          echo course_description:
+          echo $course_description
+          echo course_tags:
+          echo $course_tags
 ## For content ID creation, he while based logic below is preferred over current method, however, actions does not currently support loops in bash
 ## Leaving the logic here for reference as in future use this if actins adds loop support or move to similar in container or javascript action
       # - name: create content ID
