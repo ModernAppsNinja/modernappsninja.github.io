@@ -40,4 +40,4 @@ This course assumes familiarity with Kubernetes and Cloud Native Technologies. I
 
 Before taking this course, you should also have familiarity with vSphere administration. If you need additional background in vSphere, we recommend checking out VMware Hands on Labs, which offers a number of vSphere labs and content.
 
-### [Please Click Here to Start the Course!](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-VT7025+Perpetual/)
+### [Please Click Here to Start the Course!](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-VT7025+Perpetual/about)

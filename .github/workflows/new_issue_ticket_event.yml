@@ -9,6 +9,10 @@ jobs:
     if: contains( toJson(github), 'newuserregistration' )
     runs-on: ubuntu-latest
     steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
       - name: set git configuration
         run: |
           git config --global user.name modernappsninjabot

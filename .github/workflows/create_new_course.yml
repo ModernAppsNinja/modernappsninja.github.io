@@ -11,7 +11,7 @@ on:
         required: true
         default: 'introtoicesculpting'
       code_stub:
-        description: 'Enter Two lowercase Letters of your choice, no special chars. This will be prepended to a random number to create your content ID'
+        description: 'Enter Two lowercase letters of your choice, no special chars. This will be prepended to a random number to create your content ID'
         required: true
         default: 'ab'
       course_description:
@@ -237,8 +237,7 @@ jobs:
           fi
       - name: TEMP - for initial run to create course template, set repository name for source template to be copied as source_repo_name
         run: |
-          echo source_repo_name="vSphereTanzu101_VT7933" >> $GITHUB_ENV
-          echo ${{ env.source_repo_name }}
+          echo source_repo_name=course_repo_template_ct8279 >> $GITHUB_ENV
       - name: curl member record file
         run: |
           curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
@@ -256,36 +255,36 @@ jobs:
       #     cat ~/.config/hub
       - name: extract firstName from member_record and set as first_name
         run: |
-          echo $(echo first_name=$(echo $(cat /tmp/member_record.json | jq '.firstName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo first_name=$(cat /tmp/member_record.json | jq '.firstName' | sed 's/"//g' ) >> $GITHUB_ENV
           echo $first_name
       - name: extract lastName from member_record and set as last_name
         run: |
-          echo $(echo last_name=$(echo $(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo last_name=$(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ) >> $GITHUB_ENV
           echo $last_name
-      # - name: envsubst config.toml file
-      #   run: |
-      #     cd ${{ env.source_repo_name }}
-      #     envsubst <"config.toml" > config.toml.tmp
-      #     mv -f config.toml.tmp config.toml
-      #     cat config.toml
-      # - name: envsubst homepage.yml file
-      #   run: |
-      #     cd member_repo_template
-      #     envsubst <"data/en/homepage.yml" > /tmp/homepage.yml.tmp
-      #     mv -f /tmp/homepage.yml.tmp data/en/homepage.yml
-      #     cat data/en/homepage.yml
-      - name: envsubst git config file
+      - name: envsubst config.toml file
         run: |
           cd ${{ env.source_repo_name }}
-          envsubst <"static/admin/assets/git_config_template.txt" > /tmp/git_config
-          mv -f /tmp/git_config .git/config
-          cat .git/config
+          envsubst <"config.toml" > config.toml.tmp
+          mv -f config.toml.tmp config.toml
+          cat config.toml
+      - name: envsubst homepage index.html file
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"content/en/index.html" > /tmp/index.html.tmp
+          mv -f /tmp/index.html.tmp content/en/index.html
+          cat content/en/index.html
       - name: envsubst course metadata file
         run: |
           cd ${{ env.source_repo_name }}
           envsubst <"static/admin/assets/coursecards/course_meta.yml" > /tmp/course_meta.yml.tmp
           mv -f /tmp/course_meta.yml.tmp static/admin/assets/coursecards/course_meta.yml
           cat static/admin/assets/coursecards/course_meta.yml
+      - name: envsubst course introduction - member registration instructions
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"content/en/docs/courseIntroduction/membershipRegistration.md" > /tmp/membershipRegistration.md.tmp
+          mv -f /tmp/membershipRegistration.md.tmp content/en/docs/courseIntroduction/membershipRegistration.md
+          cat content/en/docs/courseIntroduction/membershipRegistration.md
       # - name: create new member repository
       #   run: |
       #     curl -X POST \

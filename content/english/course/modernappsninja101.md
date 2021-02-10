@@ -33,4 +33,4 @@ The ModernApps Ninja program is much more than just the learning portal and is r
 
 There are no requirements to take this course.
 
-### [Please Click Here to Start the Course!](https://www.modernapps.ninja/courses/course-v1:modernapps+COU-MC3546+Perpetual/about)
+### [Please Click Here to Start the Course!](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-MN7417+Perpetual/about)

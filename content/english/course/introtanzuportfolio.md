@@ -41,4 +41,4 @@ There are numerous additional courses available in the ModernApps Ninja Course C
 
 This course has no specific prerequisites, however we strongly recommend that participants have experience working in enterprise information technology and have familiarity with enterprise information technology infrastructure and operations administration. 
 
-### [Please Click Here to Start the Course!](https://www.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/about)
+### [Please Click Here to Start the Course!](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/about)
