@@ -77,13 +77,16 @@ jobs:
           # use while loop to repeat content id random selection until unique value is found
           while [ $content_id_loop -eq 0 ]; do
             export content_id_random=$(echo $(shuf -i 1001-9799 -n1))
+            echo $content_id_random
             export content_id_candidate=$(echo $code_stub$content_id_random)
+            echo $content_id_candidate
             # curl content id index to see if candidate ID is available
             curl \
               -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
               "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/$content_id_candidate" \
               -o /tmp/check_content_id_response
+            cat /tmp/check_content_id_response
             # extract name field from curl, which is returned if the content id candidate is already present in index
             cat /tmp/check_content_id_response | jq -r '.name' >> /tmp/check_content_id_response name
             # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
