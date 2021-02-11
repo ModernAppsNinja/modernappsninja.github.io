@@ -85,7 +85,7 @@ jobs:
               -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
               "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/$content_id_candidate" \
-              -o /tmp/check_content_id_response
+              > /tmp/check_content_id_response
             cat /tmp/check_content_id_response
             # extract name field from curl, which is returned if the content id candidate is already present in index
             cat /tmp/check_content_id_response | jq -r '.name' >> /tmp/check_content_id_response name
