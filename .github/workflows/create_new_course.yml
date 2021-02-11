@@ -75,7 +75,7 @@ jobs:
           # set content loop counter to 0
           export content_id_loop=0
           # use while loop to repeat content id random selection until unique value is found
-          while [ content_id_loop -eq 0 ]; do
+          while [ $content_id_loop -eq 0 ]; do
             export content_id_random=$(echo $(shuf -i 1001-9799 -n1))
             export content_id_candidate=$(echo $code_stub$content_id_random)
             # curl content id index to see if candidate ID is available
