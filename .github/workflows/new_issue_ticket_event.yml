@@ -31,7 +31,6 @@ jobs:
           else
             echo duplicate_request=false >> $GITHUB_ENV
           fi
-          echo $duplicate_request
       - name: extract payload data from issue body
         run: |
           echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.txt
@@ -72,7 +71,7 @@ jobs:
           echo $GITHUB_OAUTH_TOKEN
       - name: set organization name as org_login
         run: |
-          echo $(echo org_login="${{ github.event.organization.login }}") >> $GITHUB_ENV
+          echo org_login=${{ github.event.organization.login }} >> $GITHUB_ENV
       - name: push new member record to admin-private/registrations
         if: env.duplicate_request == 'false'
         run: |
@@ -104,51 +103,17 @@ jobs:
           echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
           echo "  user: modernappsninjabot" >> ~/.config/hub
           cat ~/.config/hub
-      - name: if duplicate_request true, send email duplicate registration notice
-        if: env.duplicate_request == 'true'
-        uses: dawidd6/action-send-mail@v2
-        continue-on-error: true
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: modernappsninjabot@gmail.com
-          password: ${{secrets.NINJABOT_MAIL_PASSWORD}}
-          to: ${{ env.requesting_user_email }}
-          from: modernappsninjabot@gmail.com
-          subject: Your ModernApps Ninja User Registration is a Duplicate
-          body: |
-            Your registration request with ModernApps Ninja for github user ${{ github.event.issue.user.login }} was recieved, but was found to be a duplicate request.
-            When you open a registration request, the github account you are logged in as at the time is used for the registration request.
-            If you intended to request registration for a different account, please log in with the desired account first, and then open a new registration request ticket.
-            If you believe this message to be in error, or are having issues with your account registration, please open a support request ticket at https://github.com/modernappsninja/modernappsninja.github.io
-      - name: if duplicate_request false, send email registration complete notice
-        if: env.duplicate_request == 'false'
-        uses: dawidd6/action-send-mail@v2
-        continue-on-error: true
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: modernappsninjabot@gmail.com
-          password: ${{secrets.NINJABOT_MAIL_PASSWORD}}
-          to: ${{ env.requesting_user_email }}
-          from: modernappsninjabot@gmail.com
-          subject: An invite has been sent to ${{ github.event.issue.user.login }} to join the ModernApps Ninja Github org.
-          body: |
-            Your registration request with ModernApps Ninja for github user ${{ github.event.issue.user.login  }} was recieved and an invitation to join the org has been sent to the email associated with the ${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user ${{ github.event.issue.user.login }} Github account.
-            Before registration can be finalized for the requesting github account, you will need to view the invitation email sent by github to the email address associated with the ${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user ${{ github.event.issue.user.login }} Github account.
-            After you accept the invitation for the account to join the ModernApps Ninja Github account, a workflow will be triggered that will complete your user registration and setup your member profile page, and an email will be sent to this address when the process is complete. 
-            Thank you for your participation and welcome to the ModernApps Ninja Community!
       - name: if duplicate_request true, append message to issue ticket and close ticket
         if: env.duplicate_request == 'true'
         run: |
           cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user ${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user ${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
+          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
           hub issue update ${{ github.event.issue.number }} -s closed
       - name: if duplicate_request false, append message to issue ticket and close ticket
         if: env.duplicate_request == 'false'
         run: |
           cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user ${{ github.event.issue.user.login }} has been processed" --message "The github user ${{ github.event.issue.user.login }} has been sent an invite to join the modernapps ninja org, and this issue ticket will now be closed."
+          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} has been processed" --message "The github user @${{ github.event.issue.user.login }} has been sent an invite to join the modernapps ninja org, and this issue ticket will now be closed."
           hub issue update ${{ github.event.issue.number }} -s closed
       - name: transfer issue ticket to admin-private
         run: |

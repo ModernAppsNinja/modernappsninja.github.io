@@ -13,19 +13,10 @@ jobs:
         run: cat /home/runner/work/_temp/_github_workflow/event.json
       - name: echo client_payload.action variable
         run: echo ${{ github.event.client_payload.action }}
-      - name: echo if added
-        if: github.event.client_payload.action == 'added'
-        run: echo "the webhook action was added"
-      - name: echo if removed
-        if: github.event.client_payload.action == 'removed'
-        run: echo "the webhook action was removed"
-      - name: echo client_payload.action variable
-        run: echo ${{ github.event.client_payload.action }}
       - name: initialize git
         run: |
           git config --global user.name modernappsninjabot
           git config --global user.email modernappsninjabot@gmail.com
-          git init
       - name: curl member record file
         run: |
           curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
