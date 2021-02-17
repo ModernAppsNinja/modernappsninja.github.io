@@ -1,15 +1,15 @@
 ---
-title: "Labs"
+title: "Tanzu Labs"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # about image
 image: ""
 # meta description
-description : "Tanzu Labs"
+description : ""
 ---
 
-## Live Labs
+### Live Labs
 
 [VMware Tanzu Mission Control HOL](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)
 
@@ -21,9 +21,9 @@ description : "Tanzu Labs"
 
 [VMware TKGI HOL - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546)
 
+--------
 
-##  
-## Lightening Labs
+### Lightening Labs
 
 [vSphere with Tanzu - Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 

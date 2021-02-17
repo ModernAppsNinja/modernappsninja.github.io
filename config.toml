@@ -182,6 +182,12 @@ name = "Tanzu Testdrive Labs"
 URL = "https://pathfinder.vmware.com/path/tanzu"
 weight = 3013
 
+[[Languages.en.menu.main]]
+parent = "Learn More"
+name = "Tanzu Labs"
+URL = "./about/labs"
+weight = 3080
+
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
 #name = "Labs"
