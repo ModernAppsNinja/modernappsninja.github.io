@@ -14,6 +14,7 @@ author: "Ninja Admins"
 categories: ["Tanzu Portfolio", "Tanzu Mission Control", "Tanzu Kubernetes Grid", "vSphere with Tanzu", "ModernApps Ninja"]
 tags: ["Tanzu Portfolio", "Tanzu Mission Control", "Tanzu Kubernetes Grid", "vSphere with Tanzu", "ModernApps Ninja"]
 # type
+location: "./blog-post-1"
 type: "post"
 ---
 
