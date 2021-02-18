@@ -29,18 +29,14 @@ description : ""
 [Tanzu Kubernetes Grid Odyssey](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 --------
-### Lightening Labs
+### Simulation Labs
 
-[vSphere with Tanzu Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+[vSphere with Tanzu Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
-[VMware Tanzu Mission Control Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+[VMware Tanzu Mission Control Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
-[VMware Tanzu Service Mesh - Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
+[VMware Tanzu Service Mesh Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
-[VMware TKGI - Introduction to VMware Octant Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
+[VMware TKGI - Introduction to VMware Octant Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
 
-[VMware TKGI-Tanzu Kubernetes Grid Management Console Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
-
-[Carbon Black Endpoint Standard Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)
-
-[Carbon Black Cloud Use Cases](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
+[VMware TKGI-Tanzu Kubernetes Grid Management Console Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
