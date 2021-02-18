@@ -184,7 +184,7 @@ weight = 3013
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Tanzu Labs"
+name = "Tanzu Labs OneStop Page"
 URL = "./about/labs"
 weight = 3080
 
