@@ -21,6 +21,8 @@ description : ""
 
 [VMware TKGI HOL - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546)
 
+[VMware TKGI TestDrive](https://pathfinder.vmware.com/path/enterprisepks)
+
 --------
 ### Odyssey Challenge
 
