@@ -188,6 +188,12 @@ name = "Tanzu Labs"
 URL = "./about/labs"
 weight = 3080
 
+[[Languages.en.menu.main]]
+parent = "Learn More"
+name = "Blogs"
+URL = "./blog"
+weight = 3090
+
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
 #name = "Labs"
