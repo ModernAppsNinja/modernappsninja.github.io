@@ -15,7 +15,7 @@ VMware Tanzu Mission Control [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalo
 
 vSphere with Tanzu [Hand-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
-VMware Tanzu Kubernetes Grid [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525)
+VMware Tanzu Kubernetes Grid [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 VMware Tanzu Kubernetes Grid Integrated [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Testdrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
 
@@ -28,12 +28,6 @@ Tanzu Kubernetes Grid Management Console [Simulation](http://labs.hol.vmware.com
 VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
 
 VMware Carbon Black Cloud Use Cases [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
-
-
---------
-### Odyssey Challenges
-
-[Tanzu Kubernetes Grid Odyssey](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 --------
 
