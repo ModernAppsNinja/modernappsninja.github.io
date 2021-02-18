@@ -13,11 +13,11 @@ description : ""
 
 VMware Tanzu Mission Control [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [Testdrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
-vSphere with Tanzu [Hand-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) |[Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+vSphere with Tanzu [Hand-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
 VMware Tanzu Kubernetes Grid [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525)
 
-VMware Tanzu Kubernetes Grid Integrated [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Testdrive Lab (https://pathfinder.vmware.com/path/enterprisepks)
+VMware Tanzu Kubernetes Grid Integrated [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Testdrive Lab] (https://pathfinder.vmware.com/path/enterprisepks)
 
 VMware Tanzu Service Mesh [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
