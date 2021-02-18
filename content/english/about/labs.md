@@ -17,7 +17,7 @@ vSphere with Tanzu [Hand-on Lab](https://www.vmwarelearningplatform.com/HOL/cata
 
 VMware Tanzu Kubernetes Grid [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525)
 
-VMware Tanzu Kubernetes Grid Integrated [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Testdrive Lab] (https://pathfinder.vmware.com/path/enterprisepks)
+VMware Tanzu Kubernetes Grid Integrated [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Testdrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
 
 VMware Tanzu Service Mesh [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
