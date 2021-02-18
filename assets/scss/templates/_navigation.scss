@@ -146,7 +146,7 @@ link:focus,
 
     &-item {
       position: relative;
-      color: $text-color-dark;
+      color: #717074;
       transition: .2s ease;
       text-transform: capitalize;
       font-family: $primary-font;
@@ -160,7 +160,7 @@ link:focus,
       }
 
       &:hover {
-        color: $primary-color;
+        color: #000000;
         background: transparent;
       }
     }

@@ -118,7 +118,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020 VMware"
+copyright = "Copyright &copy; 2021 VMware"
 
 
 
@@ -267,7 +267,7 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; VMware 2020"
+copyright = "Copyright &copy; VMware 2021"
 
 
 

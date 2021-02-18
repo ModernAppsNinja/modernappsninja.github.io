@@ -22,20 +22,22 @@ description : ""
 [VMware TKGI HOL - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546)
 
 --------
+### Odyssey Challenge
 
+[Tanzu Kubernetes Grid Odyssey](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
+
+--------
 ### Lightening Labs
 
-[vSphere with Tanzu - Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+[vSphere with Tanzu Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
-[VMware Tanzu Mission Control Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+[VMware Tanzu Mission Control Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
-[VMware Tanzu Service Mesh Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
+[VMware Tanzu Service Mesh - Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
 [VMware TKGI - Introduction to VMware Octant Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
 
 [VMware TKGI-Tanzu Kubernetes Grid Management Console Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
-
-[VMware Odyssey - TKG - Getting Started](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 [Carbon Black Endpoint Standard Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)
 
