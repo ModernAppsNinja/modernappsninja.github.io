@@ -11,7 +11,7 @@ description : ""
 
 ### Live Labs
 
-##VMware Tanzu Mission Control [HOL](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)[TestDrive](https://pathfinder.vmware.com/path/tanzu)
+VMware Tanzu Mission Control [Hand-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)| [Testdrive Lab](https://pathfinder.vmware.com/path/tanzu)
 
 
 [vSphere with Tanzu HOL](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811)
