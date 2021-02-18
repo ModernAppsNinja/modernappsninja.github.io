@@ -1,6 +1,6 @@
 ---
 title: "Getting started with K8S on vSphere"
-date: 17 Feb, 2021
+date: 2021-02-17
 draft: false
 author: "Viktor van den Berg"
 # taxonomy
