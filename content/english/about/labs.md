@@ -40,3 +40,7 @@ description : ""
 [VMware TKGI - Introduction to VMware Octant Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
 
 [VMware TKGI-Tanzu Kubernetes Grid Management Console Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
+
+[Carbon Black Endpoint Standard Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
+
+[Carbon Black Cloud Use Cases Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
