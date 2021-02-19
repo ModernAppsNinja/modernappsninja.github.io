@@ -71,7 +71,7 @@ jobs:
     name: new_member_invitation
     needs: job_check_duplicate
     runs-on: ubuntu-latest
-    if: needs.job_check_duplicate.outputs.ismember == 'false'
+    if: needs.job_check_duplicate.outputs.output1 == 'false'
     steps:
       - name: review event details
         run: |
