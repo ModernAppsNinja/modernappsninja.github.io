@@ -86,8 +86,14 @@ jobs:
       - name: extract payload data from issue body
         run: |
           echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.raw
+          cat /tmp/issuebody.raw
+      - name: remove quotes
+        run: |
           cat /tmp/issuebody.raw | sed 's/"//g' > /tmp/issuebody.yml.first
+          cat /tmp/issuebody.yml.first
+      - name: select di 1
           cat /tmp/issuebody.yml.first | yq e 'select(di == 1)' > /tmp/issuebody.yml
+          cat /tmp/issuebody.yml
       # - name: remove instruction lines from issuebody file #This is a fragile method, better to replace with delimiter, tried some delimiter methods that didnt work with github actions, this should ideally be reworked at some point to reduce fragility
       #   run: |
       #     cat /tmp/issuebody.txt 
