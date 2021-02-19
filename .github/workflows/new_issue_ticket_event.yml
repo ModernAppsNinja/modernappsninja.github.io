@@ -15,143 +15,148 @@ jobs:
         run: |
           env
           cat /home/runner/work/_temp/_github_workflow/event.json
-      - name: install yq
-        run: sudo snap install yq
+      # - name: install yq
+      #   run: sudo snap install yq
+      # - name: curl member record file
+      #   run: |
+      #     curl \
+      #     -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #     "https://raw.githubusercontent.com/modernapsninja/admin-private/main/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" \
+      #     -o /tmp/raw_member_record_curl.json
+      #     cat /tmp/raw_member_record_curl.json | jq -r '.name' >> /tmp/raw_member_record_curl_name
+      #     echo raw_member_curl_name=$(cat /tmp/raw_member_record_curl_name) >> $GITHUB_ENV
       - name: curl member record file
         run: |
-          curl \
-          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          "https://raw.githubusercontent.com/modernapsninja/admin-private/main/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" \
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/modernapsninja/admin-private/main/userdata/members/${{ github.event.issue.user.login }}_${{ github.event.issue.user.id }}.json" \
           -o /tmp/raw_member_record_curl.json
-          cat /tmp/raw_member_record_curl.json | jq -r '.name' >> /tmp/raw_member_record_curl_name
-          echo raw_member_curl_name=$(cat /tmp/raw_member_record_curl_name) >> $GITHUB_ENV
-      - name: check if member record alredy exists to determine if this is a duplicate request
-        run: |
-          cat /tmp/raw_member_record_curl.json
-          if [ "${{ env.raw_member_record_curl_name }}" = "${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" ]
-          then
-            echo ismember=true >> $GITHUB_ENV
-            echo "the requesting user is a member"
-          else
-            echo ismember=false >> $GITHUB_ENV
-            echo "the requesting user is not a member"
-          fi
-          echo $ismember
-      - id: ismember
-        if: env.ismember == 'false'
-        run: echo "::set-output name=ismember::false"
-      - name: clone modernappsninja.github.io repo
-        if: env.ismember == 'true'
-        run: |
-          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
-          cd modernappsninja.github.io
-          pwd
-      - name: create hub config file
-        if: env.ismember == 'true'
-        run: |
-          echo "---" > ~/.config/hub
-          echo "github.com: " >> ~/.config/hub
-          echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
-          echo "  user: modernappsninjabot" >> ~/.config/hub
-          cat ~/.config/hub
-      - name: if duplicate_request true, append message to issue ticket and close ticket
-        if: env.ismember == 'true'
-        run: |
-          cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
-          hub issue update ${{ github.event.issue.number }} -s closed
-      - name: transfer issue ticket to admin-private
-        if: env.ismember == 'true'
-        run: |
-          cd modernappsninja.github.io
-          hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
-  job_new_member_invitation:
-    name: new_member_invitation
-    needs: job_check_duplicate
-    runs-on: ubuntu-latest
-    if: needs.job_check_duplicate.outputs.ismember == 'false'
-    steps:
-      - name: review event details
-        run: |
-          env
-          cat /home/runner/work/_temp/_github_workflow/event.json
-      - name: set git configuration
-        run: |
-          git config --global user.name modernappsninjabot
-          git config --global user.email modernappsninjabot@gmail.com
-      - name: install yq
-        run: sudo snap install yq
-      - name: extract payload data from issue body
-        run: |
-          echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.raw
-          cat /tmp/issuebody.raw | sed 's/"//g' > /tmp/issuebody.yml
-          cat /tmp/issuebody.yml
-      # - name: remove instruction lines from issuebody file #This is a fragile method, better to replace with delimiter, tried some delimiter methods that didnt work with github actions, this should ideally be reworked at some point to reduce fragility
-      #   run: |
-      #     cat /tmp/issuebody.txt 
-      #     sed '1,4d' /tmp/issuebody.txt > /tmp/issuebody.json
-      #     cat /tmp/issuebody.json
-      # - name: check /tmp/issuebody.json
-      #   run: |
-      #     cat /tmp/issuebody.json
-      - name: add metadata fields to user registration data
-        run: |
-          echo "memberGithubId: ${{ github.event.issue.user.id }}" >> /tmp/issuebody.yml
-          cat /tmp/issuebody.yml
-      - name: add more metadata fields to user registration data
-        run: |
-          echo "memberGithubLogin: ${{ github.event.issue.user.login}}" >> /tmp/issuebody.yml
-          cat /tmp/issuebody.yml
-      - name: extract user preferred email and set as requesting_user_email
-        run: |
-          echo requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' ) >> $GITHUB_ENV
-          requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' )
-          echo $requesting_user_email
-      - name: extract user id and set as requesting_user_id # in future need to update this file to ensure a common env is used consistently for the same variable data
-        run: |
-          echo $(echo requesting_user_id="${{ github.event.issue.user.id }}") >> $GITHUB_ENV
-          echo $requesting_user_id
-      - name: set token as GITHUB_OAUTH_TOKEN
-        run: |
-          echo $(echo GITHUB_OAUTH_TOKEN="${{ secrets.NINJABOTGURU }}") >> $GITHUB_ENV
-          echo $GITHUB_OAUTH_TOKEN
-      - name: set organization name as org_login
-        run: |
-          echo org_login=${{ github.event.organization.login }} >> $GITHUB_ENV
-      - name: push new member record to admin-private/registrations
-        run: |
-          curl -X PUT \
-          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          -d '{"message": "Updating Member Record File For ${{ github.event.issue.user.login }}", "content": "'$(cat /tmp/issuebody.yml | base64 -w 0)'"}'                                                        \
-          "https://api.github.com/repos/modernappsninja/admin-private/contents/userdata/members/${{ github.event.issue.user.login }}_${{ github.event.issue.user.id }}.yml" \
-          -o /tmp/member_record_post_response.json
-          cat /tmp/member_record_post_response.json
-      - name: clone modernappsninja.github.io repo
-        run: |
-          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
-          cd modernappsninja.github.io
-          pwd
-      - name: curl orgteamregapicall.sh and make executable
-        run: |
-          curl https://modernapps.ninja/admin/orgteamregapicall.sh -o /tmp/orgteamregapicall.sh
-          sudo chmod +x /tmp/orgteamregapicall.sh
-      - name: make org and team invite api call
-        run: |
-          /tmp/orgteamregapicall.sh
-      - name: create hub config file
-        run: |
-          echo "---" > ~/.config/hub
-          echo "github.com: " >> ~/.config/hub
-          echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
-          echo "  user: modernappsninjabot" >> ~/.config/hub
-          cat ~/.config/hub
-      - name: append message to issue ticket and close ticket
-        run: |
-          cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} has been processed" --message "The github user @${{ github.event.issue.user.login }} has been sent an invite to join the modernapps ninja org, and this issue ticket will now be closed."
-          hub issue update ${{ github.event.issue.number }} -s closed
-      - name: transfer issue ticket to admin-private
-        run: |
-          cd modernappsninja.github.io
-          hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
+  #     - name: check if member record alredy exists to determine if this is a duplicate request
+  #       run: |
+  #         cat /tmp/raw_member_record_curl.json
+  #         if [ "${{ env.raw_member_record_curl_name }}" = "${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" ]
+  #         then
+  #           echo ismember=true >> $GITHUB_ENV
+  #           echo "the requesting user is a member"
+  #         else
+  #           echo ismember=false >> $GITHUB_ENV
+  #           echo "the requesting user is not a member"
+  #         fi
+  #         echo $ismember
+  #     - id: ismember
+  #       if: env.ismember == 'false'
+  #       run: echo "::set-output name=ismember::false"
+  #     - name: clone modernappsninja.github.io repo
+  #       if: env.ismember == 'true'
+  #       run: |
+  #         git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
+  #         cd modernappsninja.github.io
+  #         pwd
+  #     - name: create hub config file
+  #       if: env.ismember == 'true'
+  #       run: |
+  #         echo "---" > ~/.config/hub
+  #         echo "github.com: " >> ~/.config/hub
+  #         echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
+  #         echo "  user: modernappsninjabot" >> ~/.config/hub
+  #         cat ~/.config/hub
+  #     - name: if duplicate_request true, append message to issue ticket and close ticket
+  #       if: env.ismember == 'true'
+  #       run: |
+  #         cd modernappsninja.github.io
+  #         hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
+  #         hub issue update ${{ github.event.issue.number }} -s closed
+  #     - name: transfer issue ticket to admin-private
+  #       if: env.ismember == 'true'
+  #       run: |
+  #         cd modernappsninja.github.io
+  #         hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
+  # job_new_member_invitation:
+  #   name: new_member_invitation
+  #   needs: job_check_duplicate
+  #   runs-on: ubuntu-latest
+  #   if: needs.job_check_duplicate.outputs.ismember == 'false'
+  #   steps:
+  #     - name: review event details
+  #       run: |
+  #         env
+  #         cat /home/runner/work/_temp/_github_workflow/event.json
+  #     - name: set git configuration
+  #       run: |
+  #         git config --global user.name modernappsninjabot
+  #         git config --global user.email modernappsninjabot@gmail.com
+  #     - name: install yq
+  #       run: sudo snap install yq
+  #     - name: extract payload data from issue body
+  #       run: |
+  #         echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.raw
+  #         cat /tmp/issuebody.raw | sed 's/"//g' > /tmp/issuebody.yml
+  #         cat /tmp/issuebody.yml
+  #     # - name: remove instruction lines from issuebody file #This is a fragile method, better to replace with delimiter, tried some delimiter methods that didnt work with github actions, this should ideally be reworked at some point to reduce fragility
+  #     #   run: |
+  #     #     cat /tmp/issuebody.txt 
+  #     #     sed '1,4d' /tmp/issuebody.txt > /tmp/issuebody.json
+  #     #     cat /tmp/issuebody.json
+  #     # - name: check /tmp/issuebody.json
+  #     #   run: |
+  #     #     cat /tmp/issuebody.json
+  #     - name: add metadata fields to user registration data
+  #       run: |
+  #         echo "memberGithubId: ${{ github.event.issue.user.id }}" >> /tmp/issuebody.yml
+  #         cat /tmp/issuebody.yml
+  #     - name: add more metadata fields to user registration data
+  #       run: |
+  #         echo "memberGithubLogin: ${{ github.event.issue.user.login}}" >> /tmp/issuebody.yml
+  #         cat /tmp/issuebody.yml
+  #     - name: extract user preferred email and set as requesting_user_email
+  #       run: |
+  #         echo requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' ) >> $GITHUB_ENV
+  #         requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' )
+  #         echo $requesting_user_email
+  #     - name: extract user id and set as requesting_user_id # in future need to update this file to ensure a common env is used consistently for the same variable data
+  #       run: |
+  #         echo $(echo requesting_user_id="${{ github.event.issue.user.id }}") >> $GITHUB_ENV
+  #         echo $requesting_user_id
+  #     - name: set token as GITHUB_OAUTH_TOKEN
+  #       run: |
+  #         echo $(echo GITHUB_OAUTH_TOKEN="${{ secrets.NINJABOTGURU }}") >> $GITHUB_ENV
+  #         echo $GITHUB_OAUTH_TOKEN
+  #     - name: set organization name as org_login
+  #       run: |
+  #         echo org_login=${{ github.event.organization.login }} >> $GITHUB_ENV
+  #     - name: push new member record to admin-private/registrations
+  #       run: |
+  #         curl -X PUT \
+  #         -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+  #         -H "Accept: application/vnd.github.v3+json" \
+  #         -d '{"message": "Updating Member Record File For ${{ github.event.issue.user.login }}", "content": "'$(cat /tmp/issuebody.yml | base64 -w 0)'"}'                                                        \
+  #         "https://api.github.com/repos/modernappsninja/admin-private/contents/userdata/members/${{ github.event.issue.user.login }}_${{ github.event.issue.user.id }}.yml" \
+  #         -o /tmp/member_record_post_response.json
+  #         cat /tmp/member_record_post_response.json
+  #     - name: clone modernappsninja.github.io repo
+  #       run: |
+  #         git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
+  #         cd modernappsninja.github.io
+  #         pwd
+  #     - name: curl orgteamregapicall.sh and make executable
+  #       run: |
+  #         curl https://modernapps.ninja/admin/orgteamregapicall.sh -o /tmp/orgteamregapicall.sh
+  #         sudo chmod +x /tmp/orgteamregapicall.sh
+  #     - name: make org and team invite api call
+  #       run: |
+  #         /tmp/orgteamregapicall.sh
+  #     - name: create hub config file
+  #       run: |
+  #         echo "---" > ~/.config/hub
+  #         echo "github.com: " >> ~/.config/hub
+  #         echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
+  #         echo "  user: modernappsninjabot" >> ~/.config/hub
+  #         cat ~/.config/hub
+  #     - name: append message to issue ticket and close ticket
+  #       run: |
+  #         cd modernappsninja.github.io
+  #         hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} has been processed" --message "The github user @${{ github.event.issue.user.login }} has been sent an invite to join the modernapps ninja org, and this issue ticket will now be closed."
+  #         hub issue update ${{ github.event.issue.number }} -s closed
+  #     - name: transfer issue ticket to admin-private
+  #       run: |
+  #         cd modernappsninja.github.io
+  #         hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
