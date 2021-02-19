@@ -1,12 +1,11 @@
 ---
-title: "<Add Blog Title>" #changeme
-date: <date> # #changeme
-draft: true # Change this to false #changeme
-author: "Ninja Admins" #changeme
+title: "<Add Blog Title #changeme>" 
+date: 2021-01-23
+draft: false
+author: "Ninja Admins #changeme" 
 # taxonomy
-categories: ["Tanzu Portfolio", "Tanzu Mission Control", "<Add additional catagories here>"] #changeme
-tags: ["Tanzu Portfolio", "Tanzu Mission Control", "<Add additional catagories here>"] #changeme
-location: "<Link to your blog>" #changeme
+tags: ["Tanzu Portfolio", "Tanzu Mission Control", "<Add additional catagories here> #changeme"]
+location: "<Link to your blog #changeme>"
 # type
 type: "post"
 ---
