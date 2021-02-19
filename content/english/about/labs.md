@@ -1,46 +1,34 @@
 ---
-title: "Labs"
+title: "Tanzu Labs"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # about image
 image: ""
 # meta description
-description : "Tanzu Labs"
+description : ""
 ---
 
-## Tanzu Labs
+### Labs
+
+VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+
+vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+
+VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
+
+VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
+
+VMware Tanzu Service Mesh [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
+
+VMware Octant [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
+
+Tanzu Kubernetes Grid Management Console [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
+
+VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
+
+VMware Carbon Black Cloud Use Cases [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
+
+--------
 
 
-| {{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" link="https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811" title="vSphere with Tanzu" width="90" height="90" >}} | {{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/agen-hugo-theme.jpg" link="https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811" title="vSphere with Tanzu - Lightning Lab" >}} | {{< figure src="https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png" link="http://labs.hol.vmware.com/HOL/catalogs/lab/8546" title="VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS)" >}} |
-|:---:|:---:|:---:|
-
-
-| [![vSphere with Tanzu](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [![vSphere with Tanzu - Lightning Lab](https://gethugothemes.com/wp-content/uploads/edd/2019/09/agen-hugo-theme.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8897) | [![VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS) - Getting started](https://gethugothemes.com/wp-content/uploads/edd/2019/09/redlab-hugo-thumbnail.jpg)](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) |
-|:---:|:---:|:---:|
-| **vSphere with Tanzu**  | **vSphere with Tanzu - Lightning Lab**  | **VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS)**  |
-
-
-[vSphere with Tanzu](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811)
-
-[vSphere with Tanzu - Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
-
-[VMware TKGI - VMware Tanzu Kubernetes Grid Integrated (Enterprise PKS) - Getting started](http://labs.hol.vmware.com/HOL/catalogs/lab/8546)
-
-[VMware TKGI-Tanzu Kubernetes Grid Management Console Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
-
-[VMware TKGI - Introduction to VMware Octant Lightning Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
-
-[VMware Tanzu Mission Control](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)
-
-[VMware Tanzu Mission Control Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
-
-[VMware Tanzu Service Mesh Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
-
-[VMware Tanzu Kubernetes Grid](http://labs.hol.vmware.com/HOL/catalogs/lab/8525)
-
-[VMware Odyssey - TKG - Getting Started](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
-
-[Carbon Black Endpoint Standard Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)
-
-[Carbon Black Cloud Use Cases](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)

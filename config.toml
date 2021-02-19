@@ -118,7 +118,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020 VMware"
+copyright = "Copyright &copy; 2021 VMware"
 
 
 
@@ -181,6 +181,18 @@ parent = "Learn More"
 name = "Tanzu Testdrive Labs"
 URL = "https://pathfinder.vmware.com/path/tanzu"
 weight = 3013
+
+[[Languages.en.menu.main]]
+parent = "Learn More"
+name = "Tanzu Labs OneStop Page"
+URL = "./about/labs"
+weight = 3080
+
+[[Languages.en.menu.main]]
+parent = "Learn More"
+name = "Tutorials from the vExpert commnunity"
+URL = "./blog"
+weight = 3090
 
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
@@ -261,7 +273,7 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; VMware 2020"
+copyright = "Copyright &copy; VMware 2021"
 
 
 

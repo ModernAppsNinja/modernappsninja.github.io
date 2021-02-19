@@ -40,6 +40,7 @@ a,
 a:hover,
 a:focus {
   text-decoration: none;
+  color: #717074;
 }
 
 a{
@@ -58,11 +59,11 @@ select {
 }
 
 a:hover {
-  color: $primary-color;
+  color: #000000;;
 }
 
 a.text-primary:hover {
-  color: $primary-color!important;
+  color: #717074!important;
 }
 
 a.text-light:hover {
@@ -236,6 +237,10 @@ a h4{
 /* page title */
 .page-title-section {
   padding: 200px 0 80px;
+}
+
+.page-title-section-about {
+  padding: 200px 0 0px;
 }
 
 .custom-breadcrumb {
