@@ -82,7 +82,9 @@ jobs:
           git config --global user.name modernappsninjabot
           git config --global user.email modernappsninjabot@gmail.com
       - name: install yq
-        run: sudo snap install yq
+        run: |
+          wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY} -O /usr/bin/yq &&\
+          chmod +x /usr/bin/yq
       - name: extract payload data from issue body
         run: |
           echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.yml
