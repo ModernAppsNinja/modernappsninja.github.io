@@ -106,6 +106,10 @@ jobs:
           cat /tmp/issuebody.yml
       - name: extract user preferred email and set as requesting_user_email
         run: |
+          cat /tmp/issuebody.yml
+          yq e '.preferredEmailAddress' /tmp/issuebody.yml
+      - name: extract user preferred email and set as requesting_user_email
+        run: |
           echo requesting_user_email=$(yq e '.preferredEmailAddress' /tmp/issuebody.yml) >> $GITHUB_ENV
           requesting_user_email=$(yq e '.preferredEmailAddress' /tmp/issuebody.yml)
           echo $requesting_user_email
