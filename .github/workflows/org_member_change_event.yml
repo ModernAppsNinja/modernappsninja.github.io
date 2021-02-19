@@ -18,7 +18,9 @@ jobs:
           git config --global user.name modernappsninjabot
           git config --global user.email modernappsninjabot@gmail.com
       - name: install yq
-        run: sudo snap install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
       - name: curl member record file
         run: |
           curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
@@ -39,23 +41,23 @@ jobs:
           cat ~/.config/hub
       - name: extract firstName from member_record and set as first_name
         run: |
-          echo first_name=$(cat /tmp/member_record.yml | yq '.firstName') >> $GITHUB_ENV
-          first_name=$(cat /tmp/member_record.yml | yq '.firstName')
+          echo first_name=$(yq '.firstName' /tmp/member_record.yml) >> $GITHUB_ENV
+          first_name=$(yq '.firstName' /tmp/member_record.yml)
           echo $first_name
       - name: extract lastName from member_record and set as last_name
         run: |
-          echo last_name=$(cat /tmp/member_record.yml | yq '.lastName') >> $GITHUB_ENV
-          last_name=$(cat /tmp/member_record.yml | yq '.lastName')
+          echo last_name=$(yq '.lastName' /tmp/member_record.yml) >> $GITHUB_ENV
+          last_name=$(yq '.lastName' /tmp/member_record.yml)
           echo $last_name
       - name: extract twitterUsername from member_record and set as twitter_username
         run: |
-          echo twitter_username=$(cat /tmp/member_record.yml | yq '.twitterUsername') >> $GITHUB_ENV
-          twitter_username=$(cat /tmp/member_record.yml | yq '.twitterUsername')
+          echo twitter_username=$(yq '.twitterUsername' /tmp/member_record.yml) >> $GITHUB_ENV
+          twitter_username=$(yq '.twitterUsername' /tmp/member_record.yml)
           echo $twitter_username
       - name: extract linkedinUsername from member_record and set as linkedin_username
         run: |
-          echo linkedin_username=$(cat /tmp/member_record.yml | yq '.linkedinUsername') >> $GITHUB_ENV
-          linkedin_username=$(cat /tmp/member_record.yml | yq '.linkedinUsername')
+          echo linkedin_username=$(yq '.linkedinUsername' /tmp/member_record.yml) >> $GITHUB_ENV
+          linkedin_username=$(yq '.linkedinUsername' /tmp/member_record.yml)
           echo $linkedin_username
       - name: set member login as member_login
         run: |
