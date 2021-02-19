@@ -85,27 +85,17 @@ jobs:
         run: sudo snap install yq
       - name: extract payload data from issue body
         run: |
-          echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.raw
-          cat /tmp/issuebody.raw
-      - name: remove quotes
-        run: |
-          cat /tmp/issuebody.raw
-          echo "--------------------"
-          cat /tmp/issuebody.raw | sed '0,/^---$/d'
-          echo "--------------------"
-          cat /tmp/issuebody.raw | sed '0,/^---$/d' > /tmp/issuebody.yml         
+          echo -e '${{ github.event.issue.body }}' > /tmp/issuebody.yml
+          cat /tmp/issuebody.yml
       # - name: select di 1
       #   run: |
       #     cat /tmp/issuebody.yml.first | yq e 'select(di == 1)' > /tmp/issuebody.yml
       #     cat /tmp/issuebody.yml
-      # - name: remove instruction lines from issuebody file #This is a fragile method, better to replace with delimiter, tried some delimiter methods that didnt work with github actions, this should ideally be reworked at some point to reduce fragility
-      #   run: |
-      #     cat /tmp/issuebody.txt 
-      #     sed '1,4d' /tmp/issuebody.txt > /tmp/issuebody.json
-      #     cat /tmp/issuebody.json
-      # - name: check /tmp/issuebody.json
-      #   run: |
-      #     cat /tmp/issuebody.json
+      - name: remove instruction lines from issuebody file #This is a fragile method, better to replace with delimiter, tried some delimiter methods that didnt work with github actions, this should ideally be reworked at some point to reduce fragility
+        run: |
+          cat /tmp/issuebody.yml
+          sed -i '1,4d' /tmp/issuebody.yml
+          cat /tmp/issuebody.yml
       - name: add metadata fields to user registration data
         run: |
           echo "memberGithubId: ${{ github.event.issue.user.id }}" >> /tmp/issuebody.yml
