@@ -62,7 +62,7 @@ jobs:
       - name: transfer issue ticket to admin-private
         if: env.ismember == 'true'
         run: |
-            cd modernappsninja.github.io
+          cd modernappsninja.github.io
           hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
   job_new_member_invitation:
     name: new_member_invitation
