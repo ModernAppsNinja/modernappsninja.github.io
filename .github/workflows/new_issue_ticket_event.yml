@@ -106,8 +106,8 @@ jobs:
           cat /tmp/issuebody.yml
       - name: extract user preferred email and set as requesting_user_email
         run: |
-          echo requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' ) >> $GITHUB_ENV
-          requesting_user_email=$(cat /tmp/issuebody.yml | yq '.preferredEmailAddress' )
+          echo requesting_user_email=$(cat /tmp/issuebody.yml | yq e '.preferredEmailAddress' ) >> $GITHUB_ENV
+          requesting_user_email=$(cat /tmp/issuebody.yml | yq e '.preferredEmailAddress' )
           echo $requesting_user_email
       - name: extract user id and set as requesting_user_id # in future need to update this file to ensure a common env is used consistently for the same variable data
         run: |
