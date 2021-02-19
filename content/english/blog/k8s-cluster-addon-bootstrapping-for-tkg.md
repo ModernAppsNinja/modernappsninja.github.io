@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Cluster Add-On Bootstrapping" #changeme
-date: "2021-2-25" # #changeme
+date: 2021-2-25
 draft: false # Change this to false #changeme
 author: "Chip" #changeme
 # taxonomy
