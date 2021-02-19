@@ -17,14 +17,19 @@ jobs:
         run: |
           git config --global user.name modernappsninjabot
           git config --global user.email modernappsninjabot@gmail.com
+      - name: install yq
+        run: sudo snap install yq
       - name: curl member record file
         run: |
           curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          "https://raw.githubusercontent.com/modernappsninja/admin-private/main/userdata/members/${{ github.event.client_payload.member_login }}_${{ github.event.client_payload.member_github_id }}.json" \
-          -o /tmp/member_record.json
+          "https://raw.githubusercontent.com/modernappsninja/admin-private/main/userdata/members/${{ github.event.client_payload.member_login }}_${{ github.event.client_payload.member_github_id }}.yml" \
+          -o /tmp/member_record.yml
       - name: clone member_repo_template
         run: |
           git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/member_repo_template.git
+      - name: save member record file in member repo
+        run: |
+          cp /tmp/member_record.yml member_repo_template/static/userdata/member_record.yml
       - name: create hub config file
         run: |
           echo "---" > ~/.config/hub
@@ -34,27 +39,34 @@ jobs:
           cat ~/.config/hub
       - name: extract firstName from member_record and set as first_name
         run: |
-          echo $(echo first_name=$(echo $(cat /tmp/member_record.json | jq '.firstName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo first_name=$(cat /tmp/member_record.yml | yq '.firstName') >> $GITHUB_ENV
+          first_name=$(cat /tmp/member_record.yml | yq '.firstName')
           echo $first_name
       - name: extract lastName from member_record and set as last_name
         run: |
-          echo $(echo last_name=$(echo $(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo last_name=$(cat /tmp/member_record.yml | yq '.lastName') >> $GITHUB_ENV
+          last_name=$(cat /tmp/member_record.yml | yq '.lastName')
           echo $last_name
       - name: extract twitterUsername from member_record and set as twitter_username
         run: |
-          echo $(echo twitter_username=$(echo $(cat /tmp/member_record.json | jq '.twitterUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo twitter_username=$(cat /tmp/member_record.yml | yq '.twitterUsername') >> $GITHUB_ENV
+          twitter_username=$(cat /tmp/member_record.yml | yq '.twitterUsername')
           echo $twitter_username
       - name: extract linkedinUsername from member_record and set as linkedin_username
         run: |
-          echo $(echo linkedin_username=$(echo $(cat /tmp/member_record.json | jq '.linkedinUsername' | sed 's/"//g' ))) >> $GITHUB_ENV
+          echo linkedin_username=$(cat /tmp/member_record.yml | yq '.linkedinUsername') >> $GITHUB_ENV
+          linkedin_username=$(cat /tmp/member_record.yml | yq '.linkedinUsername')
           echo $linkedin_username
       - name: set member login as member_login
         run: |
-          echo $(echo member_login="${{ github.event.client_payload.member_login }}") >> $GITHUB_ENV
+          echo member_login=${{ github.event.client_payload.member_login }} >> $GITHUB_ENV
+          member_login=${{ github.event.client_payload.member_login }}
           echo $member_login
       - name: set organization name for new repository creation as repo_org_name
         run: |
-          echo repo_org_name="modernappsninjas" >> $GITHUB_ENV
+          echo repo_org_name=modernappsninjas >> $GITHUB_ENV
+          repo_org_name=modernappsninjas
+          echo $repo_org_name
       - name: envsubst config.toml file
         run: |
           cd member_repo_template
