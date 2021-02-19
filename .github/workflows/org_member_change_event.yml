@@ -41,23 +41,23 @@ jobs:
           cat ~/.config/hub
       - name: extract firstName from member_record and set as first_name
         run: |
-          echo first_name=$(yq '.firstName' /tmp/member_record.yml) >> $GITHUB_ENV
-          first_name=$(yq '.firstName' /tmp/member_record.yml)
+          echo first_name=$(yq e '.firstName' /tmp/member_record.yml) >> $GITHUB_ENV
+          first_name=$(yq e '.firstName' /tmp/member_record.yml)
           echo $first_name
       - name: extract lastName from member_record and set as last_name
         run: |
-          echo last_name=$(yq '.lastName' /tmp/member_record.yml) >> $GITHUB_ENV
-          last_name=$(yq '.lastName' /tmp/member_record.yml)
+          echo last_name=$(yq e '.lastName' /tmp/member_record.yml) >> $GITHUB_ENV
+          last_name=$(yq e '.lastName' /tmp/member_record.yml)
           echo $last_name
       - name: extract twitterUsername from member_record and set as twitter_username
         run: |
-          echo twitter_username=$(yq '.twitterUsername' /tmp/member_record.yml) >> $GITHUB_ENV
-          twitter_username=$(yq '.twitterUsername' /tmp/member_record.yml)
+          echo twitter_username=$(yq e '.twitterUsername' /tmp/member_record.yml) >> $GITHUB_ENV
+          twitter_username=$(yq e '.twitterUsername' /tmp/member_record.yml)
           echo $twitter_username
       - name: extract linkedinUsername from member_record and set as linkedin_username
         run: |
-          echo linkedin_username=$(yq '.linkedinUsername' /tmp/member_record.yml) >> $GITHUB_ENV
-          linkedin_username=$(yq '.linkedinUsername' /tmp/member_record.yml)
+          echo linkedin_username=$(yq e '.linkedinUsername' /tmp/member_record.yml) >> $GITHUB_ENV
+          linkedin_username=$(yq e '.linkedinUsername' /tmp/member_record.yml)
           echo $linkedin_username
       - name: set member login as member_login
         run: |
