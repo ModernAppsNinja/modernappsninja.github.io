@@ -89,8 +89,11 @@ jobs:
           cat /tmp/issuebody.raw
       - name: remove quotes
         run: |
-          cat /tmp/issuebody.raw | sed '0,/^---$/d' > /tmp/issuebody.yml
-          cat /tmp/issuebody.yml
+          cat /tmp/issuebody.raw
+          echo "--------------------"
+          cat /tmp/issuebody.raw | sed '0,/^---$/d'
+          echo "--------------------"
+          cat /tmp/issuebody.raw | sed '0,/^---$/d' > /tmp/issuebody.yml         
       # - name: select di 1
       #   run: |
       #     cat /tmp/issuebody.yml.first | yq e 'select(di == 1)' > /tmp/issuebody.yml
