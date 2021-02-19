@@ -83,7 +83,7 @@ jobs:
           git config --global user.email modernappsninjabot@gmail.com
       - name: install yq
         run: |
-          sudo wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY} -O /usr/bin/yq &&\
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
           sudo chmod +x /usr/bin/yq
       - name: extract payload data from issue body
         run: |
