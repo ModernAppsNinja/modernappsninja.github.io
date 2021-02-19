@@ -12,7 +12,7 @@ assignees: ''
 ---
 
 preferredEmailAddress: ""  
-firstName: "hiilo"  
+firstName: ""  
 lastName: ""  
 twitterUsername: ""  
 linkedinUsername: ""  
