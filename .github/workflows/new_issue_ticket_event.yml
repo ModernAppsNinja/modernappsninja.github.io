@@ -19,7 +19,8 @@ jobs:
         run: sudo snap install yq
       - name: curl member record file
         run: |
-          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          curl \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
           "https://raw.githubusercontent.com/modernapsninja/admin-private/main/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" \
           -o /tmp/raw_member_record_curl.json
           cat /tmp/raw_member_record_curl.json | jq -r '.name' >> /tmp/raw_member_record_curl_name
