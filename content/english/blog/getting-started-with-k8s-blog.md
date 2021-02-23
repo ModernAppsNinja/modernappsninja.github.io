@@ -11,4 +11,4 @@ location: "https://www.viktorious.nl/2020/12/08/nlvmug-speaking-engagement-getti
 type: "post"
 ---
 
-### VMUG session - Getting started with K8S on vSphere
+### Goal of this presentation was to get the audience up to speed in deploying & configuring vSphere with Tanzu
