@@ -40,7 +40,6 @@ jobs:
             echo ismember=false >> $GITHUB_ENV
             echo "the requesting user is not a member"
           fi
-          echo $ismember
       - id: ismember
         if: env.ismember == 'false'
         run: echo "::set-output name=ismember::false"
