@@ -1,11 +1,11 @@
 ---
-title: "I’m a VMware Admin: What Do I Do with Tanzu Kubernetes Clusters?" #changeme
+title: "I am a VMware Admin What Do I Do with Tanzu Kubernetes Clusters"
 date: 2020-12-21
-draft: false # Change this to false #changeme
-author: "Kendrick Coleman" #changeme
+draft: false
+author: "Kendrick Coleman"
 # taxonomy
-tags: ["TKG", "Tanzu Kubernetes Grid", "vSphere with Tanzu"] #changeme
-location: "https://tanzu.vmware.com/content/blog/deploy-kubeapps-tanzu-kubernetes-clusters-vpshere-with-tanzu/" #changeme
+tags: ["TKG", "Tanzu Kubernetes Grid", "vSphere with Tanzu"] 
+location: "https://tanzu.vmware.com/content/blog/deploy-kubeapps-tanzu-kubernetes-clusters-vpshere-with-tanzu/" 
 # type
 type: "post"
 ---
