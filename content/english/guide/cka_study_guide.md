@@ -56,26 +56,22 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 
 ### Exam taking tips
 
-- Be very comfortable with vi editor of linux.
-
-- Practise imperative commands and depending on yaml will lead to mistakes and time consumption.
-
-- Practise all the tasks from the kubernetes.io and book mark the pages corresponding to the syllabus.
-
-- Make sure to login to the master nodes for upgrade and debugging question.
-
+- Be very comfortable with vi editor of linux
+- Practise imperative commands and depending on yaml will lead to mistakes and time consumption
+- Practise all the tasks from the kubernetes.io and book mark the pages corresponding to the syllabus
+- Make sure to login to the master nodes for upgrade and debugging question
 - use sudo , don't login as root because thats an additional exit
-- when restoring etcd snapshot make sure you restore to the provided backup and also update the etcd.yaml and wait for the etcd pod to start.
+- when restoring etcd snapshot make sure you restore to the provided backup and also update the etcd.yaml and wait for the etcd pod to start
 - make sure not to spend more than 5 mins on a 4% question.
 - Only use imperative command for all operations. know your commands and careful with the version of documentation you are referring. its v1.19.0
 - DO NOT ATTEMPT ANY QUESTION WITHOUT READING AND DO NOT START WITHOUT CHANGING CONTEXT. 
-- IF U LOGIN TO NODE DON'T FORGET TO EXIT. All commands in the nodes have to use "SUDO".
-- START ANSWERING ONLY AFTER AUTOCOMPLETE IS CREATED. <the kubernetes cheat sheet first line.>
-
+- IF U LOGIN TO NODE DON'T FORGET TO EXIT. All commands in the nodes have to use "SUDO"
+- START ANSWERING ONLY AFTER AUTOCOMPLETE IS CREATED
 
 ### Pro Tips 
 - The exam comes with a free re-take, incase you feel that you are not able to reach the passing score of 66% , concentrate on remembering the questions.
-
 - You are most likely to get the same questions in the second attempt.
-
 - This applies only when you are fully prepared and not able to answer due to time crunch or exam nervousness (smile) . Not in any other scenario that i know of 
+
+### More Learnig resources from the vExpert community
+[CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
