@@ -4,7 +4,7 @@ date: 2020-07-21
 draft: false
 author: "Robert Guske"
 # taxonomy
-tags: ["TKGIS", "TKGI", "Harbor", "TKC", "Helm"]
+tags: ["TKGS", "TKG", "vSphere with Tanzu", "Harbor", "TKC", "Helm"]
 location: "https://rguske.github.io/post/vsphere-7-with-kubernetes-supercharged-helm-harbor-tkg/"
 # type
 type: "post"
