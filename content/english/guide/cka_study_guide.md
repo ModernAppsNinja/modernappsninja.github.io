@@ -36,7 +36,7 @@ course_repo_name: cka_study_guide_AM4923
 This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA).
 
 
-### Prerequisite Studies
+### Prerequisite
 
 Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good training content
 
@@ -50,5 +50,6 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 
 [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
 <br>
+
 [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
 <br>
