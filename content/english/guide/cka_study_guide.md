@@ -57,9 +57,13 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 ### Exam taking tips
 
 Be very comfortable with vi editor of linux.
-Practise imperative commands and depending on yaml will lead to mistakes and time consumption
+
+Practise imperative commands and depending on yaml will lead to mistakes and time consumption.
+
 Practise all the tasks from the kubernetes.io and book mark the pages corresponding to the syllabus.
-Make sure to login to the master nodes for upgrade and debugging question
+
+Make sure to login to the master nodes for upgrade and debugging question.
+
 use sudo , don't login as root because thats an additional exit
 when restoring etcd snapshot make sure you restore to the provided backup and also update the etcd.yaml and wait for the etcd pod to start.
 make sure not to spend more than 5 mins on a 4% question.
