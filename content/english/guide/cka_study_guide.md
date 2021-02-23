@@ -35,7 +35,6 @@ course_repo_name: cka_study_guide_AM4923
 
 This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA).
 
-[Duck Duck Go](https://duckduckgo.com)
 
 ### Prerequisite Studies
 
