@@ -33,20 +33,17 @@ course_repo_name: cka_study_guide_AM4923
 
 ### About This ModernApps Ninja Guide
 
-This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA).
+This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA) exam.
 
 
-### Prerequisite
+### Prerequisites
 
 Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good training content
 
 
-### Prerequisite Studies
-
-[Docker for the Absolute Beginner](https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
-
 ### CKA Learning Path
 
+- [Docker for the Absolute Beginner](https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
 - [Kube.Academy](https://kube.academy/courses/how-to-prepare-for-the-cka-exam) - ~21m - How to Prepare for the CKA Exam 
 - [KodaCloud](https://kodekloud.com/p/certified-kubernetes-administrator-with-practice-tests) -~18hrs-  CKA Prep Course with Practice Exam 
 - [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
