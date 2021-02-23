@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Cluster Add-On Bootstrapping"
-date: 2021-02-25
+date: 2021-01-25
 draft: false
 author: "Chip"
 # taxonomy
