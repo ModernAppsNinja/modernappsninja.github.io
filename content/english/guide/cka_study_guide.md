@@ -5,11 +5,11 @@ title: "Study Guide for the Certified Kubernetes Administrator(CKA)"
 date: 2021-02-23
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/blog/post-2.jpg"
 # meta description
 description : "This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA)."
 # course thumbnail
-image: "images/guides/vcta_am_study_guide_AM4923.jpg"
+image: "images/blog/post-2.jpg"
 # taxonomy
 tags: ["Tanzu Portfolio", "Tanzu Kubernetes Grid", "Tanzu Mission Control", "vSphere with Tanzu", "kubernetes"]
 # teacher
