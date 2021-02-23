@@ -11,7 +11,8 @@ image: "images/blog/post-1.jpg"
 # post author
 author: "Ninja Admins"
 # taxonomy
-tags: ["Tanzu Portfolio"]
+categories: ["blog"]
+tags: ["blog"]
 # type
 location: "./adding-a-new-blog-post"
 type: "post"
