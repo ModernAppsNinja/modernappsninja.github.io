@@ -1,0 +1,13 @@
+---
+title: "I’m a VMware Admin: What Do I Do with Tanzu Kubernetes Clusters?" #changeme
+date: 2020-12-21
+draft: false # Change this to false #changeme
+author: "Kendrick Coleman" #changeme
+# taxonomy
+tags: ["TKG", "Tanzu Kubernetes Grid", "vSphere with Tanzu"] #changeme
+location: "https://tanzu.vmware.com/content/blog/deploy-kubeapps-tanzu-kubernetes-clusters-vpshere-with-tanzu/" #changeme
+# type
+type: "post"
+---
+
+### Kubernetes Cluster Add-On Bootstrapping
