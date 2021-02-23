@@ -43,7 +43,7 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 
 ### Prerequisite Studies
 
-[Docker for the Absolute Beginner] (https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
+[Docker for the Absolute Beginner](https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
 <br>
 
 ### CKA Learning Path
