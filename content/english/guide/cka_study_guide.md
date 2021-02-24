@@ -35,13 +35,7 @@ course_repo_name: cka_study_guide_AM4923
 
 This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA) exam.
 
-
-### Prerequisites
-
-Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good training content
-
-
-### CKA Learning Path
+### CKA Learning Resources
 
 - [Docker for the Absolute Beginner](https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
 - [Kube.Academy](https://kube.academy/courses/how-to-prepare-for-the-cka-exam) - ~21m - How to Prepare for the CKA Exam 
@@ -49,7 +43,7 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 - [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
 - [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
 
-### Exam taking tips
+### Exam Taking Tips
 
 - Be very comfortable with vi editor of linux
 - Practise imperative commands and depending on yaml will lead to mistakes and time consumption
@@ -69,4 +63,4 @@ Sign up for [https://www.udemy.com/](https://www.udemy.com/) -  Site with good t
 - This applies only when you are fully prepared and not able to answer due to time crunch or exam nervousness (smile) . Not in any other scenario that i know of 
 
 ### More Learnig resources from the vExpert community
-[CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
+- [CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
