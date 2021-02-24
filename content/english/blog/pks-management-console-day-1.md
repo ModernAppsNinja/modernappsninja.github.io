@@ -1,10 +1,10 @@
 ---
-title: "VMware Enterprise PKS Management Console (EPMC) - Day 1"
+title: "VMware TKGI Management Console (EPMC) - Day 1"
 date: 2019-11-27
 draft: false
 author: "Robert Guske"
 # taxonomy
-tags: ["TKGI", "TKGIMC"]
+tags: ["TKGI", "PKS"]
 location: "https://rguske.github.io/post/pks-management-console-day-1/"
 # type
 type: "post"
