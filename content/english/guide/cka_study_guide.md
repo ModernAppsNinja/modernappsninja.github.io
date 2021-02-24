@@ -71,3 +71,6 @@ This study guide aims to help learners prepare for the Certified Kubernetes Admi
 ### Pro Tips 
 1. The exam comes with a free re-take, incase you feel that you are not able to reach the passing score of 66%, concentrate on remembering the questions.
 2. You are most likely to get the same questions in the second attempt.
+
+### How to Contribute to this Guide
+> Feel free to contribute by editing this file https://github.com/ModernAppsNinja/modernappsninja.github.io/blob/main/content/english/guide/cka_study_guide.md
