@@ -35,6 +35,17 @@ course_repo_name: cka_study_guide_AM4923
 
 This study guide aims to help learners prepare for the Certified Kubernetes Administrator(CKA) exam.
 
+### A Few Notes about the exam
+
+- Currently (dec 2020) the exam is based on Kubernetes version 1.19. Please take this into consideration when working with the different study material, a lot of it might use an earlier version. The goal is to align the exam environment with the current Kubernetes minor version 4-8 weeks after release date so be sure to check what version is used when sitting the exam.
+- The exam is lab/performance based and consist of different tasks/problems to be solved on the command line running on Linux
+- There's 15-20 tasks that needs to be solved in 2 hours
+- The exam is done online and you can take it from anywhere you'd like as long as your location meets the requirements
+- Available resources during the exam is documents provided in the lab machine and ONE additional browser tab which can be used to access resources at https://kubernetes.io/docs/, https://github.com/kubernetes/, https://kubernetes.io/blog/
+- The exam environment consists of six different Kubernetes clusters, all with one master and a different number of workers. There's also different CNIs in use so this is something to be aware of in your studying.
+
+> Brought to you by [CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
+
 ### CKA Learning Resources
 
 - [Docker for the Absolute Beginner](https://www.udemy.com/course/learn-docker/) - 4.5 hours Hands On Online Course - Learn Docker with Hands On Coding Exercises. For beginners in DevOps
@@ -58,9 +69,5 @@ This study guide aims to help learners prepare for the Certified Kubernetes Admi
 - START ANSWERING ONLY AFTER AUTOCOMPLETE IS CREATED
 
 ### Pro Tips 
-- The exam comes with a free re-take, incase you feel that you are not able to reach the passing score of 66% , concentrate on remembering the questions.
+- The exam comes with a free re-take, incase you feel that you are not able to reach the passing score of 66%, concentrate on remembering the questions.
 - You are most likely to get the same questions in the second attempt.
-- This applies only when you are fully prepared and not able to answer due to time crunch or exam nervousness (smile) . Not in any other scenario that i know of 
-
-### More Learnig resources from the vExpert community
-- [CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
