@@ -4,7 +4,7 @@ date: 2021-01-03
 draft: false
 author: "Chris Little"
 # taxonomy
-tags: ["Tanzu Kuberentes Grid"]
+tags: ["Tanzu Kubernetes Grid", "TKG"]
 location: "https://little-stuff.com/2021/01/03/how-to-configure-fluent-bit-to-not-use-tls-with-splunk-in-tkg-1-2/>"
 # type
 type: "post"
