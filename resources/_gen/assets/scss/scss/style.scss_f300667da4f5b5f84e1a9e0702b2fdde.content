@@ -109,7 +109,7 @@ h6, .h6 {
   color: #61717d;
   background-color: #f4f8fa; }
   .btn-primary::before {
-    background-color: #fff; }
+    background-color: #717074; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active {
     color: #f4f8fa !important;
     background-color: #d1e2ea !important;
@@ -172,7 +172,8 @@ img {
 a,
 a:hover,
 a:focus {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #717074; }
 
 a {
   color: inherit; }
@@ -188,10 +189,10 @@ select {
     outline: 0; }
 
 a:hover {
-  color: #f4f8fa; }
+  color: #000000; }
 
 a.text-primary:hover {
-  color: #f4f8fa !important; }
+  color: #717074 !important; }
 
 a.text-light:hover {
   color: #f4f8fa !important; }
@@ -320,6 +321,12 @@ a h4:hover {
 /* page title */
 .page-title-section {
   padding: 200px 0 80px; }
+
+.page-title-section-about {
+  padding: 200px 0 0px; }
+
+.page-title-section-blog {
+  padding: 200px 0 0px; }
 
 .custom-breadcrumb li.nasted {
   position: relative;
@@ -548,7 +555,7 @@ link:focus,
         display: block; } }
 .navbar .dropdown-item {
   position: relative;
-  color: #000;
+  color: #717074;
   transition: .2s ease;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif; }
@@ -558,7 +565,7 @@ link:focus,
   .navbar .dropdown-item:not(:last-child) {
     margin-bottom: 10px; }
   .navbar .dropdown-item:hover {
-    color: #f4f8fa;
+    color: #000000;
     background: transparent; }
 
 .hero-section {

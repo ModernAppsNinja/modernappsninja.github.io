@@ -7,8 +7,8 @@
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="row">
           <!-- blog post -->
-          {{ $paginator := .Paginate .Pages }}
-          {{ range $paginator.Pages }}
+          {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") 10 }}
+          {{ range (.Paginator 10).Pages }}
           <div class="col-sm-6 mb-5">
             <article
               class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
@@ -26,7 +26,7 @@
                   </li>
                 </ul>
                 
-                <p class="card-text">{{ .Summary | truncate 100 }}</p>
+                <p class="card-text">{{ .Summary | truncate 100 }}</p>c
                 <a href="{{ .Params.location }}" target="_blank" class="btn btn-primary btn-sm">{{ i18n "read_more" }}</a>
               </div>
             </article>
