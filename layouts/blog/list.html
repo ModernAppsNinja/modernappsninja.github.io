@@ -8,7 +8,7 @@
         <div class="row">
           <!-- blog post -->
           {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") 50 }}
-          {{ range (.Paginator 10).Pages }}
+          {{ range (.Paginator 50).Pages }}
           <div class="col-sm-6 mb-5">
             <article
               class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
