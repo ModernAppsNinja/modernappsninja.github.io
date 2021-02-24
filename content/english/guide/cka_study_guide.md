@@ -44,7 +44,7 @@ This study guide aims to help learners prepare for the Certified Kubernetes Admi
 - Available resources during the exam is documents provided in the lab machine and ONE additional browser tab which can be used to access resources at https://kubernetes.io/docs/, https://github.com/kubernetes/, https://kubernetes.io/blog/
 - The exam environment consists of six different Kubernetes clusters, all with one master and a different number of workers. There's also different CNIs in use so this is something to be aware of in your studying.
 
-> - Brought to you by [CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen
+> - * is Brought to you by [CKA Study Guide](https://rudimartinsen.com/2020/12/28/cka-study-guide/) by Rudi Martinsen *
 
 ### CKA Learning Resources
 
