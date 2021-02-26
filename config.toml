@@ -133,66 +133,71 @@ weight = 1
 [[Languages.en.menu.main]]
 name = "courses"
 url = "course"
-weight = 2
+weight = 5
+
+[[Languages.en.menu.main]]
+name = "blog"
+url = "blog"
+weight = 10
 
 [[Languages.en.menu.main]]
 name = "Learn More"
 identifier = "Learn More"
-weight = 3
+weight = 15
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tanzu Hands-on Labs"
 URL = "https://labs.hol.vmware.com/HOL/catalogs/catalog/1886"
-weight = 3010
+weight = 1510
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tanzu Developer Center Workshops"
 URL = "https://tanzu.vmware.com/developer/workshops/"
-weight = 3015
+weight = 1515
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "vSphere with Tanzu Tech Zone"
 URL = "https://core.vmware.com/tanzu"
-weight = 3025
+weight = 1525
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Kube Academy Courses"
 URL = "https://kube.academy/courses"
-weight = 3020
+weight = 1520
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tanzu Documentation"
 URL = "https://docs.vmware.com/en/VMware-Tanzu/index.html"
-weight = 3030
+weight = 1530
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "ModernApps Ninja Github Org"
 URL = "https://github.com/modernappsninja/"
-weight = 3005
+weight = 1505
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tanzu Testdrive Labs"
 URL = "https://pathfinder.vmware.com/path/tanzu"
-weight = 3013
+weight = 1513
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tanzu Labs OneStop Page"
 URL = "./about/labs"
-weight = 3080
+weight = 1580
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
 name = "Tutorials from the vExpert commnunity"
 URL = "./blog"
-weight = 3090
+weight = 1590
 
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
