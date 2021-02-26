@@ -2,16 +2,16 @@
 title: "Tanzu Labs"
 draft: false
 # page title background image
-bg_image: "/about/hol.jpg"
+bg_image: "/about/hol.png"
 # about image
-image: "/about/hol.jpg"
+image: "/about/hol.png"
 # meta description
 description : ""
 ---
 
 ### Labs
 
-![/about/hol.jpg](/about/hol.jpg)
+![/about/hol.jpg](/about/hol.png)
 
 VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
