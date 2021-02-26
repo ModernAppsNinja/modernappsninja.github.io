@@ -11,8 +11,9 @@ description : ""
 
 - **[About Community Membership](#about-community-membership)**
 - **[How to Register](#how-to-register)**
-- **[Link to Membership Registration Form](#link-to-membership-registration-form)**
-
+- **[Link to Membership Registration Form](#link-to-membership-registration-form)**  
+  
+  
 ### About Community Membership
 
 The Free ModernApps Ninja Community Membership unlocks access to many key community assets including:
@@ -80,7 +81,7 @@ Please note that we are currently transitioning courses to a new backend system 
 
 ### Link to Membership Registration Form
 
-Before submitting your registration please note that ModernApps Ninja is hosted on public Github Repositories, and the records of processing this information can be publically accessed. All records of participation are reflected on our public github sites and repositories and may be visible to other members or the general public. Participation in ModernApps Ninja does not require you to submit confidential information, and asks that you do not submit any information you desire to be kept secret, as all information and particiapation data on this site should be considered public information. 
+Before submitting your registration please note that ModernApps Ninja is hosted on public Github Repositories, and the records of processing this information can be publicly accessed. All records of participation are reflected on our public github sites and repositories and may be visible to other members or the general public. Participation in ModernApps Ninja does not require you to submit confidential information, and asks that you do not submit any information you desire to be kept secret, as all information and particiapation data on this site should be considered public information. 
 
 **[Please click here to access the Membership Registration Form](https://github.com/ModernAppsNinja/modernappsninja.github.io/issues/new?assignees=modernappsninjabot&labels=newuserregistration&template=joinrequest.md&title=Request+to+Join+ModernApps+Ninja+Github+Org)**
 
