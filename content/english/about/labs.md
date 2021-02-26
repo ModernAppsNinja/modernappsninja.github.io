@@ -11,8 +11,6 @@ description : ""
 
 ### Labs
 
-![/about/hol3.ppg](/about/hol3.png)
-
 VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
@@ -34,6 +32,8 @@ Tanzu Kubernetes Grid Management Console [Simulation](http://labs.hol.vmware.com
 VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
 
 VMware Carbon Black Cloud Use Cases [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
+
+![/about/hol3.ppg](/about/hol3.png)
 
 --------
 
