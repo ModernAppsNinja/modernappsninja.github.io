@@ -4,7 +4,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # about image
-image: "images/blog/hol.jpg"
+image: "static/images/blog/hol.jpg"
 # meta description
 description : ""
 ---
