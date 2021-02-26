@@ -358,16 +358,17 @@ textarea.form-control{
       position: relative;
       padding-left: 20px;
       margin-bottom: 10px;
+      margin: 20px 0;
       list-style-type: none;
 
       &::before {
         position: absolute;
         content: "\e65d";
         font-family: $icon-font;
-        font-size: 14px;
+        font-size: 16px;
         left: 0;
         top: 1px;
-        color: $primary-color;
+        color: $black;
         transition: .3s ease;
       }
     }

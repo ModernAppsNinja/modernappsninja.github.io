@@ -22,9 +22,9 @@ The Free ModernApps Ninja Community Membership unlocks access to many key commun
 - Ability to take course tests and request certificates of completion
 - Member Repository and ModernAppsNinjas Github Pages site to display Member Course Records, Completion Certificates and Achievements
 - Access to member discussion boards
-- Access to participatory gitops/devops learning events and exercises where members can gain organizational permissions including collaborator and maintainer achievements
 - Access to submit blogs, courses and course contents, access course template and other community resources for contributors
 - Course Enrollment and particpation reflects github commits on Members github profile and listed as contributor on ModernApps Ninja Github Org
+- Access to participatory gitops/devops learning events, hackathons and exercises where members can gain organizational permissions including collaborator and maintainer achievements
 
 Please Note: We are currently making some changes to our backend course hosting, and some courses may require additional registration steps until we complete this transition. If a course requires any additional registration steps, instructions will be provided in the course materials. 
 
