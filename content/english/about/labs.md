@@ -19,6 +19,8 @@ VMware Cloud on AWS with Tanzu [Simulation](https://labs.hol.vmware.com/HOL/cata
 
 VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
+VMware Tanzu Application Catalog [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/8526)
+
 Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/9312)
 
 VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
