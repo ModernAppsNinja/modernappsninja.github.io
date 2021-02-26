@@ -15,6 +15,8 @@ VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catal
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
+VMware Cloud on AWS with Tanzu [Simulation](https://labs.hol.vmware.com/HOL/catalogs/lab/8743)
+
 VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/9312)
