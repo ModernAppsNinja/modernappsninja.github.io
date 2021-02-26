@@ -11,7 +11,7 @@ description : ""
 
 ### Labs
 
-![/about/hol.jpg](/about/hol.png)
+![/about/hol.ppg](/about/hol.png)
 
 VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
