@@ -2,9 +2,9 @@
 title: "Tanzu Labs"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/blog/hol.jpg"
 # about image
-image: "static/images/blog/hol.jpg"
+image: "images/blog/hol.jpg"
 # meta description
 description : ""
 ---
