@@ -9,8 +9,6 @@ image: ""
 description : ""
 ---
 
-# ModernApps Ninja Community Membership <!-- omit in toc -->
-
 - [About Community Membership](#about-community-membership)
 - [How to Register](#how-to-register)
 - [Link to Membership Registration Form](#link-to-membership-registration-form)
