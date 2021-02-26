@@ -9,13 +9,13 @@ image: ""
 description : ""
 ---
 
-## ModernApps Ninja Community Membership <!-- omit in toc -->
+# ModernApps Ninja Community Membership <!-- omit in toc -->
 
 - [About Community Membership](#about-community-membership)
 - [How to Register](#how-to-register)
 - [Link to Membership Registration Form](#link-to-membership-registration-form)
 
-### About Community Membership
+## About Community Membership
 
 The Free ModernApps Ninja Community Membership unlocks access to many key community assets including:
 
@@ -30,7 +30,7 @@ The Free ModernApps Ninja Community Membership unlocks access to many key commun
 
 Please Note: We are currently making some changes to our backend course hosting, and some courses may require additional registration steps until we complete this transition. If a course requires any additional registration steps, instructions will be provided in the course materials. 
 
-### How to Register
+## How to Register
 
 Note: You must have a Github account and be logged in to github to register. Regardless of what values you type into the form, the github account you are logged in as at the time you submit the registration form will be registered with ModernApps Ninja, so please be sure you are logged in to github with the account you want to register with.  
 
@@ -80,11 +80,11 @@ After you accept the Github invitation and join the organization, an automated w
 
 Please note that we are currently transitioning courses to a new backend system and some courses are still on the old system. Course records from the old system may not be immediately reflected on the member page, but we will ensure that all records from our previous system get transferred and reflected on your member page soon. 
 
-### Link to Membership Registration Form
+## Link to Membership Registration Form
 
 Before submitting your registration please note that ModernApps Ninja is hosted on public Github Repositories, and the records of processing this information can be publically accessed. All records of participation are reflected on our public github sites and repositories and may be visible to other members or the general public. Participation in ModernApps Ninja does not require you to submit confidential information, and asks that you do not submit any information you desire to be kept secret, as all information and particiapation data on this site should be considered public information. 
 
-[Please click here to access the Membership Registration Form]()
+**[Please click here to access the Membership Registration Form](https://github.com/ModernAppsNinja/modernappsninja.github.io/issues/new?assignees=modernappsninjabot&labels=newuserregistration&template=joinrequest.md&title=Request+to+Join+ModernApps+Ninja+Github+Org)**
 
 
 
