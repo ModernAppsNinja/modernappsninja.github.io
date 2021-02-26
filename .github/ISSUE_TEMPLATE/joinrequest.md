@@ -1,9 +1,9 @@
 ---
-name: Do Not Use - Test Only
-about: Test of New Request to join Github Org
-title: do not use - test only
+name: Request to Join ModernApps Ninja Github Org
+about: Request to Join ModernApps Ninja Github Org
+title: Request to Join ModernApps Ninja Github Org
 labels: 'newuserregistration'
-assignees: ''
+assignees: 'modernappsninjabot'
 
 ---
 #### Before Completing this form, please see instructions at the following link and be sure to follow them exactly - [https://modernapps.ninja/about/membership](https://modernapps.ninja/about/membership)
