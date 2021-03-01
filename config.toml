@@ -181,7 +181,7 @@ weight = 1585
 parent = "Learn More"
 name = "Tanzu Hands-on Labs"
 URL = "./about/labs"
-weight = 1580
+weight = 1522
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
