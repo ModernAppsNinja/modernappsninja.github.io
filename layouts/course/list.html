@@ -7,7 +7,8 @@
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="row">
           <!-- course list -->
-          {{ range .Data.Pages }}
+          {{ $paginator := .Paginate ( where .Data.Pages "Type" "course") 50 }}
+          {{ range (.Paginator 50).Pages }}
           <div class="col-sm-6 mb-5">
             {{ .Render "course" }}
           </div>
