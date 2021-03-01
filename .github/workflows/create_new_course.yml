@@ -476,7 +476,7 @@ jobs:
               -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
               -d '{"message": "Adding new course card for: ${{ env.course_repo_name }}", "content": "'$(cat /tmp/${{ env.course_repo_name }}.md.base64)'"' \
-              "https://api.github.com/repos/modernappsninja/modernappsninja.github.io/contents/course/${{ env.content_id_candidate }}" \
+              "https://api.github.com/repos/modernappsninja/modernappsninja.github.io/contents/course/${{ env.course_repo_name }}.md" \
               -o /tmp/content_id_post_response.json
             cat /tmp/content_id_post_response.json
       - name: add new label for course to modernappsninja.github.io
