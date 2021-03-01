@@ -145,11 +145,6 @@ name = "Learn More"
 identifier = "Learn More"
 weight = 15
 
-[[Languages.en.menu.main]]
-parent = "Learn More"
-name = "Tanzu Hands-on Labs"
-URL = "https://labs.hol.vmware.com/HOL/catalogs/catalog/1886"
-weight = 1510
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
@@ -181,15 +176,10 @@ name = "ModernApps Ninja Github Org"
 URL = "https://github.com/modernappsninja/"
 weight = 1505
 
-[[Languages.en.menu.main]]
-parent = "Learn More"
-name = "Tanzu Testdrive Labs"
-URL = "https://pathfinder.vmware.com/path/tanzu"
-weight = 1513
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Tanzu Labs OneStop Page"
+name = "Tanzu Hands-on Labs"
 URL = "./about/labs"
 weight = 1580
 
