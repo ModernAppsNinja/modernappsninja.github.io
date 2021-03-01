@@ -25,7 +25,9 @@ content_id: vt4163
 course_short_title: vSphereTanzu301
 course_navbar_title: vSphere with Tanzu 301
 course_repo_name: vSphereTanzu301_vt4163
----### About Course
+---  
+
+### About Course
 
 vSphere with Tanzu: application-focused management for streamlined development, agile operations, and accelerated innovation. Applications can be deployed using any combination of virtual machines, containers and Kubernetes.
 
