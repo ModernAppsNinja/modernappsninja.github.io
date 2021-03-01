@@ -35,6 +35,11 @@ VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/H
 
 VMware Carbon Black Cloud Use Cases [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
 
+### Lab Collections
+
+[Link to all Tanzu Hands-on labs](https://labs.hol.vmware.com/HOL/catalogs/catalog/1886)
+[Link to all Tanzu Testdrive labs](https://pathfinder.vmware.com/path/tanzu)
+
 
 ![/about/hol3.ppg](/about/hol3.png)
 
