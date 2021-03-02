@@ -7,7 +7,7 @@ draft: false
 # meta description
 description: "This course provides an introductory technical overview to VMware Tanzu Basic and Tanzu Standard"
 # course thumbnail
-image: "https://modernapps.ninja/introtanzustandard_ts7297/admin/assets/images/introtanzustandard_ts7297.jpg"
+image: "images/courses/introtanzustandard_ts7297.jpg"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
