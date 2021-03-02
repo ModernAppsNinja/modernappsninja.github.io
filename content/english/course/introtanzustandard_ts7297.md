@@ -41,4 +41,4 @@ This course assumes familiarity with Kubernetes and Cloud Native Technologies. I
 
 Before taking this course, you should also have familiarity with vSphere administration. If you need additional background in vSphere, we recommend checking out [VMware Hands-on Labs](https://labs.hol.vmware.com/HOL/catalogs/catalog/1887), which offers a number of vSphere labs and content.
 
-### [Please Click Here to Start the Course!](https://modernapps.github.io/introtanzustandard_ts7297/)
+### [Please Click Here to Start the Course!](https://modernappsninja.github.io/introtanzustandard_ts7297/)

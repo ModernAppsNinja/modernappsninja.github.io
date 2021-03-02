@@ -14,7 +14,7 @@
               class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
               <!--<img class="card-img-top rounded-0" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">-->
               <div class="card-body">
-                <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                <h4 class="card-title"><a href="{{ .Params.location }}">{{ .Title }}</a></h4>
                 <!-- post meta -->
                 <ul class="list-inline mb-3">
                   <!-- post date -->
@@ -22,7 +22,9 @@
                     {{ .PublishDate.Format "02 Jan, 2006" }}</li>
                   <!-- author -->
                   <li class="list-inline-item mr-3 ml-0"><i class="ti-user"></i> <a
-                      href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a>
+                      href="{{ .Params.location }}">{{ .Params.Author | title }}</a>
+                      <!-- the href statement on the line below is the original and links to the author page. Im disabling it now since we arent using the author pages but keeping the statement below in case we want to use in the future -->
+                      <!--href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a>-->
                   </li>
                 </ul>
                 
