@@ -5,7 +5,7 @@ title: "vSphere with Tanzu 301"
 date: "2021-02-25T00:41:40Z"
 draft: false
 # meta description
-description: "Technical introduction to vSphere with Tanzu - Level 301"
+description: "This Course teaches how to install and configure vSphere with Tanzu"
 # course thumbnail
 image: "https://modernapps.ninja/vSphereTanzu301_vt4163/admin/assets/images/vSphereTanzu301_vt4163.jpg"
 # taxonomy
