@@ -141,6 +141,17 @@ url = "blog"
 weight = 10
 
 [[Languages.en.menu.main]]
+name = "guides"
+identifier = "guides"
+weight = 12
+
+[[Languages.en.menu.main]]
+parent = "guides"
+name = "Certified Kubernetes Administrator Study Guide"
+URL = "guide/cka_study_guide/"
+weight = 1205
+
+[[Languages.en.menu.main]]
 name = "Learn More"
 identifier = "Learn More"
 weight = 15
