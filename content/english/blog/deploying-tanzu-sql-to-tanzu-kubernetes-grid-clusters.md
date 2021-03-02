@@ -1,3 +1,4 @@
+---
 title: "Deploying Tanzu SQL to Tanzu Kubernetes Grid Clusters"
 date: 2021-01-23
 draft: false
