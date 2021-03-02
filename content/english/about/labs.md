@@ -27,9 +27,9 @@ VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.co
 
 VMware Tanzu Service Mesh [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
-VMware Octant [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
+VMware Octant [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
 
-Tanzu Kubernetes Grid Management Console [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
+Tanzu Kubernetes Grid Management Console [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
 
 VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
 
