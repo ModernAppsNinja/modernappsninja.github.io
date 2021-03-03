@@ -4,7 +4,7 @@ date: 2021-02-04
 draft: false
 author: "Myles Gray"
 # taxonomy
-tags: "vSphere with Tanzu", "Data Persistence Platform", Tanzu Portfolio"
+tags: ["vSphere with Tanzu", "Data Persistence Platform", Tanzu Portfolio"]
 location: "https://blogs.vmware.com/virtualblocks/2021/02/04/introduction-vsan-data-persistence-platform"
 # type
 type: "post"
