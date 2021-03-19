@@ -43,14 +43,29 @@ jobs:
       - id: ismember
         if: env.ismember == 'false'
         run: echo "::set-output name=ismember::false"
+      - name: check if requestor is already a modernappsninja github org member
+        run: |
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/orgs/modernappsninja/members/afewell" \
+            -o /tmp/is_org_member_response.json
+          cat /tmp/is_org_member_response.json   
+          if [ -s /tmp/is_org_member_response.json ]
+          then
+            echo "the requestor is not an org member"
+            echo orgmember=false >> $GITHUB_ENV
+          else
+            echo "the requestor is an org member"
+            echo orgmember=true >> $GITHUB_ENV
+          fi  
       - name: clone modernappsninja.github.io repo
-        if: env.ismember == 'true'
         run: |
           git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
           cd modernappsninja.github.io
           pwd
       - name: open repository dispatch request to trigger new member added workflow
-        if: env.ismember == 'true'
+        if: env.orgmember == 'true'
         run: |
           rdbody=\
           '{
@@ -81,9 +96,16 @@ jobs:
       - name: if duplicate_request true, append message to issue ticket and close ticket
         if: env.ismember == 'true'
         run: |
-          cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is in processing, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
-          hub issue update ${{ github.event.issue.number }} -s closed
+          if [ '${{ env.orgmember }}' == true ]
+          then
+            cd modernappsninja.github.io
+            hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is in processing, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete"
+            hub issue update ${{ github.event.issue.number }} -s closed
+          else
+            cd modernappsninja.github.io
+            hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is a duplicate request, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
+            hub issue update ${{ github.event.issue.number }} -s closed
+          fi  
       - name: transfer issue ticket to admin-private
         if: env.ismember == 'true'
         run: |
