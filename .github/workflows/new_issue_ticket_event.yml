@@ -9,7 +9,7 @@ jobs:
     if: contains( toJson(github), 'newuserregistration' )
     runs-on: ubuntu-latest
     outputs:
-      output1: ${{ steps.ismember.outputs.ismember }}
+      output1: ${{ steps.isduplicate.outputs.isduplicate }}
     steps:
       - name: review event details
         run: |
@@ -34,59 +34,19 @@ jobs:
           cat /tmp/raw_member_record_curl.json
           if [ "${{ env.raw_member_record_curl_name }}" = "${{ github.event.issue.user.login }}_${{ github.event.issue.user.id }}.yml" ]
           then
-            echo ismember=true >> $GITHUB_ENV
+            echo isduplicate=true >> $GITHUB_ENV
             echo "the requesting user is a member"
           else
-            echo ismember=false >> $GITHUB_ENV
+            echo isduplicate=false >> $GITHUB_ENV
             echo "the requesting user is not a member"
           fi
-      - id: ismember
-        if: env.ismember == 'false'
-        run: echo "::set-output name=ismember::false"
-      - name: check if requestor is already a modernappsninja github org member
-        run: |
-          curl \
-            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/orgs/modernappsninja/members/afewell" \
-            -o /tmp/is_org_member_response.json
-          cat /tmp/is_org_member_response.json   
-          if [ -s /tmp/is_org_member_response.json ]
-          then
-            echo "the requestor is not an org member"
-            echo orgmember=false >> $GITHUB_ENV
-          else
-            echo "the requestor is an org member"
-            echo orgmember=true >> $GITHUB_ENV
-          fi  
       - name: clone modernappsninja.github.io repo
         run: |
           git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
           cd modernappsninja.github.io
           pwd
-      - name: open repository dispatch request to trigger new member added workflow
-        if: env.orgmember == 'true'
-        run: |
-          rdbody=\
-          '{
-            "client_payload": {
-              "action": "added",
-              "member_github_id": ${{ github.event.issue.user.id }},
-              "member_login": "${{ github.event.issue.user.login }}",
-              "org_name": "ModernAppsNinja",
-              "team_name": "Members"
-            },
-            "event_type": "org_member_change"
-          }'
-          curl -X POST \
-          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          -d "$rdbody"                                                        \
-          "https://api.github.com/repos/modernappsninja/modernappsninja.github.io/dispatches" \
-          -o /tmp/repo_dispatch_post_response.json
-          cat /tmp/repo_dispatch_post_response.json
       - name: create hub config file
-        if: env.ismember == 'true'
+        if: env.isduplicate == 'true'
         run: |
           echo "---" > ~/.config/hub
           echo "github.com: " >> ~/.config/hub
@@ -94,20 +54,16 @@ jobs:
           echo "  user: modernappsninjabot" >> ~/.config/hub
           cat ~/.config/hub
       - name: if duplicate_request true, append message to issue ticket and close ticket
-        if: env.ismember == 'true'
+        if: env.isduplicate == 'true'
         run: |
-          if [ '${{ env.orgmember }}' == true ]
-          then
-            cd modernappsninja.github.io
-            hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is in processing, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete"
-            hub issue update ${{ github.event.issue.number }} -s closed
-          else
-            cd modernappsninja.github.io
-            hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is a duplicate request, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
-            hub issue update ${{ github.event.issue.number }} -s closed
-          fi  
+          cd modernappsninja.github.io
+          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is a duplicate request, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
+          hub issue update ${{ github.event.issue.number }} -s closed
+      - id: isduplicate
+        if: env.isduplicate == 'false'
+        run: echo "::set-output name=isduplicate::false"
       - name: transfer issue ticket to admin-private
-        if: env.ismember == 'true'
+        if: env.isduplicate == 'true'
         run: |
           cd modernappsninja.github.io
           hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private
@@ -184,6 +140,43 @@ jobs:
           git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
           cd modernappsninja.github.io
           pwd
+      - name: check if requestor is already a modernappsninja github org member
+        run: |
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/orgs/modernappsninja/members/afewell" \
+            -o /tmp/is_org_member_response.json
+          cat /tmp/is_org_member_response.json   
+          if [ -s /tmp/is_org_member_response.json ]
+          then
+            echo "the requestor is not an org member"
+            echo orgmember=false >> $GITHUB_ENV
+          else
+            echo "the requestor is an org member"
+            echo orgmember=true >> $GITHUB_ENV
+          fi  
+      - name: open repository dispatch request to trigger new member added workflow
+        if: env.orgmember == 'true'
+        run: |
+          rdbody=\
+          '{
+            "client_payload": {
+              "action": "added",
+              "member_github_id": ${{ github.event.issue.user.id }},
+              "member_login": "${{ github.event.issue.user.login }}",
+              "org_name": "ModernAppsNinja",
+              "team_name": "Members"
+            },
+            "event_type": "org_member_change"
+          }'
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d "$rdbody"                                                        \
+          "https://api.github.com/repos/modernappsninja/modernappsninja.github.io/dispatches" \
+          -o /tmp/repo_dispatch_post_response.json
+          cat /tmp/repo_dispatch_post_response.json
       - name: curl orgteamregapicall.sh and make executable
         run: |
           curl https://modernapps.ninja/admin/orgteamregapicall.sh -o /tmp/orgteamregapicall.sh
