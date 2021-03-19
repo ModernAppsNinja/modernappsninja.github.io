@@ -49,6 +49,27 @@ jobs:
           git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/modernappsninja.github.io.git
           cd modernappsninja.github.io
           pwd
+      - name: open repository dispatch request to trigger new member added workflow
+        if: env.ismember == 'true'
+        run: |
+          rdbody=\
+          '{
+            "client_payload": {
+              "action": "added",
+              "member_github_id": ${{ github.event.issue.user.id }},
+              "member_login": "${{ github.event.issue.user.login }}",
+              "org_name": "ModernAppsNinja",
+              "team_name": "Members"
+            },
+            "event_type": "org_member_change"
+          }'
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d "$rdbody"                                                        \
+          "https://api.github.com/repos/modernappsninja/modernappsninja.github.io/dispatches" \
+          -o /tmp/repo_dispatch_post_response.json
+          cat /tmp/repo_dispatch_post_response.json
       - name: create hub config file
         if: env.ismember == 'true'
         run: |
@@ -61,7 +82,7 @@ jobs:
         if: env.ismember == 'true'
         run: |
           cd modernappsninja.github.io
-          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is dupicate, closing" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
+          hub issue update ${{ github.event.issue.number }} --message "registration request for user @${{ github.event.issue.user.login }} is in processing, closing this issue ticket. The system will notify user in seperate message when new member added workflow is complete" --message "The github user @${{ github.event.issue.user.login }} is already registered. This request has been marked as a dupicate request and will be closed."
           hub issue update ${{ github.event.issue.number }} -s closed
       - name: transfer issue ticket to admin-private
         if: env.ismember == 'true'
