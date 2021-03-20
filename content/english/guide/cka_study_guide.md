@@ -53,6 +53,7 @@ This study guide aims to help learners prepare for the Certified Kubernetes Admi
 - [KodaCloud](https://kodekloud.com/p/certified-kubernetes-administrator-with-practice-tests) -~18hrs-  CKA Prep Course with Practice Exam 
 - [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
 - [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) - 10 hours Hands On Online Course - Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser
+- [killer.sh](https://killer.sh/) - Paid Kubernetes Exam Simulator for CKAD, CKA, and CKS that many have found to be well worth the price
 
 ### Exam Taking Tips
 
