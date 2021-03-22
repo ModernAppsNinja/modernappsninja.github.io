@@ -1,7 +1,7 @@
 ---
 title: "vSphere with Tanzu 201"
 date: 2020-11-23T15:27:17+06:00
-draft: false
+draft: true
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
