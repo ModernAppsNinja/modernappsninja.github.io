@@ -45,7 +45,7 @@ link = "plugins/google-map/gmap.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "This is meta description"
+description = "Free Courses with an Active Expert Community powered by VMware Tanzu"
 author = "ModernApps Ninja"
 # contact info
 # address = "9567 Turner Trace Apt. BC C3G8A4"
