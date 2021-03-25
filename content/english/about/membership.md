@@ -13,7 +13,8 @@ description : ""
 - **[How to Register](#how-to-register)**
 - **[Link to Membership Registration Form](#link-to-membership-registration-form)**  
   
-  
+{{< youtube OAn7qRqdCmQ >}}
+
 ### About Community Membership
 
 The Free ModernApps Ninja Community Membership unlocks access to many key community assets including:
