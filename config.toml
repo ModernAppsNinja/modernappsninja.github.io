@@ -136,7 +136,7 @@ url = "course"
 weight = 5
 
 [[Languages.en.menu.main]]
-name = "blog"
+name = "tutorials"
 url = "blog"
 weight = 10
 
