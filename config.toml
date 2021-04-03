@@ -200,11 +200,11 @@ name = "Tanzu Hands-on Labs"
 URL = "./about/labs"
 weight = 1522
 
-[[Languages.en.menu.main]]
-parent = "Learn More"
-name = "Tutorials from the vExpert commnunity"
-URL = "./blog"
-weight = 1510
+#[[Languages.en.menu.main]]
+#parent = "Learn More"
+#name = "Tutorials from the vExpert commnunity"
+#URL = "./blog"
+#weight = 1510
 
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
