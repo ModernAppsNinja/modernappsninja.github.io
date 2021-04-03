@@ -45,17 +45,17 @@ banner_feature:
     # feature item loop
     - name : "Free Tanzu Courses"
       icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja provides free elearning **[courses](https://modernapps.ninja/course/)** for the [VMware Tanzu Portfolio](https://tanzu.vmware.com/) and Cloud Native Technologies"
+      content : "ModernApps Ninja provides free elearning **[courses](https://modernapps.ninja/course/)** for the *[VMware Tanzu Portfolio](https://tanzu.vmware.com/)* and Cloud Native Technologies"
 
     # feature item loop
     - name : "Hands On Training"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja Courses are focused on hands-on skills and feature robust demos and [hands-on labs](https://modernapps.ninja/about/labs/)"
+      content : "ModernApps Ninja Courses are focused on hands-on skills and feature robust demos and *[hands-on labs](https://modernapps.ninja/about/labs/)*"
 
     # feature item loop
     - name : "Robust Online Labs"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja partners with [VMware Hands-on Labs](https://hol.vmware.com/) and [Educates](https://docs.edukates.io/en/latest/) to provide free and robust online lab environments"
+      content : "ModernApps Ninja partners with *[VMware Hands-on Labs](https://hol.vmware.com/)* and *[Educates](https://docs.edukates.io/en/latest/)* to provide free and robust online lab environments"
 
     # feature item loop
     - name : "Learn Practical Devops"
@@ -137,4 +137,8 @@ funfacts:
 blog:
   enable : True
   title : "Latest Tutorial Blogs"
+  button:
+    enable : true
+    label : "Tutorials"
+    link : "blog"
   # blog item comes from "content/**/blog" folder.
