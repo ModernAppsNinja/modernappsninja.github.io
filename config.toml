@@ -148,7 +148,7 @@ weight = 12
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Certified Kubernetes Administrator Study Guide"
-URL = "guide/cka_study_guide/"
+URL = "https://modernapps.ninja/ckastudyguide_sg2378/docs/"
 weight = 1205
 
 [[Languages.en.menu.main]]
