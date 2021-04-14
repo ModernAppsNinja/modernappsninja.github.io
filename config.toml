@@ -165,7 +165,7 @@ weight = 15
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Tanzu Developer Center Workshops"
+name = "Kubernetes and Spring Workshops"
 URL = "https://tanzu.vmware.com/developer/workshops/"
 weight = 1515
 
@@ -177,7 +177,7 @@ weight = 1525
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Kube Academy Courses"
+name = "Kubernetes Courses"
 URL = "https://kube.academy/courses"
 weight = 1520
 
