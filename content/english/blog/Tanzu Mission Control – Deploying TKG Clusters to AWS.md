@@ -2,7 +2,7 @@
 title: "Tanzu Mission Control – Deploying TKG Clusters to AWS"
 date: 2021-04-14
 draft: false
-author: "Dean Lewis
+author: "Dean Lewis"
 # taxonomy
 tags: ["Tanzu Portfolio", "Tanzu Mission Control", "TKG", "Deploy", "AWS"]
 location: "https://veducate.co.uk/tmc-deploy-tkg-aws/"
