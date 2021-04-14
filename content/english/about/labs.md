@@ -9,7 +9,7 @@ image: "/about/hol2.png"
 description : ""
 ---
 
-### Labs
+### Featured Hands-on Labs and Workshops 
 
 VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
@@ -23,11 +23,23 @@ VMware Tanzu Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmwar
 
 Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/9312)
 
+Containers Basics [Workshop](https://tanzu.vmware.com/developer/workshops/lab-container-basics/)
+
+Kubernetes Fundamentals [Workshop](https://tanzu.vmware.com/developer/workshops/lab-k8s-fundamentals/)
+
+How to build a simple microservice with Spring [Workshop](https://tanzu.vmware.com/developer/workshops/lab-microservice/)
+
+How to build and deploy a Cloud Native Application [Workshop](https://tanzu.vmware.com/developer/workshops/cnd-deploy-practices/)
+
+Spring on Kubernetes [Workshop](https://tanzu.vmware.com/developer/workshops/spring-on-kubernetes/)
+
+Spring Cloud Gateway [Workshop](https://tanzu.vmware.com/developer/workshops/lab-spring-gateway/)
+
 VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
 
 VMware Tanzu Service Mesh [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
-VMware Octant [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548)
+VMware Octant [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548) | [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-started-with-octant/)
 
 Tanzu Kubernetes Grid Management Console [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
 
@@ -35,12 +47,13 @@ VMware Carbon Black Container Security [Simulation](http://labs.hol.vmware.com/H
 
 VMware Carbon Black Cloud Use Cases [Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
 
-### Lab Collections
+### Lab and Workshop Collections
 
 [Link to all Tanzu Hands-on labs](https://labs.hol.vmware.com/HOL/catalogs/catalog/1886)
 
 [Link to all Tanzu Testdrive labs](https://pathfinder.vmware.com/path/tanzu)
 
+[Link to all Open Source Based Workshops](https://tanzu.vmware.com/developer/workshops/)
 
 ![/about/hol3.ppg](/about/hol3.png)
 
