@@ -4,7 +4,7 @@ slider:
   bg_image : #"images/banner/banner-1.jpg"
   slider_item:
     # slider item loop
-    - title : "Welcome to ModernApps Ninja"
+    - title : "Welcome to ModernApps by VMware Tanzu"
       content : "Free Courses with an active Expert Community powered by VMware Tanzu"
       animation_in : "left"
       animation_out : "right"
@@ -15,7 +15,7 @@ slider:
         link : "https://modernapps.ninja/about/membership/"
 
     # slider item loop
-    - title : "Welcome to ModernApps Ninja"
+    - title : "Welcome to ModernApps by VMware Tanzu"
       content : "Free Courses with an active Expert Community powered by VMware Tanzu"
       animation_in : "left"
       animation_out : "right"
@@ -26,7 +26,7 @@ slider:
         link : "https://modernapps.ninja/about/membership/"
 
     # slider item loop
-    - title : "Welcome to ModernApps Ninja"
+    - title : "Welcome to ModernApps by VMware Tanzu"
       content : "Free Courses with an active Expert Community powered by VMware Tanzu"
       animation_in : "left"
       animation_out : "right"
@@ -45,17 +45,17 @@ banner_feature:
     # feature item loop
     - name : "Free Tanzu Courses"
       icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja provides free elearning **[courses](https://modernapps.ninja/course/)** for the **[VMware Tanzu Portfolio](https://tanzu.vmware.com/)** and Cloud Native Technologies"
+      content : "ModernApps by VMware Tanzu provides free elearning **[courses](https://modernapps.ninja/course/)** for the **[VMware Tanzu Portfolio](https://tanzu.vmware.com/)** and Cloud Native Technologies"
 
     # feature item loop
     - name : "Hands On Training"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja Courses are focused on hands-on skills and feature robust demos and **[hands-on labs](https://modernapps.ninja/about/labs/)**"
+      content : "ModernApps by VMware Tanzu Courses are focused on hands-on skills and feature robust demos and **[hands-on labs](https://modernapps.ninja/about/labs/)**"
 
     # feature item loop
     - name : "Robust Online Labs"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Ninja partners with **[VMware Hands-on Labs](https://hol.vmware.com/)** and **[Educates](https://docs.edukates.io/en/latest/)** to provide free and robust online lab environments"
+      content : "ModernApps by VMware Tanzu partners with **[VMware Hands-on Labs](https://hol.vmware.com/)** and **[Educates](https://docs.edukates.io/en/latest/)** to provide free and robust online lab environments"
 
     # feature item loop
     - name : "Learn Practical Devops"
@@ -66,9 +66,9 @@ banner_feature:
 ############################## about ##################################
 about:
   enable : true
-  title : "About ModernApps Ninja"
+  title : "About ModernApps by VMware Tanzu"
   image : "images/about/about-us.png"
-  content : "ModernApps Ninja is a community program for students and practitioners of Cloud Native Technologies. The community seeks to provide practical educational experiences that help enrich and maximize the knowledge sharing potential for community participants and contributors."
+  content : "ModernApps by VMware Tanzu is a community program for students and practitioners of Cloud Native Technologies. The community seeks to provide practical educational experiences that help enrich and maximize the knowledge sharing potential for community participants and contributors."
   button:
     enable : true
     label : "Learn more"
@@ -97,7 +97,7 @@ success_story:
   enable : true
   bg_image : "images/backgrounds/success-story.jpg"
   title : "Success Stories"
-  content : "Many of our participants learned to make their first Github Commit through the Ninja Program. One participant reported that he had never made a Github commit and learned how to as he became an active contributor in the Ninja Community - and has since gone on to become a committer to Kubernetes and other leading open source projects!"
+  content : "Many of our participants learned to make their first Github Commit through the ModernApps Program. One participant reported that he had never made a Github commit and learned how to as he became an active contributor in the ModernApps Community - and has since gone on to become a committer to Kubernetes and other leading open source projects!"
   # video link
   video_link : "https://www.youtube.com/watch?v=GlVSmFtIs1s&t=5s"
 

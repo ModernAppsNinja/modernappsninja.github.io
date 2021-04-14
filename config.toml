@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://modernapps.ninja/"
-title = "ModernApps Ninja Home"
+title = "ModernApps by VMware Tanzu Home"
 theme = "educenter-hugo"
 # themesDir = "../.."
 # post pagination
