@@ -12,8 +12,7 @@ jobs:
     name: send tweet job
     runs-on: ubuntu-latest
     steps:
-      - name: send tweet step
-        uses: devigned/go-twitter-action@v1
+      - uses: devigned/go-twitter-action@v1
         with:
           message: '${{ github.event.inputs.message }}'
           apiKey: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
