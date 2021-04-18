@@ -9,7 +9,7 @@ on:
 
 jobs:
   send_tweet:
-  - name: send tweet job
+    name: send tweet job
     runs-on: ubuntu-latest
     steps:
       - name: send tweet step
