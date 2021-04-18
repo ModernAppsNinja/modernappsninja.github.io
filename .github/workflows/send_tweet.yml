@@ -9,13 +9,13 @@ on:
 
 jobs:
   send_tweet:
-    name: send tweet
+  - name: send tweet
     runs-on: ubuntu-latest
     steps:
-- uses: devigned/go-twitter-action@v1
-  with:
-    message: '${{ github.event.inputs.message }}'
-    apiKey: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
-    apiKeySecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_SECRET_KEY }}
-    accessToken: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN }}
-    accessTokenSecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN_SECRET}}    
+    uses: devigned/go-twitter-action@v1
+    with:
+      message: '${{ github.event.inputs.message }}'
+      apiKey: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
+      apiKeySecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_SECRET_KEY }}
+      accessToken: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN }}
+      accessTokenSecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN_SECRET}}    
