@@ -1,0 +1,21 @@
+name: Send a tweet
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Text of tweet, up to 240 Chars'
+        required: true
+        default: 'Hi this is a tweet'
+
+jobs:
+  send_tweet:
+    name: send tweet
+    runs-on: ubuntu-latest
+    steps:
+- uses: devigned/go-twitter-action@v1
+  with:
+    message: '${{ github.event.inputs.message }}'
+    apiKey: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
+    apiKeySecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_SECRET_KEY }}
+    accessToken: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN }}
+    accessTokenSecret: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN_SECRET}}    
