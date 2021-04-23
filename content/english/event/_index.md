@@ -1,8 +1,8 @@
 ---
-title: "Our Courses"
+title: "ModernApps Learning Events"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Find the latest ModernApps Learning webinars & hackathons along with relevant events posted by our member community"
 ---

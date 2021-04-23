@@ -158,6 +158,11 @@ URL = "https://modernapps.ninja/tanzustandardgettingstarted_ts5887/docs/"
 weight = 1204
 
 [[Languages.en.menu.main]]
+name = "events"
+url = "event"
+weight = 13
+
+[[Languages.en.menu.main]]
 name = "Learn More"
 identifier = "Learn More"
 weight = 15
