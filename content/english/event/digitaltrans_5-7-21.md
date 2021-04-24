@@ -1,11 +1,14 @@
 ---
 title: "ModernApps SRE Live!"
 # Schedule page publish date
-publishDate: "2021-05-07T00:00:05PT"
-date: "2021-05-07T00:00:05PT"
-# event date
-eventdate: "05/07/2021"
-time: "8:00-9:00AM Pacific (UTC -8)"
+publishDate: "2021-04-07T00:00:05Z"
+# Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
+date: "2021-05-07T08:00:00Z"
+endTime: "09:00"
+# tzcode = offical timezone code
+tzcode: "PT"
+tzoffset: "(UTC -8)"
+tzampm: "AM"
 # post save as draft
 draft: false
 # page title background image
@@ -36,7 +39,7 @@ location: "[Zoom Meeting](https://vmware.zoom.us/j/99786575079?pwd=dm8ybUNzQnF1Z
 #   - name : "Alfred Jin"
 #     image : "images/event-speakers/speaker-4.jpg"
 #     designation : "Teacher"
-weight: 50702
+
 # type
 type: "event"
 ---

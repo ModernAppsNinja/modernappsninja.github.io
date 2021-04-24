@@ -1,11 +1,14 @@
 ---
 title: "ModernApps Learning Weekly Office Hours"
 # Schedule page publish date
-publishDate: "2021-05-07T00:00:00PT"
-date: "2021-05-07T00:00:00PT"
-# event date
-eventdate: "05/07/2021"
-time: "7:30-8:00AM Pacific (UTC -8)"
+publishDate: "2021-04-07T00:00:00Z"
+# Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
+date: "2021-05-07T07:30:00Z"
+endTime: "08:00"
+# tzcode = offical timezone code
+tzcode: "PT"
+tzoffset: "(UTC -8)"
+tzampm: "AM"
 # post save as draft
 draft: false
 # page title background image
@@ -36,7 +39,7 @@ location: "[Zoom Meeting](https://vmware.zoom.us/j/99786575079?pwd=dm8ybUNzQnF1Z
 #   - name : "Alfred Jin"
 #     image : "images/event-speakers/speaker-4.jpg"
 #     designation : "Teacher"
-weight: 50701
+
 # type
 type: "event"
 ---

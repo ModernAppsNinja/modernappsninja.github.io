@@ -5,10 +5,14 @@
   <div class="container">
     <div class="row">
       <!-- event -->
-      {{ range .Data.Pages }}
+      {{ range .Data.Pages.ByDate }}
+      <!--{{ if ge (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}-->
       <div class="col-lg-4 col-sm-6 mb-5">
-        {{ .Render "event" }}
+        <!--<li>Date: {{ .Date.Format "15:04" }}</li>        
+        <li>Now: {{ now.Format "2006-01-02" }}</li>  -->      
+        {{ .Render "event" }}  
       </div>
+      <!--{{ end }}-->
       {{ end }}
     </div>
   </div>

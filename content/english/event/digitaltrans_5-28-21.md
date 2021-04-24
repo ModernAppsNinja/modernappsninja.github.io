@@ -1,11 +1,14 @@
 ---
 title: "ModernApps SRE Live!"
 # Schedule page publish date
-publishDate: "2021-05-28T00:00:05PT"
-date: "2021-05-28T00:00:05PT"
-# event date
-eventdate: "05/28/2021"
-time: "8:00-9:00AM Pacific (UTC -8)"
+publishDate: "2021-03-28T00:00:05Z"
+# Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
+date: "2021-05-28T08:00:00Z"
+endTime: "09:00"
+# tzcode = offical timezone code
+tzcode: "PT"
+tzoffset: "(UTC -8)"
+tzampm: "AM"
 # post save as draft
 draft: false
 # page title background image
