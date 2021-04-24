@@ -164,12 +164,6 @@
 {{ end }}
 <!-- /cta -->
 
-<!-- success story -->
-{{ if $data.homepage.success_story.enable }}
-{{ partial "success-story.html" . }}
-{{ end }}
-<!-- /success story -->
-
 <!-- events -->
 {{ if $data.homepage.event.enable }}
 <section class="section bg-gray">
@@ -203,5 +197,11 @@
 </section>
 {{ end }}
 <!-- /events -->
+
+<!-- success story -->
+{{ if $data.homepage.success_story.enable }}
+{{ partial "success-story.html" . }}
+{{ end }}
+<!-- /success story -->
 
 {{ end }}
