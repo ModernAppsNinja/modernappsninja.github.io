@@ -61,7 +61,7 @@
         </div> -->
         <!-- support -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">{{ i18n "courses" }}</h4>
+          <h4 class="mb-5 text-uppercase"><a href="{{ `course` | relLangURL }}">{{ i18n "courses" }}</a></h4>
           <ul class="list-unstyled">
             {{ range first 5 (where site.RegularPages "Type" "course")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -69,7 +69,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">Tutorials</h4>
+          <h4 class="mb-5 text-uppercase"><a href="{{ `blog` | relLangURL }}">Tutorials</a></h4>
           <ul class="list-unstyled">
             {{ range first 3 (where site.RegularPages "Type" "post")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -77,7 +77,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">Guides</h4>
+          <h4 class="mb-5 text-uppercase"><a href="{{ `guide` | relLangURL }}">Guides</a></h4>
           <ul class="list-unstyled">
             {{ range first 5 (where site.RegularPages "Type" "guide")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
