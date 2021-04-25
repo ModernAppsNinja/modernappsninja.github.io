@@ -137,6 +137,17 @@ h6, .h6 {
     background-color: #fff !important;
     border: 1px solid #fff !important; }
 
+.btn-light-contrast {
+  color: #61717d;
+  background-color: #fff;
+  border: 1px solid #fff; }
+  .btn-light-contrast::before {
+    background-color: #f4f8fa; }
+  .btn-light-contrast:active, .btn-light-contrast:hover, .btn-light-contrast.focus, .btn-light-contrast:focus, .btn-light-contrast.active {
+    color: #61717d;
+    background-color: #fff !important;
+    border: 1px solid #fff !important; }
+
 body {
   background-color: #fff;
   overflow-x: hidden; }

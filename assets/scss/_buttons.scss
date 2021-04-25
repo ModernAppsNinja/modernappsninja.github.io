@@ -109,3 +109,23 @@
     border: 1px solid $white !important;
   }
 }
+
+.btn-light-contrast {
+  color: $navbar-text-color;
+  background-color: $white;
+  border: 1px solid $white;
+
+  &::before {
+    background-color: $primary-color;
+  }
+
+  &:active,
+  &:hover,
+  &.focus,
+  &:focus,
+  &.active {
+    color: $navbar-text-color;
+    background-color: $white !important;
+    border: 1px solid $white !important;
+  }
+}

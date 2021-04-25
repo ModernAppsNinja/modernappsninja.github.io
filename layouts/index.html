@@ -93,40 +93,19 @@
 {{ end }}
 <!-- /courses -->
 
-<!-- about us -->
-{{ if $data.homepage.about.enable }}
-{{ with $data.homepage.about }}
-<section class="section bg-gray">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-primary">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-      {{ with .image }}
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /about us -->
-
 <!-- blog -->
 {{ if $data.homepage.blog.enable }}
-<section class="section">
+<section class="section-sm bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title">{{ $data.homepage.blog.title }}</h2>
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="section-title">{{ $data.homepage.blog.title }}</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="{{ `blog` | relLangURL }}" class="btn btn-sm btn-light-contrast ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -166,7 +145,7 @@
 
 <!-- events -->
 {{ if $data.homepage.event.enable }}
-<section class="section bg-gray">
+<section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -174,14 +153,14 @@
           <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.event.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">{{ i18n "see_all" }}</a>
+            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-primary ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
       <!-- event -->
-      {{ range first 3 (where site.RegularPages "Type" "event")}}
+      {{ range first 3 (where site.RegularPages "Type" "event").ByDate }}
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         {{ .Render "event" }}
       </div>
@@ -197,6 +176,33 @@
 </section>
 {{ end }}
 <!-- /events -->
+
+<!-- about us -->
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p>{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-sm btn-light-contrast">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+      {{ with .image }}
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /about us -->
 
 <!-- success story -->
 {{ if $data.homepage.success_story.enable }}

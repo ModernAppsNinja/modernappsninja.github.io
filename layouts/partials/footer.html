@@ -68,6 +68,22 @@
             {{ end }}
           </ul>
         </div>
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="mb-5 text-uppercase">Tutorials</h4>
+          <ul class="list-unstyled">
+            {{ range first 3 (where site.RegularPages "Type" "post")}}
+            <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="mb-5 text-uppercase">Guides</h4>
+          <ul class="list-unstyled">
+            {{ range first 5 (where site.RegularPages "Type" "guide")}}
+            <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
         <!-- support 
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
