@@ -3,7 +3,7 @@
 ### Hugo Template Metadata
 title: "ModernApps Skills 101"
 date: "2021-04-21T20:27:58Z"
-draft: true
+draft: false
 # meta description
 description: "Introduction to ModernApps Learning by VMware Tanzu"
 # course thumbnail
@@ -29,17 +29,10 @@ course_repo_name: modernappsskills101_ms4043
   
   
 ### About Course
-
-vSphere with Tanzu: application-focused management for streamlined development, agile operations, and accelerated innovation. Applications can be deployed using any combination of virtual machines, containers and Kubernetes.
+This course provides an intro to the ModernApps Learning community.
 
 ### Requirements
 
-We recommend taking the Introduction to VMware Tanzu Portfolio course prior to taking the vSphere with Tanzu 101 course.
-
-We also recommend completing the ModernApps Ninja 101 course to learn about the community resources available to support this course and maximize your learning experience.
-
-This course assumes familiarity with Kubernetes and Cloud Native Technologies. If you are not familiar with these technologies, we recommend checking out KubeAcademy by VMware, which has a terrific set of free, bite-size video resources on the basics of containers, Kubernetes and cloud native that are great for beginners.
-
-Before taking this course, you should also have familiarity with vSphere administration. If you need additional background in vSphere, we recommend checking out VMware Hands on Labs, which offers a number of vSphere labs and content.
+This course has no pre-requisites
 
 ### [Please Click Here to Start the Course!](https://modernapps.ninja/${course_repo_name}/)
