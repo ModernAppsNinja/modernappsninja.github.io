@@ -1,6 +1,6 @@
 ---
 title: "NSX Advanced Load Balancer configuration for vSphere with Tanzu"
-date: 2021-04-14
+date: 2021-04-29
 draft: false
 author: "Dave Morera - GreatWhiteTec"
 # taxonomy
