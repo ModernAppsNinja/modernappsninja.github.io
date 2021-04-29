@@ -35,4 +35,4 @@ This course provides an intro to the ModernApps Learning community.
 
 This course has no pre-requisites
 
-### [Please Click Here to Start the Course!](https://modernapps.ninja/${course_repo_name}/)
+### [Please Click Here to Start the Course!](https://modernapps.ninja/modernappsskills101_ms4043/)
