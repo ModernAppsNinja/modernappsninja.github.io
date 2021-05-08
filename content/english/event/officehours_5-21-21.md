@@ -7,8 +7,7 @@ publishDate: "2021-03-21T00:00:00Z"
 date: "2021-05-21T07:30:00Z"
 endTime: "08:00"
 # tzcode = offical timezone code
-tzcode: "PT"
-tzoffset: "(UTC -8)"
+tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
 tzampm: "AM"
 # post save as draft
 draft: false

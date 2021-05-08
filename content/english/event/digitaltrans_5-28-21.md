@@ -6,8 +6,7 @@ publishDate: "2021-03-28T00:00:05Z"
 date: "2021-05-28T08:00:00Z"
 endTime: "09:00"
 # tzcode = offical timezone code
-tzcode: "PT"
-tzoffset: "(UTC -8)"
+tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
 tzampm: "AM"
 # post save as draft
 draft: false
@@ -47,9 +46,13 @@ type: "event"
 
 ### About Event
 
-The ModernApps learning platform started with traditional technologies, and is evolving toward cloud native best practices one step at a time. We the community are the platform architects, engineers and IT.  
-  
-Join fellow community members as we plan platform features, build things and deliver Site Reliability Engineering live.  
+There is a huge gap between classroom learning and the complexities of real-world environments, and during times of significant change this gap is formidable.
+ 
+ModernApps Learning has its own vision, goals and infrastructure and we the community design, develop and deliver all aspects of the platform.  We are a project hosted by VMware and develop and manage production assets. We are much like many programs within large organizations, with one key difference - we are designed to be managed with and by our open community, facilitated by VMware.  
+ 
+On the SRE Live! call we will be doing live planning, design, and implementation of all aspects of the ModernApps Learning Platform. We will be using agile planning and implement devops/gitops processes, CICD workflows, and strive step-by-step towards cloud native best practice implementations, together as a community.  
+ 
+Hope to see you on the call!   
 
 **SRE Live meetings are recorded and archives are posted to the [ModernApps Learning Youtube Page](https://www.youtube.com/playlist?list=PLITkokHBfePI9AGrsQDgiTigAzCpV2bau)**  
 

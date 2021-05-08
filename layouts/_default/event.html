@@ -7,7 +7,7 @@
     <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
     <ul>
       <li><em>Date:</em> {{ .Date.Format "January 2, 2006" }}</li>
-      <li><em>Time:</em> {{ .Date.Format "15:04" }}{{ .Params.tzampm }} {{ .Params.tzcode }} {{ .Params.tzoffset }}</li>
+      <li><em>Time:</em> {{ .Date.Format "15:04" }}{{ .Params.tzampm }} {{ .Params.tzcode | markdownify }}</li>
       <li><em>Place:</em> {{ .Params.location | markdownify }}</li>
     </ul>
     <!-- location 
