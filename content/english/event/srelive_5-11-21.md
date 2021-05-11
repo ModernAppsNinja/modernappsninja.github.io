@@ -43,6 +43,8 @@ location: "[Zoom Meeting](https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z
 type: "event"
 ---
 
+[Click Here to Download an ics file to add this event to your calendar](https://modernapps.ninja/files/ModernApps_SRE_Live-Project_Management_Setup.zip)
+
 ### About Event
 
 This past week we held the first ever ModernApps SRE Live! Call, and will continue to hold this call every Friday Morning. 
