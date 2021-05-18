@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting vSphere 7 with Kubernetes (Tanzu) installation"
+title: "Troubleshooting vSphere 7 with Tanzu installation"
 date: 2021-05-17
 draft: false
 author: "Navneet Verma"
