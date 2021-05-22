@@ -160,7 +160,7 @@ weight = 1204
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Editing with VSCode"
-URL = "https://modernapps.ninja/tanzustandardgettingstarted_ts5887/docs/"
+URL = "https://modernapps.ninja/docs_pd6204/docs/localdevelopment/"
 weight = 1206
 
 [[Languages.en.menu.main]]
