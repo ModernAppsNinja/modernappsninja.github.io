@@ -1,5 +1,5 @@
 ---
-title: "Adding new blog Posts"
+title: "Adding new tutorial/blog Posts"
 date: 2021-02-23
 draft: false
 # page title background image
@@ -17,10 +17,11 @@ tags: ["blog"]
 location: "./adding-a-new-blog-post"
 type: "post"
 ---
+Anyone is welcome to submit relevant tutorial blogs to the ModernApps Learning Tutorials page.
 
-This blog will guide you through adding a blog on this site
+ModernApps Ninja Tutorials are technical blogs written in a way that educates the reader about a technology. 
 
-
+If you would like to add a tutorial blog or video, please follow the steps below
 
 #### Step 1
 Navigate to the [blogs github page](https://github.com/ModernAppsNinja/modernappsninja.github.io/tree/main/content/english/blog).
