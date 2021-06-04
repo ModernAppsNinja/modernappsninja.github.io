@@ -7,7 +7,7 @@ date: "2021-06-25T08:00:00Z"
 endTime: "09:00"
 # tzcode = offical timezone code
 tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
-tzampm: "PM"
+tzampm: "AM"
 # post save as draft
 draft: false
 # page title background image
