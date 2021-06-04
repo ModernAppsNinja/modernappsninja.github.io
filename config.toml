@@ -206,8 +206,8 @@ weight = 1590
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "ModernApps Github Org"
-URL = "https://github.com/modernappsninja/"
+name = "ModernApps Github Homepage"
+URL = "https://github.com/modernappsninja/modernappsninja.github.io/"
 weight = 1585
 
 
