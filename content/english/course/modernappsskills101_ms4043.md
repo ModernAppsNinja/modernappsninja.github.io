@@ -31,11 +31,9 @@ course_repo_name: modernappsskills101_ms4043
 ### About Course
 This course provides an introduction to the ModernApps Learning community. The community is much more than just content and is really intended to be an active community of professionals learning and working towards applying new skills in cloud native technologies.
 
-The ModernApps Learning community uses devops tools to deliver all the features provided by the platform to participate in courses, collaboration and other community assets. When you register with the community you fill out an issue ticket. To enroll in a course you will post a new file to the course repository. When you take a test you will modify an existing file in the repository. While registration, enrollment and testing are normal features of Learning Management Systems (LMS), the ModernApps Learning Platform is not an LMS, it is a devops system where each of these features is implemented as a CI/CD workflow using GitHub Actions. This means participating in a course is just like working on a devops project; you will use GitHub messaging to collaborate with peers and open pull requests to edit or post files to a repository to participate in each course.
+The ModernApps Learning community uses devops tools to deliver all the features provided by the platform to participate in courses, collaboration and other community assets. When you register with the community you fill out an issue ticket. To enroll in a course you will post a new file to the course repository. When you take a test you will modify an existing file in the repository. This means participating in a course is just like working on a devops project; you will use GitHub messaging to collaborate with peers and open pull requests to edit or post files to a repository to participate in each course.
 
 By the time you have taken your first course, you will have learned these core skills which represent the most common and important skills to begin participating and contributing to a modern devops and/or open source projects.
-
-In this course you will learn the foundational skills to participate in ModernApps Learning courses at the 100 level, including how to register with the community, use community collaboration tools, participate in events, enroll in courses, take tests, and request course completion badges.
 
 If you complete all steps in this course, you can request a certificate of completion digital badge by following the instructions provided at the end of the course.
 
