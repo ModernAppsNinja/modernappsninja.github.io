@@ -1,5 +1,5 @@
 ---
-title: "ModernApps SRE Live! + Hackathon Kickoff Call"
+title: "ModernApps SRE Live!"
 # Schedule page publish date
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
@@ -22,8 +22,6 @@ type: "event"
 ---
 
 ### About Event
-
-For the week of 6-18-21, the SRE Live call will be hosting the kickoff for the ModernApps Learning Hackathon Weekend!
 
 There is a huge gap between classroom learning and the complexities of real-world environments, and during times of significant change this gap is formidable.
  

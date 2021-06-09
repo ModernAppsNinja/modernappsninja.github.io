@@ -1,5 +1,5 @@
 ---
-title: "ModernApps SRE Live!"
+title: "Cancelled: ModernApps SRE Live!"
 # Schedule page publish date
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
@@ -20,6 +20,7 @@ location: "[Zoom Meeting](https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z
 # type
 type: "event"
 ---
+ModernApps SRE Live will be cancelled 6/11/21. We will resume at the usual time on 6/18. Thanks!
 
 ### About Event
 
