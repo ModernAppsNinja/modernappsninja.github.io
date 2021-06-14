@@ -1,5 +1,5 @@
 ---
-title: "<Tanzu Mission Control – TKG Management support and provisioning new clusters"
+title: "Tanzu Mission Control – TKG Management support and provisioning new clusters"
 date: 2021-06-01
 draft: false
 author: "Dean Lewis"
