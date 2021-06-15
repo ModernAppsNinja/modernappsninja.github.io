@@ -1,5 +1,5 @@
 ---
-title: "ModernApps SRE Live!"
+title: "Call Cancelled for 6/18/21 -- ModernApps SRE Live! -- In Observance of Juneteenth"
 # Schedule page publish date
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
@@ -20,6 +20,19 @@ location: "[Zoom Meeting](https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z
 # type
 type: "event"
 ---
+
+### Call Cancelled on 6/18/21 in Observance of Juneteenth
+
+To borrow from VMware’s internal announcement – “Juneteenth ― a blend of the words June and nineteenth ― is an important day for America as it commemorates the end of slavery on June 19, 1865, which is two years after the Emancipation Proclamation was issued. Recognizing Juneteenth isn’t only about that one day in 1865, but rather, it honors a process of racial equality that is still ongoing.”  
+
+I am glad to see that in the U.S. VMware is now recognizing Juneteenth as an official holiday in respect of the tremendous significance for which it stands, and likewise the ModernApps Learning Office Hours and SRE Live! calls will be cancelled in observance.  
+
+From Juneteenth.com:  
+  
+“Today Juneteenth commemorates African American freedom and emphasizes education and achievement. It is a day, a week, and in some areas a month marked with celebrations, guest speakers, picnics and family gatherings. It is a time for reflection and rejoicing. It is a time for assessment, self-improvement and for planning the future. Its growing popularity signifies a level of maturity and dignity in America long over due. In cities across the country, people of all races, nationalities and religions are joining hands to truthfully acknowledge a period in our history that shaped and continues to influence our society today. Sensitized to the conditions and experiences of others, only then can we make significant and lasting improvements in our society.”
+
+
+
 
 ### About Event
 
