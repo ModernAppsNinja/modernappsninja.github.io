@@ -19,7 +19,7 @@ type: "post"
 ---
 Anyone is welcome to submit relevant tutorial blogs to the ModernApps Learning Tutorials page.
 
-ModernApps Ninja Tutorials are technical blogs written in a way that educates the reader about a technology. 
+ModernApps Tutorials are technical blogs written in a way that educates the reader about VMware Tanzu Modern Apps technologies. 
 
 If you would like to add a tutorial blog or video, please follow the steps below
 
