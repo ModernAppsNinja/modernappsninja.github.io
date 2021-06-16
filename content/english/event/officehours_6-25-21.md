@@ -4,7 +4,7 @@ title: "ModernApps Learning Weekly Office Hours"
 # Schedule page publish date
 publishDate: "2021-04-23T07:30:00Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
-date: "2021-04-23T07:30:00Z"
+date: "2021-06-25T07:30:00Z"
 endTime: "08:00"
 # tzcode = offical timezone code
 tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
