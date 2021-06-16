@@ -4,7 +4,7 @@ title: "ModernApps SRE Live!"
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
 date: "2021-07-16T08:00:00Z"
-endTime: "09:00"
+endTime: "08:45"
 # tzcode = offical timezone code
 tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
 tzampm: "AM"
