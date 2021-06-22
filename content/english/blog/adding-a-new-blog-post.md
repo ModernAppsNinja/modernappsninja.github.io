@@ -30,7 +30,7 @@ Navigate to the [blogs github page](https://github.com/ModernAppsNinja/modernapp
 
 
 #### Step 2 
-Click on "Add File" → "Create New File"
+Click on "Add File" → "Create New File". Make sure you are in the right folder "/content/english/blog/".
 ![](/images/blog/adding-a-new-blogpost/2.png)
 #### Step 3 
 Paste the following template in the file
