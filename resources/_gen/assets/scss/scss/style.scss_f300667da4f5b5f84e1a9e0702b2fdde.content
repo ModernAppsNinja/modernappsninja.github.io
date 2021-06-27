@@ -262,6 +262,9 @@ a h4:hover {
 .bg-gray {
   background: #f4f8fa; }
 
+.bg-tzlightblu {
+  background: #00C1D5; }
+
 .text-primary {
   color: #000 !important; }
 

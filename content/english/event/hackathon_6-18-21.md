@@ -1,10 +1,10 @@
 ---
-title: "Hackathon Weekend"
+title: "Hackathon Week!"
 # Schedule page publish date
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
 date: "2021-06-25T08:00:00Z"
-endTime: "09:00"
+endTime: "11:59"
 # tzcode = offical timezone code
 tzcode: "[Pacific Time](https://www.timeanddate.com/time/zones/pt)"
 tzampm: "AM"
@@ -13,7 +13,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Join this live working session where we will be planning and implementing process and project management standards, tools and workflows"
+description : "Participate in Hackathon Week from 6/23 to 7/2 to learn, network with community and earn up to 6 limited edition Hackathon digital badges"
 # Event image
 # location
 location: "[Zoom Meeting](https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z2FuamZITlpRa2VEdz09)"
@@ -23,45 +23,14 @@ type: "event"
 
 ### About Event
 
-Please join us for the hackathon weekend kickoff call on Friday 6-18-21 at 8:00 AM Pacific time, where we will review several new pieces of content together. Participants will review the new course and guide materials, ask questions, report problems and submit improvements and feature requests. We will review how to submit issue tickets and submit content improvements and organize an agile sprint to track activities during the event. 
+Hackathon week provides an opportunity to contribute to community, network with peers and learn and gain experience by opening and resolving issue tickets, make github commits with content updates, or even help with new site features!.
 
-Any participant who completes the course under review, reports an issue or submits an improvement during the hackathon weekend will recieve a special digital badge acknowleging your participation and contribution, in addition to any other badges that may be recieved for completing the coursework, and each commit you make is a valuable addition to your public GitHub profile!
+You do not need to be a developer, you can be a beginner with github, each step to participate has clear and simple instructions.
 
-All feedback and content must be submitted between Friday 6-18-21 and Sunday 6-20-21 to be eligible to recieve the hackathon digital badge. 
- 
-Hope to see you on the call!  
+6 new limited edition Digital Badges will be available to participants who complete the simple requirements for each badge. In addition to earning the badges, each of the contributions you make will be reflected on your public github profile!
 
-**SRE Live meetings are recorded and archives are posted to the [ModernApps Learning Youtube Page](https://www.youtube.com/playlist?list=PLITkokHBfePI9AGrsQDgiTigAzCpV2bau)**  
+Anyone who opens an issue ticket, validates or updates content, contributes new content or features will be able to earn badges!
 
-- **Meeting Zoom URL:** [https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z2FuamZITlpRa2VEdz09](https://VMware.zoom.us/j/92122108978?pwd=eFVFajhpSFB4Z2FuamZITlpRa2VEdz09)  
+While many hackathons focus on building sample coding ideas that may or may not ever be used, in the ModernApps Learning hackathon you will contribute directly to production assets, and the hackathon badges will state clearly that you contributed to production assets!
 
-- **Zoom Meeting ID:** 921 2210 8978  
-
-- **Zoom Meeting Password:** 713207  
-
-- **Join from Skype for Business:**  
-Skype URL: https://VMware.zoom.us/skype/99786575079
-
-- **Join by Telephone:** (Requires Entering Meeting ID and Password listed above)  
-
-- Dialin Numbers: 
-  - US: 
-    - +1 253 215 8782 
-    - or +1 346 248 7799 
-    - or +1 669 900 6833 
-    - or +1 301 715 8592 
-    - or +1 312 626 6799 
-    - or +1 646 558 8656 
-  - India: 000 800 050 5050 (Toll Free) 
-    - or 000 800 040 1530 (Toll Free) 
-  - United Kingdom: +44 208 080 6591 
-    - or +44 208 080 6592 
-    - or +44 330 088 5830 
-    - or +44 131 460 1196 
-    - or +44 203 481 5237 
-    - or +44 203 481 5240 
-  - Ireland: +353 1 653 3895 
-    - or +353 1 653 3897 
-    - or +353 1 653 3898 
-    - or +353 6 163 9031 
-    - or +353 1 536 9320 
+**[Please click here to find further details and instructions on the Hackathon homepage.](http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/)**
