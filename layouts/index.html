@@ -39,6 +39,7 @@
       <div class="col-12 text-center">
         <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
         <h6 class="text-white font-secondary mb-0">{{ .subtitle | markdownify }}</h6>
+        <p>" "</p>
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link | absLangURL }}" class="btn btn-light-contrast">{{ .label }}</a>
