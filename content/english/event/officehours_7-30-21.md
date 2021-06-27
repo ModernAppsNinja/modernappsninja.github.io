@@ -2,7 +2,7 @@
 title: "ModernApps Learning Weekly Office Hours"
 # Schedule page publish date
 # Schedule page publish date
-date: "2021-07-30T00:00:00Z"
+date: "2021-07-30T07:30:00Z"
 publishDate: "2021-03-28T00:00:01Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
 endTime: "08:00"

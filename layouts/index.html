@@ -161,10 +161,14 @@
     </div>
     <div class="row justify-content-center">
       <!-- event -->
-      {{ range first 3 (where site.RegularPages "Type" "event").ByDate }}
+      <p> </p>
+      {{ $myrange := first 3 (where .Site.RegularPages "Type" "event") }}
+      {{ range sort $myrange "Params.date" }}
+      {{ if ge .Params.date.Unix now.Unix }}
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         {{ .Render "event" }}
       </div>
+      {{ end }}
       {{ end }}
     </div>
     <!-- mobile see all button -->
