@@ -88,7 +88,7 @@ cta:
   title : "This week is Hackathon Week!"
   button:
     enable : true
-    label : "join now"
+    label : "Learn More"
     link : "http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/"
 
 ######################## Success story #############################
