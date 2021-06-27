@@ -25,6 +25,20 @@ type: "event"
 
 For the call on 6-25-21, the SRE Live call will be hosting the kickoff for the ModernApps Learning Hackathon Weekend!
 
+Hackathon week provides an opportunity to contribute to community, network with peers and learn and gain experience by opening and resolving issue tickets, make github commits with content updates, or even help with new site features!.
+
+You do not need to be a developer, you can be a beginner with github, each step to participate has clear and simple instructions.
+
+6 new limited edition Digital Badges will be available to participants who complete the simple requirements for each badge. In addition to earning the badges, each of the contributions you make will be reflected on your public github profile!
+
+Anyone who opens an issue ticket, validates or updates content, contributes new content or features will be able to earn badges!
+
+While many hackathons focus on building sample coding ideas that may or may not ever be used, in the ModernApps Learning hackathon you will contribute directly to production assets, and the hackathon badges will state clearly that you contributed to production assets!
+
+**[Please click here to find further details and instructions on the Hackathon homepage.](http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/)**
+
+### About ModernApps SRE Live!
+
 There is a huge gap between classroom learning and the complexities of real-world environments, and during times of significant change this gap is formidable.
  
 ModernApps Learning has its own vision, goals and infrastructure and we the community design, develop and deliver all aspects of the platform.  We are a project hosted by VMware and develop and manage production assets. We are much like many programs within large organizations, with one key difference - we are designed to be managed with and by our open community, facilitated by VMware.  

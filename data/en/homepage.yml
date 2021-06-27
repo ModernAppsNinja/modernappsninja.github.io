@@ -83,14 +83,13 @@ course:
 
 ########################## Call to action ############################
 cta:
-  enable : false
-  subtitle : "Click to Join the Advance Workshop"
-  title : "Training In Advannce Networking"
+  enable : true
+  subtitle : "Click to learn about Hackathon Week including how to earn up to 6 limited edition Hackathon Digital Badges!"
+  title : "This week is Hackathon Week!"
   button:
     enable : true
     label : "join now"
-    link : "contact"
-
+    link : "http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/"
 
 ######################## Success story #############################
 success_story:

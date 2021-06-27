@@ -1,5 +1,5 @@
 ---
-title: "ModernApps SRE Live!"
+title: "ModernApps SRE Live - Hackathon Week Checkin"
 # Schedule page publish date
 publishDate: "2021-04-07T00:00:05Z"
 # Event Date: (use the exact same formatting as below, enter the time in 12 hour format in the local timezone of the presenter)
@@ -22,6 +22,26 @@ type: "event"
 ---
 
 ### About Event
+
+This week we will be checking in on the progress for the ModernApps Live June 2021 Hackathon Week!
+
+- Topics:
+  - Review Hackathon Progress
+  - Review tickets for issues, feeback and pull requests
+  - Light retro
+
+Hackathon week provides an opportunity to contribute to community, network with peers and learn and gain experience by opening and resolving issue tickets, make github commits with content updates, or even help with new site features!.
+
+You do not need to be a developer, you can be a beginner with github, each step to participate has clear and simple instructions.
+
+6 new limited edition Digital Badges will be available to participants who complete the simple requirements for each badge. In addition to earning the badges, each of the contributions you make will be reflected on your public github profile!
+
+Anyone who opens an issue ticket, validates or updates content, contributes new content or features in the hackathon timeframe will be able to earn badges!
+
+While many hackathons focus on building sample coding ideas that may or may not ever be used, in the ModernApps Learning hackathon you will contribute directly to production assets, and the hackathon badges will state clearly that you contributed to production assets!
+
+**[Please click here to find further details and instructions on the Hackathon homepage.](http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/)**
+
 
 There is a huge gap between classroom learning and the complexities of real-world environments, and during times of significant change this gap is formidable.
  
