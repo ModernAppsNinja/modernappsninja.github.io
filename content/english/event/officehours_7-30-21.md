@@ -39,7 +39,6 @@ location: "[Zoom Meeting](https://vmware.zoom.us/j/99786575079?pwd=dm8ybUNzQnF1Z
 #   - name : "Alfred Jin"
 #     image : "images/event-speakers/speaker-4.jpg"
 #     designation : "Teacher"
-weight: 52801
 # type
 type: "event"
 ---

@@ -17,8 +17,6 @@ description : "The office hours call is a place where any member can ask any que
 # Event image
 # location
 location: "[Zoom Meeting](https://vmware.zoom.us/j/99786575079?pwd=dm8ybUNzQnF1ZFZoNndnS2RJQkIxdz09)"
-# weight
-weight: 2
 # type
 type: "event"
 ---
