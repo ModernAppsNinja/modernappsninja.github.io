@@ -10,4 +10,4 @@ location: "http://www.justait.net/2021/06/tkc-update.html"
 type: "post"
 ---
 
-### Step but Step procedure on how to update Tanzu Kubernetes Clusters 
+### Step by step procedure on how to update Tanzu Kubernetes Clusters 
