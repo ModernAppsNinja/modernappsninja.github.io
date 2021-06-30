@@ -1,5 +1,5 @@
 ---
-title: "Updating Supervisor Cluster>"
+title: "Updating Supervisor Cluster"
 date: 2021-05-19
 draft: false
 author: "Eduardo Meirelles"
@@ -10,4 +10,4 @@ location: "http://www.justait.net/2021/05/super-update.html"
 type: "post"
 ---
 
-### Check how to update Supervisor Cluster with latest Kubernetes release
+### How to update Supervisor Cluster with latest Kubernetes release
