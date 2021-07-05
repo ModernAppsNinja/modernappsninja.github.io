@@ -83,7 +83,7 @@ course:
 
 ########################## Call to action ############################
 cta:
-  enable : true
+  enable : false
   subtitle : "Click to learn about Hackathon Week including how to earn up to 6 limited edition Hackathon Digital Badges!"
   title : "This week is Hackathon Week!"
   button:
