@@ -153,6 +153,12 @@ weight = 1205
 
 [[Languages.en.menu.main]]
 parent = "guides"
+name = "Tanzu Glossary"
+URL = "https://modernapps.ninja/tanzuglossary_7721/docs/"
+weight = 1207
+
+[[Languages.en.menu.main]]
+parent = "guides"
 name = "Tanzu Standard Getting Started Guide"
 URL = "https://modernapps.ninja/tanzustandardgettingstarted_ts5887/docs/"
 weight = 1204
