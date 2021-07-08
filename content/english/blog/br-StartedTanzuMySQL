@@ -1,0 +1,13 @@
+---
+title: "Getting Started with VMware Tanzu SQL with MySQL for Kubernetes"
+date: 2021-07-01
+draft: false
+author: "Brian Ragazzi"
+# taxonomy
+tags: ["Tanzu Portfolio", "ssl certificates", "Tanzu Kubernetes Grid", "Tanzu Kubernetes Grid Service", "cert-manager","Tanzu SQL", "Tanzu SQL with MySQL", "phpMyAdmin", "DBaaS", "MySQL on k8s"]
+location: "https://brianragazzi.wordpress.com/2021/07/01/getting-started-with-vmware-tanzu-sql-with-mysql-for-kubernetes/"
+# type
+type: "post"
+---
+ 
+### Step-by-step process to add deploy Tanzu SQL with MySQL, configure certificates with cert-manager, deploy an example database and interact with it via phpMyAdmin
