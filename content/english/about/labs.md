@@ -11,7 +11,9 @@ description : ""
 
 ### Featured Hands-on Labs and Workshops 
 
-VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516) | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)
+VMware Tanzu Standard [VMware Pathfinder Lab](https://pathfinder.vmware.com/path/tanzu_standard)
+
+VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [Pathfinder Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516) | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
@@ -37,7 +39,7 @@ Spring on Kubernetes [Workshop](https://tanzu.vmware.com/developer/workshops/spr
 
 Spring Cloud Gateway [Workshop](https://tanzu.vmware.com/developer/workshops/lab-spring-gateway/)
 
-VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
+VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Pathfinder Lab](https://pathfinder.vmware.com/path/enterprisepks)
 
 VMware Tanzu Service Mesh [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
