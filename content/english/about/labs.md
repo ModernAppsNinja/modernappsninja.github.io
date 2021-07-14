@@ -39,7 +39,7 @@ Spring on Kubernetes [Workshop](https://tanzu.vmware.com/developer/workshops/spr
 
 Spring Cloud Gateway [Workshop](https://tanzu.vmware.com/developer/workshops/lab-spring-gateway/)
 
-VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [Pathfinder Lab](https://pathfinder.vmware.com/path/enterprisepks)
+VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
 
 VMware Tanzu Service Mesh [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
