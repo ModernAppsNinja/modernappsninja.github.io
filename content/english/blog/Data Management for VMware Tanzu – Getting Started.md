@@ -5,7 +5,7 @@ draft: false
 author: "Dean Lewis"
 # taxonomy
 tags: ["Tanzu Portfolio", "Data Management", "Database", "DBaaS"]
-location: "https://veducate.co.uk/dms-tanzu-getting-started/"
+location: "http://vexpert.me/dms-tanzu-getting-started"
 # type
 type: "post"
 ---
