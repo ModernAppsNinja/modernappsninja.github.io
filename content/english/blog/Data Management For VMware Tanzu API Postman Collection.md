@@ -1,6 +1,6 @@
 ---
 title: "Data Management For VMware Tanzu API Postman Collection"
-date: 2021-01-23
+date: 2021-08-16
 draft: false
 author: "Dean Lewis"
 # taxonomy
