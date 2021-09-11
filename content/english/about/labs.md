@@ -39,17 +39,10 @@ Spring on Kubernetes [Workshop](https://tanzu.vmware.com/developer/workshops/spr
 
 Spring Cloud Gateway [Workshop](https://tanzu.vmware.com/developer/workshops/lab-spring-gateway/)
 
-VMware Tanzu Kubernetes Grid Integrated [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8546) | [TestDrive Lab](https://pathfinder.vmware.com/path/enterprisepks)
-
 VMware Tanzu Service Mesh [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8509)
 
-VMware Octant [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8548) | [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-started-with-octant/)
+VMware Octant [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-started-with-octant/)
 
-Tanzu Kubernetes Grid Management Console [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8547)
-
-VMware Carbon Black Container Security [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8549)	
-
-VMware Carbon Black Cloud Use Cases [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8550)
 
 ### Lab and Workshop Collections
 
