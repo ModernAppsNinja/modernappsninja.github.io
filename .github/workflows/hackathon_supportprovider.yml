@@ -1,0 +1,189 @@
+name: NewTutorialPosted
+on:
+  push:
+    paths:
+    - 'content/english/blog/**.md'
+
+jobs:
+  job_announce_new_tutorial:
+    name: announce_new_tutorial
+    runs-on: ubuntu-latest
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+      - name: extract new tutorial filename and title
+        run: |
+          git show --name-only --oneline | tail -1 > /tmp/pathfilename
+          echo \'$(sed 's/content\/english\/blog\///' /tmp/pathfilename)\' > /tmp/filename
+          y
+
+          echo total_test_count=$(yq e '.memberGithubId' /tmp/member_record.yml) >> $GITHUB_ENV
+
+
+
+
+
+
+
+
+
+
+
+
+
+      - name: pull member record file
+        run: |
+          echo ${{ github.event.commits[0].author.username }}
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/modernappsninjas/${{ github.event.commits[0].author.username }}/main/static/userdata/member_record.yml" \
+          -o /tmp/member_record.yml
+          cat /tmp/member_record.yml
+      - name: check if member record already exists to determine if this is a duplicate request
+        run: |
+          authorGitubId=$(yq e '.memberGithubId' /tmp/member_record.yml)
+          if [ $(echo "${authorGithubId}") ==  "null" ]
+          then
+            echo ismember=false >> $GITHUB_ENV
+            echo "the requesting user is not a member"
+          else
+            echo ismember=true >> $GITHUB_ENV
+            echo "the requesting user is a member"
+          fi
+      - id: ismember
+        if: env.ismember == 'true'
+        run: echo "::set-output name=ismember::true"
+
+# There is currently no method to notify a user if they are not a member, so for the time being administrators should check membership before approving, and this check will only be used as a backup measure, and in the event that a nonmember attempts to run this workflow it will fail with no notification provided and therefore dependent on the requesting user to request assistance
+# In the future, one potential method we could implement to notify a nonmember user would be to open an issue ticket on the source repository on which they opened a pullrequest, at-mention them with instructions, and immediately close the issue ticket so they can still find it through their notifications but there is no further maintenance requirement for administrators
+
+  job_award_badge:
+  # call badgr and provision badge ()
+    name: job_award
+    needs: job_verify_membership
+    runs-on: ubuntu-latest
+    if: needs.job_verify_membership.outputs.output1 == 'true'
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - name: set org/repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+          org_repo="$GITHUB_REPOSITORY"
+          echo $org_repo
+      - name: pull member record file
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/modernappsninjas/${{ github.event.commits[0].author.username }}/main/static/userdata/member_record.yml" \
+          -o /tmp/member_record.yml
+          cat /tmp/member_record.yml
+      - name: make assertion to award digital badge to recipient
+        run: |
+          preferredemailaddress=$(yq e '.preferredEmailAddress' /tmp/member_record.yml)
+          badgeclass_entity_id=2W3B96ZXRy-HBX6rzg6EJA
+          reponame=${{ github.event.repository.name }}
+          lorepo=$(echo ${reponame,,})
+          echo "lorepo is: ${lorepo}"
+          badgrtoken=$(curl -X POST "https://api.badgr.io/o/token" -d "username=${{ secrets.BADGREMAIL }}&password=${{ secrets.BADGRPASSWORD }}" | jq -r '.access_token')
+          echo "badgrtoken is: ${badgrtoken}"
+          curl -X POST \
+          "https://api.badgr.io/v2/badgeclasses/${badgeclass_entity_id}/assertions" \
+          --header "Content-Type: application/json" \
+          --header "Authorization: Bearer ${badgrtoken}" \
+          --data-raw '{
+            "recipient": {
+              "identity": "'$(echo ${preferredemailaddress})'",
+              "type": "email",
+              "hashed": true
+            },
+            "evidence": [
+              {
+                "url": "https://modernappsninjas.github.io/${{ github.event.commits[0].author.username }}/"
+              }
+            ],
+            "notify": true
+          }' >> /tmp/assert_call_response.json
+          cat /tmp/assert_call_response.json
+      - name: review variables from assertion response
+        run: |
+          echo "status.success is : $(jq -r '.status.success' /tmp/assert_call_response.json)"
+          jq -r '.status.success' /tmp/assert_call_response.json > /tmp/assert_success
+          echo "result.entityId is : $(jq -r '.result[0].entityId' /tmp/assert_call_response.json)"
+          jq -r '.result[0].entityId' /tmp/assert_call_response.json > /tmp/badge_entityId
+          echo "result.openBadgeId is : $(jq -r '.result[0].openBadgeId' /tmp/assert_call_response.json)"
+          jq -r '.result[0].openBadgeId' /tmp/assert_call_response.json > /tmp/badge_openBadgeId
+      - name: pull badge meta file
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/hackathons/badges/supportprovider/cards/badge_meta.yml" \
+          -o /tmp/badge_meta.yml
+          cat /tmp/badge_meta.yml
+      - name: pull badge data stub
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/hackathons/badges/supportprovider/cards/member_badge_card_stub.md" \
+          -o /tmp/member_badge_card_stub.md
+          cat /tmp/member_badge_card_stub.md
+      - name: prepare hackathon badge card
+        run: |
+          # combine badge meta, member badge card stub, member github ids and openbadge ids to create new member hackathon badge card file
+          cat /tmp/badge_meta.yml > /tmp/member_badge_card.md
+          cat /tmp/member_badge_card_stub.md >> /tmp/member_badge_card.md
+          echo "   " >> /tmp/member_badge_card.md
+          echo "Member_Github_Account_Login: ${{ github.event.commits[0].author.username }}  " >> /tmp/member_badge_card.md
+          echo "   " >> /tmp/member_badge_card.md
+          echo "OpenBadge_EntityId: $(cat /tmp/badge_entityId)" >> /tmp/member_badge_card.md
+          echo "   " >> /tmp/member_badge_card.md
+          echo 'OpenBadge_Url: ['$(cat /tmp/badge_openBadgeId)']('$(cat /tmp/badge_openBadgeId)')' >> /tmp/member_badge_card.md
+          echo "   " >> /tmp/member_badge_card.md
+          cat /tmp/member_badge_card.md
+          cat /tmp/member_badge_card.md | base64 -w 0 > /tmp/member_badge_card.md.base64
+      - name: post  member badge card to member repo certs dir
+        run: |
+          curl -X PUT \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"message": "Posting updated member badge record card", "content": "'$(cat /tmp/member_badge_card.md.base64)'"}' \
+          "https://api.github.com/repos/modernappsninjas/${{ github.event.commits[0].author.username }}/contents/content/english/certs/${{ github.event.repository.name }}_supportprovider.md" \
+          -o /tmp/member_badge_card_post_response.json
+      - name: gather ID and slug for modernappsninja members team
+        run: |
+          curl -s \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://api.github.com/orgs/modernappsninja/teams" \
+          -o /tmp/ninja_teams_list.json
+          # gather members team id
+          cat /tmp/ninja_teams_list.json | jq -r 'map(select(.name=="'Members'")) | .[].id' > /tmp/members_team_id
+          cat /tmp/members_team_id
+          echo members_team_id=$(cat /tmp/members_team_id) >> $GITHUB_ENV
+          # gather members team slug
+          cat /tmp/ninja_teams_list.json | jq -r 'map(select(.name=="'Members'")) | .[].slug' > /tmp/members_team_slug
+          cat /tmp/members_team_slug
+          echo members_team_slug=$(cat /tmp/members_team_slug) >> $GITHUB_ENV
+      - name: update members discussion board hackathon award thread about new badge award
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"body":"Congratulations to @'${{ github.event.commits[0].author.username }}' for earning the Hackathon Support Provider Badge! Thank you for contributing to the community!"}' \
+          "https://api.github.com/orgs/modernappsninja/teams/${{ env.members_team_slug }}/discussions/9/comments" \
+          -o /tmp/add_course_team_discussion_response.json
+          cat /tmp/add_course_team_discussion_response.json
