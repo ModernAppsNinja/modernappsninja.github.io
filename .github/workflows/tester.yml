@@ -1,11 +1,11 @@
 name: tester_action
 on:
   workflow_dispatch:
-    # inputs:
-    #   tweet:
-    #     description: 'Enter your Tweet'
-    #     required: true
-    #     default: ''
+    inputs:
+      pathfilename:
+        description: 'Enter pathfilename'
+        required: true
+        default: ''
 
 jobs:
   job_tester:
