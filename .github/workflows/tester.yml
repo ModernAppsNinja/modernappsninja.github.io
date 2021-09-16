@@ -34,5 +34,5 @@ jobs:
           cat /tmp/pathfilename
           echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
           cat /tmp/filename
-          yq e '.title' "$(cat /tmp/filename)"" | head -1 > /tmp/title
+          yq e '.title' "$(cat /tmp/filename)" | head -1 > /tmp/title
           cat /tmp/title
