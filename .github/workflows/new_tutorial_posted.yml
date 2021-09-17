@@ -26,7 +26,7 @@ jobs:
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
       - name: extract new tutorial filename and title
         run: |
-          git show HEAD^1 --name-only --oneline | tail -1 # > /tmp/pathfilename
+          git show HEAD^1 --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
           echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
           cat /tmp/filename
