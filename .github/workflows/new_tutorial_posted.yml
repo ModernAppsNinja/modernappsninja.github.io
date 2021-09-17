@@ -1,0 +1,76 @@
+name: NewTutorialPosted
+on:
+  push:
+    paths:
+    - 'content/english/blog/**.md'
+
+jobs:
+  job_announce_new_tutorial:
+    name: announce_new_tutorial
+    runs-on: ubuntu-latest
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+      - name: extract new tutorial filename and title
+        run: |
+          git show --name-only --oneline | tail -1 # > /tmp/pathfilename
+          cat /tmp/pathfilename
+          echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
+          cat /tmp/filename
+          yq e '.title' content/english/blog/"$(cat /tmp/filename)" | head -1 > /tmp/title
+          cat /tmp/title
+      - name: gather ID and slug for modernappsninja members team
+        run: |
+          curl -s \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://api.github.com/orgs/modernappsninja/teams" \
+          -o /tmp/ninja_teams_list.json
+          # gather members team id
+          cat /tmp/ninja_teams_list.json | jq -r 'map(select(.name=="'Members'")) | .[].id' > /tmp/members_team_id
+          cat /tmp/members_team_id
+          echo members_team_id=$(cat /tmp/members_team_id) >> $GITHUB_ENV
+          # gather members team slug
+          cat /tmp/ninja_teams_list.json | jq -r 'map(select(.name=="'Members'")) | .[].slug' > /tmp/members_team_slug
+          cat /tmp/members_team_slug
+          echo members_team_slug=$(cat /tmp/members_team_slug) >> $GITHUB_ENV
+      - name: update members discussion board hackathon award thread about new badge award
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"body":"New Tutorial Posted: $(cat /tmp/title). https://modernapps.ninja/blog/","title":"New Tutorial Posted"}' \
+          "https://api.github.com/orgs/modernappsninja/teams/${{ env.members_team_slug }}/discussions" \
+          -o /tmp/add_course_team_discussion_response.json
+          cat /tmp/add_course_team_discussion_response.json
+      - name: install tweet.sh and send tweet
+        env: 
+          MY_SCREEN_NAME: modernappsninja
+          MY_LANGUAGE: EN
+          CONSUMER_KEY: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
+          CONSUMER_SECRET: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_SECRET_KEY  }}
+          ACCESS_TOKEN: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN_SECRET }}        
+        run: |
+          # Install dependencies for tweet.sh
+          sudo apt-get -y install nkf
+          # Install tweet.sh
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/piroor/tweet.sh/trunk/tweet.sh" \
+          -o tweet.sh
+          cat tweet.sh
+          chmod +x tweet.sh
+          # send tweet
+          ./tweet.sh post "New Tutorial Posted: $(cat /tmp/title). https://modernapps.ninja/blog/ #ModernAppsLearning by @VMwareTanzu! #vmware #vmwaretanzu"

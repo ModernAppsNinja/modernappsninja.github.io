@@ -1,0 +1,38 @@
+name: tester_action
+on:
+  workflow_dispatch:
+    inputs:
+      pathfilename:
+        description: 'Enter pathfilename'
+        required: true
+        default: ''
+
+jobs:
+  job_tester:
+    name: tester
+    runs-on: ubuntu-latest
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+      - name: extract new tutorial filename and title
+        run: |
+          # git show --name-only --oneline | tail -1 # > /tmp/pathfilename
+          echo ${{ github.event.inputs.pathfilename}} > /tmp/pathfilename
+          cat /tmp/pathfilename
+          echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
+          cat /tmp/filename
+          yq e '.title' content/english/blog/"$(cat /tmp/filename)" | head -1 > /tmp/title
+          cat /tmp/title
