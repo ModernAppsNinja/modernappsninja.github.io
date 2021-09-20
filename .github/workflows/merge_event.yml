@@ -39,14 +39,14 @@ jobs:
             echo isblog=false >> $GITHUB_ENV
           fi
       - name: extract new tutorial filename and title
-        if: ${{ env.isblog }} == 'true'
+        if: env.isblog == 'true'
         run: |
           echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
           cat /tmp/filename
           yq e '.title' content/english/blog/"$(cat /tmp/filename)" | head -1 > /tmp/title
           cat /tmp/title
       - name: gather ID and slug for modernappsninja members team
-        if: ${{ env.isblog }} == 'true'
+        if: env.isblog == 'true'
         run: |
           curl -s \
           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
@@ -61,7 +61,7 @@ jobs:
           cat /tmp/members_team_slug
           echo members_team_slug=$(cat /tmp/members_team_slug) >> $GITHUB_ENV
       - name: update members discussion board hackathon award thread about new tutorial
-        if: ${{ env.isblog }} == 'true'
+        if: env.isblog == 'true'
         run: |
           curl -X POST \
           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
@@ -71,7 +71,7 @@ jobs:
           -o /tmp/add_course_team_discussion_response.json
           cat /tmp/add_course_team_discussion_response.json
       - name: install tweet.sh and send tweet
-        if: ${{ env.isblog }}  == 'true'
+        if: env.isblog == 'true'
         env: 
           MY_SCREEN_NAME: modernappsninja
           MY_LANGUAGE: EN
