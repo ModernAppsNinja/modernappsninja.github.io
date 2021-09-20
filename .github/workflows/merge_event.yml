@@ -24,9 +24,9 @@ jobs:
         with:
           submodules: recursive  # Fetch the Docsy theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
-      - name: determine if /tmp/filepath includes "blog" and set "isblog" env variable to true/false
+      - name: set isblog env variable to true/false
         run: |
-          git show HEAD^1 --name-only --oneline | tail -1 > /tmp/pathfilename
+          git show HEAD --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
           cat /tmp/pathfilename | grep blog > /tmp/filecheck
           if [ -z $(cat /tmp/filecheck) ]
