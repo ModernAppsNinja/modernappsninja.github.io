@@ -28,10 +28,9 @@ jobs:
         run: |
           git show HEAD --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
-          echo "filecheck=$(cat /tmp/pathfilename | grep blog)" >> $GITHUB_ENV
       - name: set isblog env variable to true/false
         run: |
-          if [ -z "$filecheck" ];
+          if [ $(wc -m < /tmp/pathfilename) gt 1 ];
           then
             echo isblog=false >> $GITHUB_ENV
           else
