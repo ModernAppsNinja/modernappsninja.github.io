@@ -28,6 +28,8 @@ jobs:
         run: |
           git show HEAD --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
+      - name: check if blog and set filecheck file
+        run: |
           cat /tmp/pathfilename | grep blog > /tmp/filecheck
           cat /tmp/filecheck
       - name: set isblog env variable to true/false
@@ -91,7 +93,7 @@ jobs:
           cat tweet.sh
           chmod +x tweet.sh
           # send tweet
-          ./tweet.sh post "New Tutorial Posted: $(cat /tmp/title). https://modernapps.ninja/blog/ #ModernAppsLearning by @VMwareTanzu! #vmware #vmwaretanzu"
+          ./tweet.sh post "New Tutorial Posted: $(cat /tmp/title). https://modernapps.ninja/blog/ #ModernAppsLearning by @VMwareTanzu!"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
