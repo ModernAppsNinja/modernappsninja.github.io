@@ -1,8 +1,8 @@
 name: NewTutorialPosted
-on:
-  push:
-    paths:
-    - 'content/english/blog/**.md'
+# on:
+#   push:
+#     paths:
+#     - 'content/english/blog/**.md'
 
 jobs:
   job_announce_new_tutorial:
