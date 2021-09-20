@@ -10,4 +10,4 @@ location: "https://little-stuff.com/2021/09/19/migrating-a-tkg-cluster-control-p
 type: "post"
 ---
 
-### A walkthrough of migrating  the control plane endpoint in an upgraded TKG 1.4 cluster from kube-vip to NSX ALB
+### A walkthrough of migrating  the control plane endpoint in an upgraded TKG 1.4 cluster from kube-vip to NSX ALB 
