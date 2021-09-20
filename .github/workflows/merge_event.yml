@@ -28,13 +28,13 @@ jobs:
         run: |
           git show HEAD --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
-      - name: check if blog and set hitcount
+      - name: check if blog and set filecheck file
         run: |
-          grep -c blog /tmp/pathfilename
-          echo hitcount=$(grep -c blog /tmp/pathfilename)
+          sed -n '/blog/p' /tmp/pathfilename > /tmp/filecheck
+          cat /tmp/filecheck
       - name: set isblog env variable to true/false
         run: |
-          if [ "${{ env.hitcount }}" -ge "1" ];
+          if [ "$(wc -m < /tmp/filecheck)" -gt "5" ];
           then
             echo isblog=true 
             echo isblog=true >> $GITHUB_ENV
