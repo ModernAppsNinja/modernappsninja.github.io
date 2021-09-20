@@ -36,13 +36,15 @@ jobs:
         run: |
           if [ "$(wc -m < /tmp/filecheck)" -gt "5" ];
           then
-            echo isblog=true 
             echo isblog=true >> $GITHUB_ENV
+            echo "this is a blog"
           else
-            echo isblog=false
             echo isblog=false >> $GITHUB_ENV
+            echo "this is not a blog"
           fi
           echo "isblog value is: $(echo $isblog)"
+          echo "the following line echoes isblog"
+          echo $isblog
       - name: extract new tutorial filename and title
         if: env.isblog == 'true'
         run: |
