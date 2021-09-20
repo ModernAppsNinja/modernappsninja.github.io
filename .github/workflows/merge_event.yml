@@ -42,6 +42,7 @@ jobs:
             echo isblog=false
             echo isblog=false >> $GITHUB_ENV
           fi
+          echo "isblog value is: $isblog"
       - name: extract new tutorial filename and title
         if: env.isblog == 'true'
         run: |
