@@ -30,11 +30,11 @@ jobs:
           cat /tmp/pathfilename
       - name: set isblog env variable to true/false
         run: |
-          if [ $(wc -m < /tmp/pathfilename) gt 1 ];
+          if [ "$(wc -m < /tmp/pathfilename)" gt "1" ];
           then
-            echo isblog=false >> $GITHUB_ENV
-          else
             echo isblog=true >> $GITHUB_ENV
+          else
+            echo isblog=false >> $GITHUB_ENV
           fi
       - name: extract new tutorial filename and title
         if: ${{ env.isblog }}
