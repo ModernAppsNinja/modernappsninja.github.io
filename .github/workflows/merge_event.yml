@@ -30,7 +30,7 @@ jobs:
           cat /tmp/pathfilename
       - name: set isblog env variable to true/false
         run: |
-          if [ "$(wc -m < /tmp/pathfilename)" gt "1" ];
+          if [ "$(wc -m < /tmp/pathfilename)" -gt "1" ];
           then
             echo isblog=true >> $GITHUB_ENV
           else
