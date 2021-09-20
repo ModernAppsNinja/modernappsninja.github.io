@@ -28,13 +28,12 @@ jobs:
         run: |
           git show HEAD --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
-          cat /tmp/pathfilename | grep blog > /tmp/filecheck
-          cat /tmp/filecheck
-          if [ -z "$(cat /tmp/filecheck)" ]
+          filecheck=$(cat /tmp/pathfilename | grep blog)
+          if [ -z "$filecheck" ]
           then 
-            echo isblog=true >> $GITHUB_ENV
-          else
             echo isblog=false >> $GITHUB_ENV
+          else
+            echo isblog=true >> $GITHUB_ENV
           fi
           echo $isblog
       - name: extract new tutorial filename and title
