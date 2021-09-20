@@ -31,7 +31,7 @@ jobs:
       - name: check if blog and set filecheck file
         run: |
           # cat /tmp/pathfilename
-          cat /tmp/pathfilename | grep blog
+          cat /tmp/pathfilename | grep "blog"
           # cat /tmp/filecheck
       - name: set isblog env variable to true/false
         run: |
