@@ -30,19 +30,23 @@ jobs:
           cat /tmp/pathfilename
       - name: check if blog and set filecheck file
         run: |
-          cat /tmp/pathfilename
-          cat /tmp/pathfilename | grep blog > /tmp/filecheck
+          sed -n '/blog/p' /tmp/pathfilename > /tmp/filecheck
           cat /tmp/filecheck
       - name: set isblog env variable to true/false
         run: |
           if [ "$(wc -m < /tmp/filecheck)" -gt "5" ];
           then
-            echo isblog=true 
             echo isblog=true >> $GITHUB_ENV
+            echo "this is a blog"
           else
-            echo isblog=false
             echo isblog=false >> $GITHUB_ENV
+            echo "this is not a blog"
           fi
+      - name: check isblog value
+        run: |
+          echo "isblog value is: $(echo $isblog)"
+          echo "the following line echoes isblog"
+          echo $isblog
       - name: extract new tutorial filename and title
         if: env.isblog == 'true'
         run: |
