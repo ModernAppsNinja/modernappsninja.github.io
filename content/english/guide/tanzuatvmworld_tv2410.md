@@ -3,7 +3,7 @@
 ### Hugo Template Metadata
 title: ""
 date: "2021-09-22T20:24:30Z"
-draft: true
+draft: false
 # meta description
 description: ""
 # course thumbnail
@@ -17,7 +17,7 @@ duration: "0 Hours"
 # course fee
 fee: "Free!"
 # apply url
-apply_url: "https://modernapps.github.io/"
+apply_url: "https://modernapps.ninja/tanzuatvmworld_tv2410/docs/"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
