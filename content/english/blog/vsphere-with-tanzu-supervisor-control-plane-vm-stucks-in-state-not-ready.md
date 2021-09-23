@@ -1,5 +1,5 @@
 ---
-title: "vSphere with Tanzu - SupervisorControlPlaneVM stucks in state NotReady"
+title: "vSphere with Tanzu - How to fix SupervisorControlPlaneVM stuck in state NotReady"
 date: 2021-04-25
 draft: false
 author: "Robert Guske"
