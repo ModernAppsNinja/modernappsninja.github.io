@@ -148,7 +148,7 @@ weight = 12
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Tanzu at VMworld 2021 Guide"
-URL = "https://modernapps.ninja/tanzuatvmworld_tv2410/docs/"
+URL = "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
 weight = 1203
 
 [[Languages.en.menu.main]]

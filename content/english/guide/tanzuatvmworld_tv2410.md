@@ -17,11 +17,11 @@ duration: "0 Hours"
 # course fee
 fee: "Free!"
 # apply url
-apply_url: "https://modernapps.ninja/tanzuatvmworld_tv2410/docs/"
+apply_url: "https://modernapps.ninja/tanzu-at-vmworld2021"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
-content_id: tv2410
+content_id: tv2021
 course_short_title: 
 course_navbar_title:    
 course_repo_name: 
@@ -32,4 +32,4 @@ course_repo_name:
 
 This guide provides information about Tanzu sessions and activities at VMworld 2021
 
-### [Please Click Here to Start the Course!](https://modernapps.ninja/${course_repo_name}/)
+### [Please Click Here to Start the Course!](https://modernapps.ninja/tanzu-at-vmworld2021)
