@@ -147,6 +147,12 @@ weight = 12
 
 [[Languages.en.menu.main]]
 parent = "guides"
+name = "Tanzu at VMworld 2021 Guide"
+URL = "https://modernapps.ninja/tanzuatvmworld_tv2410/docs/"
+weight = 1203
+
+[[Languages.en.menu.main]]
+parent = "guides"
 name = "Certified Kubernetes Administrator Study Guide"
 URL = "https://modernapps.ninja/ckastudyguide_sg2378/docs/"
 weight = 1205
