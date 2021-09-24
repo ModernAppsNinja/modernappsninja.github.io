@@ -75,7 +75,7 @@ jobs:
           curl -X POST \
           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          -d '{"body":"New Tutorial Posted: $(cat /tmp/title). https://modernapps.ninja/blog/","title":"New Tutorial Posted"}' \
+          -d '{"body":"New Tutorial Posted: '$(cat /tmp/title)'. https://modernapps.ninja/blog/","title":"New Tutorial Posted"}' \
           "https://api.github.com/orgs/modernappsninja/teams/${{ env.members_team_slug }}/discussions" \
           -o /tmp/add_course_team_discussion_response.json
           cat /tmp/add_course_team_discussion_response.json
