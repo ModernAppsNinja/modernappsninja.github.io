@@ -10,4 +10,4 @@ location: "https://little-stuff.com/2021/09/13/upgrading-from-tkg-1-3-to-1-4-inc
 type: "post"
 ---
 
-### A detailed walkthrough of upgradnig TKGm 1.3 on vSphere with all extensions installed to 1.4. 
+### A detailed walkthrough of upgradnig TKGm 1.3 on vSphere with all extensions installed to 1.4.   
