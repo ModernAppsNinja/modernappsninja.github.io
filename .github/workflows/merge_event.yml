@@ -53,7 +53,7 @@ jobs:
           echo $(sed 's/content\/english\/blog\///' /tmp/pathfilename) > /tmp/filename
           cat /tmp/filename
           yq e '.title' content/english/blog/"$(cat /tmp/filename)" | head -1 > /tmp/title
-          cat /tmp/title
+          echo blogtitle=$(cat /tmp/title) >> $GITHUB_ENV
       - name: gather ID and slug for modernappsninja members team
         if: env.isblog == 'true'
         run: |
@@ -75,7 +75,7 @@ jobs:
           curl -X POST \
           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          -d '{"body":"New Tutorial Posted: '$(cat /tmp/title)'. https://modernapps.ninja/blog/","title":"New Tutorial Posted"}' \
+          -d '{"body":"New Tutorial Posted: ${{ env.blogtitle }}. https://modernapps.ninja/blog/","title":"New Tutorial Posted"}' \
           "https://api.github.com/orgs/modernappsninja/teams/${{ env.members_team_slug }}/discussions" \
           -o /tmp/add_course_team_discussion_response.json
           cat /tmp/add_course_team_discussion_response.json
