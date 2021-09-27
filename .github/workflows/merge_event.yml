@@ -26,7 +26,8 @@ jobs:
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
       - name: check filename of most recent commit
         run: |
-          git show HEAD^1 --name-only --oneline | tail -1 > /tmp/pathfilename
+          echo "the commit id is: ${{ github.event.commits[0].id}}"
+          git show ${{ github.event.commits[0].id}} --name-only --oneline | tail -1 > /tmp/pathfilename
           cat /tmp/pathfilename
       - name: check if blog and set filecheck file
         run: |
