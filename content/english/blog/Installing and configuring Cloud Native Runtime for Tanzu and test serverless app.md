@@ -10,4 +10,4 @@ location: "https://mappslearning.wordpress.com/2021/09/25/installing-cloud-nativ
 type: "post"
 ---
 
-### Step by Step Instructions to install and configure Cloud Native Runtime for Tanzu on Tanzu Kubernetes Cluster and deploying a sample application to test Serverless
+### Step by Step Instructions to install and configure Cloud Native Runtime for Tanzu on Tanzu Kubernetes Cluster and deploying a sample application to test Serverless 
