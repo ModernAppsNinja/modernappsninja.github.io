@@ -154,7 +154,7 @@ weight = 1205
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "VMware Certified Professional - Application Modernization Study Guide"
-URL = "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
+URL = "https://modernapps.ninja/vcpamstudyguide_am6615/docs/"
 weight = 1210
 
 [[Languages.en.menu.main]]
