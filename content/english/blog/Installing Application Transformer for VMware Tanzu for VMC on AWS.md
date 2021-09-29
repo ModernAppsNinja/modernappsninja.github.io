@@ -10,4 +10,4 @@ location: "https://mappslearning.wordpress.com/2021/09/09/application-transforme
 type: "post"
 ---
 
-### Step by Step instructions to setup application transformer (preview) for VMware Tanzu on VMC on AWS
+### Step by Step instructions to setup application transformer (preview) for VMware Tanzu on VMC on AWS 
