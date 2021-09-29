@@ -149,31 +149,31 @@ weight = 12
 parent = "guides"
 name = "Tanzu at VMworld 2021 Guide"
 URL = "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
-weight = 1203
+weight = 1205
 
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "VMware Certified Professional - Application Modernization Study Guide"
 URL = "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
-weight = 1203
+weight = 1210
 
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Certified Kubernetes Administrator Study Guide"
 URL = "https://modernapps.ninja/ckastudyguide_sg2378/docs/"
-weight = 1205
+weight = 1220
 
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Tanzu Glossary"
 URL = "https://modernapps.ninja/tanzuglossary_tg7721/docs/"
-weight = 1207
+weight = 1225
 
 [[Languages.en.menu.main]]
 parent = "guides"
 name = "Tanzu Standard Getting Started Guide"
 URL = "https://modernapps.ninja/tanzustandardgettingstarted_ts5887/docs/"
-weight = 1204
+weight = 1215
 
 [[Languages.en.menu.main]]
 parent = "guides"
