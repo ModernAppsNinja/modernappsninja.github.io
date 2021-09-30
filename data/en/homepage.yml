@@ -83,13 +83,13 @@ course:
 
 ########################## Call to action ############################
 cta:
-  enable : false
-  subtitle : "Click to learn about Hackathon Week including how to earn up to 6 limited edition Hackathon Digital Badges!"
-  title : "This week is Hackathon Week!"
+  enable : true
+  subtitle : "Click to learn about Tanzu sessions and activities at VMworld 2021!"
+  title : "Join Team Tanzu at VMworld!"
   button:
     enable : true
     label : "Learn More"
-    link : "http://modernapps.ninja/june2021hackathon_hw3657/docs/courseintroduction/"
+    link : "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
 
 ######################## Success story #############################
 success_story:
