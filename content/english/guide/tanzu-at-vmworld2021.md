@@ -19,7 +19,7 @@ fee: "Free!"
 # apply url
 apply_url: "https://modernapps.ninja/tanzu-at-vmworld2021"
 # type
-type: "course"
+type: "guide"
 ### Extended Ninja Course Metadata
 content_id: tv2021
 course_short_title: 

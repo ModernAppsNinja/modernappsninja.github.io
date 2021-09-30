@@ -19,7 +19,7 @@ fee: "Free!"
 # apply url
 apply_url: "https://modernapps.github.io/"
 # type
-type: "course"
+type: "guide"
 ### Extended Ninja Course Metadata
 content_id: tg7721
 course_short_title: 
