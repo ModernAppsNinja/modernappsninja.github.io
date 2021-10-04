@@ -1,5 +1,5 @@
 ---
-title: "Upgrading a TKG 1.11 Management Console installation to 1.12"
+title: "Upgrading a TKGI 1.11 to 1.12 Using the TKGI Management Console"
 date: 2021-10-03
 draft: false
 author: "Chris Little"
