@@ -3,6 +3,7 @@
 ### Hugo Template Metadata
 title: "VMware Tanzu Standard 101"
 date: "2021-03-01T14:21:43Z"
+weight: 5015
 draft: false
 # meta description
 description: "This course provides an introductory technical overview to VMware Tanzu Basic and Tanzu Standard"

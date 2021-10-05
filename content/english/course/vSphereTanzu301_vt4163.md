@@ -3,6 +3,7 @@
 ### Hugo Template Metadata
 title: "vSphere with Tanzu 301"
 date: "2021-02-25T00:41:40Z"
+weight: 5030
 draft: false
 # meta description
 description: "This Course teaches how to install and configure vSphere with Tanzu"
