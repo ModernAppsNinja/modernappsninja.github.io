@@ -3,6 +3,7 @@
 ### Hugo Template Metadata
 title: "ModernApps Skills 101"
 date: "2021-04-21T20:27:58Z"
+weight: 5005
 draft: false
 # meta description
 description: "Introduction to ModernApps Learning by VMware Tanzu"

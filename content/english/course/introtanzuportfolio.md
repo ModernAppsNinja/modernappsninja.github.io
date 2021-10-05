@@ -1,6 +1,7 @@
 ---
 title: "Introduction to the VMware Tanzu Portfolio"
 date: 2019-07-06T15:27:17+06:00
+weight: 5010
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"

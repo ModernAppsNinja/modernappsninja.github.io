@@ -3,6 +3,7 @@
 ### Hugo Template Metadata
 title: "vSphere with Tanzu 201"
 date: "2021-03-20T15:15:37Z"
+weight: 5025
 draft: false
 # meta description
 description: "Technical Introduction to vSphere with Tanzu - Level 201"
