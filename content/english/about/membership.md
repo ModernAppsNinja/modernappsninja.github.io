@@ -19,16 +19,14 @@ description : ""
 
 The Free ModernApps Learning Community Membership unlocks access to many key community assets including:
 
+- Ability to take course tests and request digital badge certificates of completion
+- Access to submit blogs, courses and course contents, access course template and other community resources for contributors
 - Membership in the ModernAppsNinja Github Organization and Members Github Team
 - ModernApps Learning Mailer list emails about community events and key content updates
-- Ability to take course tests and request certificates of completion
 - Member Repository and Github Pages site to display Member Course Records, Completion Certificates and Achievements
 - Access to member discussion boards
-- Access to submit blogs, courses and course contents, access course template and other community resources for contributors
 - Course Enrollment and particpation reflects github commits on Members github profile and listed as contributor on ModernAppsNinja Github Org
 - Access to participatory gitops/devops learning events, hackathons and exercises where members can gain organizational permissions including collaborator and maintainer achievements
-
-Please Note: We are currently making some changes to our backend course hosting, and some courses may require additional registration steps until we complete this transition. If a course requires any additional registration steps, instructions will be provided in the course materials. 
 
 ### How to Register
 
