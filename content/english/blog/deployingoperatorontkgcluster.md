@@ -1,5 +1,5 @@
 ---
-title: "Creat and Deploy Kubernetes Operator on a Tanzu Kubernetes Cluster"
+title: "Create and Deploy Kubernetes Operator on a Tanzu Kubernetes Cluster"
 date: 2021-10-10
 draft: false
 author: "Dinesh Tripathi"
