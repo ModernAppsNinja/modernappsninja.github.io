@@ -160,13 +160,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <!-- event -->
-      <p> </p>
-      {{ range first 3 (where (where .Site.RegularPages "Type" "event").ByDate "Params.date" "ge" now) }}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "event" }}
-      </div>
-      {{ end }}
+      <iframe src="https://calendar.google.com/calendar/embed?src=modernappsninja%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <!-- mobile see all button -->
     <div class="row">

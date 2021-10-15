@@ -83,7 +83,7 @@ course:
 
 ########################## Call to action ############################
 cta:
-  enable : true
+  enable : false
   subtitle : "Click to learn about Tanzu sessions and activities at VMworld 2021!"
   title : "Join Team Tanzu at VMworld!"
   button:
