@@ -1,22 +1,58 @@
 {{ define "main" }}
 
-<!-- events -->
-<section class="section bg-gray">
+<!-- event single -->
+<section class="section-sm">
   <div class="container">
     <div class="row">
-      <!-- event -->
-      {{ range .Data.Pages.ByDate }}
-      <!--{{ if ge (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}-->
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <!--<li>Date: {{ .Date.Format "15:04" }}</li>        
-        <li>Now: {{ now.Format "2006-01-02" }}</li>  -->      
-        {{ .Render "event" }}  
+      <div class="col-12 mb-50 content">
+        <iframe src="https://calendar.google.com/calendar/embed?src=modernappsninja%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
-      <!--{{ end }}-->
+    </div>
+    <!-- event speakers -->
+    <!--<div class="row">
+      <div class="col-12">
+        <h3 class="mb-4">{{ i18n "event_speaker"}}</h3>
+      </div>
+      <!-- speakers 
+      {{ range .Params.Speaker }}
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="media">
+         {{ with .image }}<img class="mr-3 img-fluid" src="{{ . | relURL }}" alt="speaker">{{ end }}
+          <div class="media-body">
+            <h4 class="mt-0">{{ .name }}</h4>
+            {{ .designation }}
+          </div>
+        </div>
+      </div>
       {{ end }}
+      <!-- border 
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
     </div>
   </div>
 </section>
-<!-- /events -->
+<!-- /event single -->
+
+<!-- more event 
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">{{ i18n "more_event" }}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- event 
+      {{ $related := (where site.RegularPages "Type" "event") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
+      {{ range first 3 $related }}
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        {{ .Render "event" }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>-->
+<!-- /more event -->
 
 {{ end }}
