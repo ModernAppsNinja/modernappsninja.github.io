@@ -4,7 +4,7 @@ date: 2021-10-28
 draft: false
 author: "Masanori Nara"
 # taxonomy
-tags: ["tkg", "avs"]
+tags: ["Tanzu Portfolio", "Application Transformer", "Application Modernization"]
 location: "https://www.netone.co.jp/knowledge-center/netone-blog/20211028-1/"
 # type
 type: "post"
