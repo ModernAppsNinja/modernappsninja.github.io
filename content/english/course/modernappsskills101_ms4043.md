@@ -8,7 +8,7 @@ draft: false
 # meta description
 description: "Introduction to ModernApps Learning by VMware Tanzu"
 # course thumbnail
-image: "https://modernapps.ninja/modernappsskills101_ms4043/admin/assets/images/modernappsskills101_ms4043.jpg"
+image: "images/courses/modernappsskills101_ms4043.jpg"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher

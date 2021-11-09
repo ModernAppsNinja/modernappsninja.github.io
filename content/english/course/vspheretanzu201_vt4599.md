@@ -8,7 +8,7 @@ draft: false
 # meta description
 description: "Technical Introduction to vSphere with Tanzu - Level 201"
 # course thumbnail
-image: "https://modernapps.ninja/vspheretanzu201_vt4599/admin/assets/images/vspheretanzu201_vt4599.jpg"
+image: "images/courses/vspheretanzu201.jpg"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
