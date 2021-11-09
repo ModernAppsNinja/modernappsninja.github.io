@@ -8,7 +8,7 @@ draft: false
 # meta description
 description: "This Course teaches how to install and configure vSphere with Tanzu"
 # course thumbnail
-image: "https://modernapps.ninja/vSphereTanzu301_vt4163/admin/assets/images/vSphereTanzu301_vt4163.jpg"
+image: "images/courses/vspheretanzu301.jpg"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
