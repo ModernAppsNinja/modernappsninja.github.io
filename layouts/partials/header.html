@@ -25,15 +25,15 @@
   </div>
   {{ end }}-->
   <!-- navbar -->
-  <div class="navigation w-100 {{ if site.Params.top_header }} top-hider {{ end }}">
+  <div class="w-100 bg-secondary {{ if site.Params.top_header }} top-hider {{ end }}">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid"
             src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+        <!-- <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
         <div class="collapse navbar-collapse text-center" id="navigation">
           <ul class="navbar-nav ml-auto">

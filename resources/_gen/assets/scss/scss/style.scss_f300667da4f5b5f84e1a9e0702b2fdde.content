@@ -15,9 +15,27 @@ VERSION:	Versoin Number
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Light.woff2") format("woff2"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Light.woff") format("woff"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Metropolis';
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Regular.woff2") format("woff2"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Regular.woff") format("woff"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Metropolis';
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Bold.woff2") format("woff2"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Bold.woff") format("woff"), url("https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Bold.ttf") format("truetype"); }
+
 body {
   line-height: 1.2;
-  font-family: "Poppins", sans-serif;
+  font-family: "Metropolis";
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #5c5c77; }
@@ -27,12 +45,12 @@ p, .paragraph {
   color: #5c5c77;
   font-size: 20px;
   line-height: 1.9;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Metropolis"; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "futura-bold";
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.2; }
 
 h1, .h1 {
@@ -68,7 +86,7 @@ h6, .h6 {
 /* Button style */
 .btn {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Metropolis";
   text-transform: capitalize;
   padding: 15px 40px;
   border-radius: 0;
@@ -106,8 +124,8 @@ h6, .h6 {
   padding: 5px 15px; }
 
 .btn-primary {
-  color: #61717d;
-  background-color: #f4f8fa; }
+  color: #fff;
+  background-color: #1d428a; }
   .btn-primary::before {
     background-color: #717074; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active {
@@ -233,6 +251,11 @@ a h4:hover {
 
 .border-primary {
   border-color: #ededf1 !important; }
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px; }
 
 /* overlay */
 .overlay {
@@ -482,8 +505,8 @@ textarea.form-control {
     background: #fff; } }
 
 .navbar-nav {
-  padding-left: 140px;
-  background: #f4f8fa; }
+  padding-left: 30px;
+  padding-top: 6px; }
   @media (max-width: 991px) {
     .navbar-nav {
       padding-left: 0;
@@ -573,7 +596,7 @@ link:focus,
   color: #717074;
   transition: .2s ease;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Metropolis"; }
   @media (max-width: 991px) {
     .navbar .dropdown-item {
       text-align: center; } }

@@ -8,6 +8,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family:'Metropolis';
+  font-style:normal;
+  font-weight:300;
+  src: url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Light.woff2') format('woff2'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Light.woff') format('woff'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Metropolis';
+  font-weight:normal;
+  font-style:normal;
+  src: url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Regular.woff2') format('woff2'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Regular.woff') format('woff'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Metropolis';
+  font-weight:500;
+  font-style:normal;
+  src: url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF2/Metropolis-Bold.woff2') format('woff2'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/WOFF/Metropolis-Bold.woff') format('woff'),
+       url('https://d1fto35gcfffzn.cloudfront.net/tanzu/fonts/Truetype/Metropolis-Bold.ttf') format('truetype');
+}
+
 body {
   line-height: 1.2;
   font-family: $primary-font;
@@ -27,7 +52,7 @@ p, .paragraph {
 h1,h2,h3,h4,h5,h6 {
   color: $text-color-dark;
   font-family: $secondary-font;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.2;
 }
 
