@@ -26,8 +26,8 @@
 }
 
 .navbar-nav {
-  padding-left: 140px;
-  background: $primary-color;
+  padding-left: 30px;
+  padding-top: 6px;
 
   @include desktop {
     padding-left: 0;

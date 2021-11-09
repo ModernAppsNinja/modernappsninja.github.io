@@ -57,13 +57,13 @@
 {{ if $data.homepage.banner_feature.enable }}
 {{ with $data.homepage.banner_feature }}
 <section class="bg-gray overflow-md-hidden">
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-xl-4 col-lg-5 align-self-end">
+  <div class="container-fluid center">
+    <div class="row no-gutters center">
+      <!-- <div class="col-xl-4 col-lg-5 align-self-end">
         <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="banner-feature">
-      </div>
-      <div class="col-xl-8 col-lg-7">
-        <div class="row feature-blocks justify-content-between">
+      </div> -->
+      <div class="col-xl-12">
+        <div class="row justify-content-between">
           {{ range .feature_item }}
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="{{ .icon }} mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
@@ -126,7 +126,7 @@
           <h2 class="section-title">{{ $data.homepage.blog.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{ `blog` | relLangURL }}" class="btn btn-sm btn-light-contrast ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
+            <a href="{{ `blog` | relLangURL }}" class="btn btn-primary">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-sm btn-light-contrast">{{ .label }}</a>
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
