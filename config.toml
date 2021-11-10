@@ -44,6 +44,7 @@ link = "plugins/google-map/gmap.js"
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
+footerlogo = "images/footerlogo.png"
 # Meta data
 description = "Free Courses with an Active Expert Community powered by VMware Tanzu"
 author = "ModernApps Ninja"

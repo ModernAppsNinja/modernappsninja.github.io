@@ -90,7 +90,7 @@
           <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.course.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{ `course` | relLangURL }}" class="btn btn-sm btn-primary ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
+            <a href="{{ `course` | relLangURL }}" class="btn btn-sm btn-outline-blue ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@
           <h2 class="section-title">{{ $data.homepage.blog.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{ `blog` | relLangURL }}" class="btn btn-primary">{{ i18n "see_all" }}</a>
+            <a href="{{ `blog` | relLangURL }}" class="btn btn-outline-blue">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
     <div class="row justify-content-center">
       <!-- blog post -->
       {{ range first 6 (where site.RegularPages "Type" "post")}}
-      <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+      <article class="col-lg-4 col-sm-6 mb-5">
         {{ .Render "post" }}
       </article>
       {{ end }}
@@ -154,7 +154,7 @@
           <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.event.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-primary ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
+            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-blue ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
