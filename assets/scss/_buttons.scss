@@ -55,17 +55,30 @@
   color: $white;
   background-color: $blue;
 
-  &::before {
-    background-color: #717074;
+  &:active,
+  &:hover,
+  &.focus,
+  &:focus,
+  &.active {
+    color: $blue !important;
+    background-color: $white !important;
+    border-color: $blue !important;
+    border: 1px solid $blue;
   }
+}
+
+.btn-outline-blue {
+  color: $blue;
+  background-color: $white;
+  border: 1px solid $blue;
 
   &:active,
   &:hover,
   &.focus,
   &:focus,
   &.active {
-    color: $primary-color !important;
-    background-color: darken($color: $primary-color, $amount: 10) !important;
+    color: $white !important;
+    background-color: $blue !important;
     border-color: darken($color: $primary-color, $amount: 10) !important;
   }
 }

@@ -126,11 +126,19 @@ h6, .h6 {
 .btn-primary {
   color: #fff;
   background-color: #1d428a; }
-  .btn-primary::before {
-    background-color: #717074; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active {
-    color: #f4f8fa !important;
-    background-color: #d1e2ea !important;
+    color: #1d428a !important;
+    background-color: #fff !important;
+    border-color: #1d428a !important;
+    border: 1px solid #1d428a; }
+
+.btn-outline-blue {
+  color: #1d428a;
+  background-color: #fff;
+  border: 1px solid #1d428a; }
+  .btn-outline-blue:active, .btn-outline-blue:hover, .btn-outline-blue.focus, .btn-outline-blue:focus, .btn-outline-blue.active {
+    color: #fff !important;
+    background-color: #1d428a !important;
     border-color: #d1e2ea !important; }
 
 .btn-outline-primary {
@@ -198,6 +206,10 @@ img {
   width: 100%;
   height: 100%; }
 
+.footerlogo {
+  width: 50%;
+  padding-bottom: 90px; }
+
 a,
 a:hover,
 a:focus {
@@ -254,7 +266,7 @@ a h4:hover {
 
 .center {
   margin: auto;
-  width: 80%;
+  width: 77%;
   padding: 10px; }
 
 /* overlay */
@@ -607,7 +619,7 @@ link:focus,
     background: transparent; }
 
 .hero-section {
-  padding: 250px 0 20px; }
+  padding: 150px 0 20px; }
 
 .hero-slider .prevArrow,
 .hero-slider .nextArrow {
