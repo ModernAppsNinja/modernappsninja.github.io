@@ -213,12 +213,6 @@ weight = 1520
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Ask us anything"
-URL = "https://github.com/ModernAppsNinja/modernappsninja.github.io/discussions"
-weight = 1587
-
-[[Languages.en.menu.main]]
-parent = "Learn More"
 name = "Tanzu Documentation"
 URL = "https://docs.vmware.com/en/VMware-Tanzu/index.html"
 weight = 1590
