@@ -1,5 +1,5 @@
 ---
-title: "First Look – Tanzu Build Services and rebuilding Pac-Man"
+title: "First Look – Setup Tanzu Build Services and rebuilding Pac-Man"
 date: 2021-11-11
 draft: false
 author: "Dean Lewis"
