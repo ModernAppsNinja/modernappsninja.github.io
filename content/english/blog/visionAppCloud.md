@@ -1,6 +1,6 @@
 ---
 title: "Video: VMware Vision for App & Cloud Modernization"
-date: 2021-04-23
+date: 2021-11-11
 draft: false
 author: "Raghu Raghuram, Craig McLuckie, Kit Colbert"
 # taxonomy
