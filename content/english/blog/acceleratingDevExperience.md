@@ -1,6 +1,6 @@
 ---
 title: "Video: Accelerating the Developer Experience with Tanzu Build Service and Tanzu Application Catalog"
-date: 2021-04-23
+date: 2021-11-11
 draft: false
 author: "Ryan Baker"
 # taxonomy
