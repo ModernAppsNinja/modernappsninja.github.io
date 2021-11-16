@@ -11,9 +11,9 @@ description : ""
 
 ### Featured Hands-on Labs and Workshops 
 
-VMware Tanzu Basic [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659)
+VMware Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659)
 
-VMware Tanzu Standard [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
+VMware vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
 VMware Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426)
 
