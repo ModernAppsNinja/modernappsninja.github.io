@@ -15,11 +15,11 @@ VMware Tanzu Basic [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/1
 
 VMware Tanzu Standard [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
+VMware Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426)
+
 <!---update [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)_-->
 <!--Checked with Kunal for Guided Demos | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)-->
 VMware Tanzu Mission Control | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
-
-VMware Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW)
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
