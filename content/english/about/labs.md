@@ -13,19 +13,25 @@ description : ""
 
 VMware Tanzu Standard [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
-VMware Tanzu Mission Control [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516) | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)
+# update [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)
+# Checked with Kunal for Guided Demos | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)
+VMware Tanzu Mission Control | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+
+VMware Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW)
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
 VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.com/HOL/catalogs/lab/8743)
 
-VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
+# Edition specific labs launched instead of this - VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
-VMware Tanzu Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/8526) | [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)
+# checked with Kunal [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)
+VMware Tanzu Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/8526) 
 
-VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)
+# Check with Kunal
+# VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)
 
-Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/9312)
+Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657)
 
 Containers Basics [Workshop](https://tanzu.vmware.com/developer/workshops/lab-container-basics/)
 
