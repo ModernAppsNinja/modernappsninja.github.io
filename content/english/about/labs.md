@@ -11,6 +11,8 @@ description : ""
 
 ### Featured Hands-on Labs and Workshops 
 
+VMware Tanzu Basic [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659)
+
 VMware Tanzu Standard [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
 # update [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)
