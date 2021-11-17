@@ -127,8 +127,8 @@ copyright = "Copyright &copy; 2021 VMware"
 
 # main menu
 [[Languages.en.menu.main]]
-name = "About"
-url = "about"
+name = "Labs"
+url = "about/labs"
 weight = 1
 
 [[Languages.en.menu.main]]
@@ -226,9 +226,9 @@ weight = 1585
 
 [[Languages.en.menu.main]]
 parent = "Learn More"
-name = "Workshops and Hands-on Labs"
-URL = "./about/labs"
-weight = 1522
+name = "About"
+URL = "./about"
+weight = 2522
 
 #[[Languages.en.menu.main]]
 #parent = "Learn More"
