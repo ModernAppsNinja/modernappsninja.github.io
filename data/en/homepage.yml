@@ -39,7 +39,7 @@ slider:
 
 ############################### Banner feature ###############################
 banner_feature:
-  enable : true
+  enable : false
   image : "images/banner/banner-feature.png"
   feature_item:
     # feature item loop
