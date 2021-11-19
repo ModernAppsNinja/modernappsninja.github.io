@@ -5,7 +5,7 @@ draft: false
 author: "Steve Pantol"
 # taxonomy
 tags: ["Tanzu Portfolio"]
-location: "https://vmc.techzone.vmware.com/resource/tanzu-explainerg"
+location: "https://vmc.techzone.vmware.com/resource/tanzu-explainer"
 # type
 type: "post"
 ---
