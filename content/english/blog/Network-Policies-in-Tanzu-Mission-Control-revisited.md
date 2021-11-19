@@ -10,4 +10,4 @@ location: "https://cormachogan.com/2021/11/18/network-policies-in-tanzu-mission-
 type: "post"
 ---
 
-Cormac Hogan is a Chief Technologist at VMware. He is the co-author of the “Essential Virtual SAN” and “vSAN 6.7 U1 Deep Dive” books. This is his personal blog, mostly related to VMware technologies in the storage, virtualization and Kubernetes space.
+### Use a pod based NFS server and then control access to it from other pods who wish to mount the NFS file share from the server pod
