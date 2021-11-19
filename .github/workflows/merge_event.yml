@@ -82,6 +82,7 @@ jobs:
           cat /tmp/add_course_team_discussion_response.json
       - name: install tweet.sh and send tweet
         if: env.isblog == 'true'
+        continue-on-error: true
         env: 
           MY_SCREEN_NAME: modernappsninja
           MY_LANGUAGE: EN
