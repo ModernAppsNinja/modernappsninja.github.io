@@ -11,15 +11,15 @@ description : ""
 
 ### Featured Hands-on Labs and Workshops 
 
-Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659)
+Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW)
 
-Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
 vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
-Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426)
+Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW)
 
-Tanzu for Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414)
+Tanzu for Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW)
 
 <!---update [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)_-->
 <!--Checked with Kunal for Guided Demos | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)-->
@@ -36,7 +36,7 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 <!-- Check with Kunal
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
 
-Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657)
+Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657) (NEW)
 
 Containers Basics [Workshop](https://tanzu.vmware.com/developer/workshops/lab-container-basics/)
 
