@@ -11,7 +11,7 @@ slider:
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Register to earn your digital badge"
+        label : "REGISTER NOW"
         link : "https://modernapps.ninja/about/membership/"
 
     # slider item loop
@@ -22,7 +22,7 @@ slider:
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Register to earn your digital badge"
+        label : "REGISTER NOW"
         link : "https://modernapps.ninja/about/membership/"
 
     # slider item loop
@@ -33,7 +33,7 @@ slider:
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Register to earn your digital badge"
+        label : "REGISTER NOW"
         link : "https://modernapps.ninja/about/membership/"
 
 
