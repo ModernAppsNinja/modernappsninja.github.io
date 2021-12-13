@@ -49,7 +49,7 @@ p, .paragraph {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "futura-bold";
+  font-family: "Metropolis";
   font-weight: 300;
   line-height: 1.2; }
 
@@ -319,7 +319,7 @@ a h4:hover {
   color: #000 !important; }
 
 .font-secondary {
-  font-family: "futura-bold"; }
+  font-family: "Metropolis"; }
 
 .mb-10 {
   margin-bottom: 10px !important; }
@@ -769,7 +769,7 @@ link:focus,
 .card-date {
   position: absolute;
   background: #f4f8fa;
-  font-family: "futura-bold";
+  font-family: "Metropolis";
   text-align: center;
   padding: 10px;
   color: #fff;
