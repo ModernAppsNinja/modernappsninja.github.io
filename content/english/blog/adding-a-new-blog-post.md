@@ -87,6 +87,6 @@ Create the pull request by clicking the green button
 ![](/images/blog/adding-a-new-blogpost/7.png)
 
 #### Conclusion
-That is it! Ninja Admins will approve this pull request which will add this blog to the blogs page here: https://modernapps.ninja/blog/
+That is it! The Admins will approve this pull request which will add this blog to the blogs page here: https://modernapps.ninja/blog/
 
 Thank you for helping us build the blog page!
