@@ -25,9 +25,9 @@ Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catal
   
 
 Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
-> Module 1: Cluster lifecycle management\
-> Module 2: Access policies\
-> Module 3: Conformance testing\
+######     Module 1: Cluster lifecycle management
+######     Module 2: Access policies
+######     Module 3: Conformance testing
 
 vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
