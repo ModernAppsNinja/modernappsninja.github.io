@@ -14,6 +14,9 @@ description : ""
 
 
 Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW)
+
+<span style="color:blue">some *blue* text</span>.
+
 <div>
 > Module 1: Working with Management & workload clusters, scale clusters up and down\
 > Module 2: Walkthrough using the GUI to deploy a TKG management and workload cluster\
