@@ -15,14 +15,13 @@ description : ""
 
 Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW)
 
-
-##### > Module 1: Working with Management & workload clusters, scale clusters up and down\
-###### > Module 2: Walkthrough using the GUI to deploy a TKG management and workload cluster\
-###### > Module 3: Deploy a modular container based application using spring-petclinic\
-== > Module 4: Review of NSX Advanced Load Balancer ==\
-> Module 5: Walkthrough using VRealize Log Insight to review Kubernetes logs\
-> Module 6: Deep dive on Harbor Container Registry\
-> Module 7: Walkthrough Octant and use Octant to troubleshoot a multi-tiered application
+###### Module 1: Working with Management & workload clusters, scale clusters up and down
+###### Module 2: Walkthrough using the GUI to deploy a TKG management and workload cluster
+###### Module 3: Deploy a modular container based application using spring-petclinic
+###### Module 4: Review of NSX Advanced Load Balancer
+###### Module 5: Walkthrough using VRealize Log Insight to review Kubernetes logs
+###### Module 6: Deep dive on Harbor Container Registry
+###### Module 7: Walkthrough Octant and use Octant to troubleshoot a multi-tiered application
   
 
 Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
