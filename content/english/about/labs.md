@@ -85,7 +85,7 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 ###### Module 5:	Continuous Delivery with Tanzu	30 min	A
 ###### Module 6:	Introduction to Cloud-Native Runtimes
 
-## More labs and Workshops:
+### More labs and Workshops:
 
 <!-- Check with Kunal. I don't think this link works
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
@@ -115,7 +115,6 @@ Octant [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-start
 
 [Link to all Open Source Based Workshops](https://tanzu.vmware.com/developer/workshops/)
 
-![/about/hol3.ppg](/about/hol3.png)
 
 --------
 
