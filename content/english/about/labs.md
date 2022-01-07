@@ -67,7 +67,7 @@ VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.
 ###### Module 3: Create the Tanzu Kubernetes Cluster	
 ###### Module 4: Login to the Kubernetes Clusters
 
-VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge (http://labs.hol.vmware.com/HOL/catalogs/lab/8664)-->
+VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge (http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 ###### Module 1: Introduction to Tanzu Kubernetes Grid
 ###### Module 2: Working with TKG Clusters 	45 min	I
@@ -85,9 +85,10 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 ###### Module 5:	Continuous Delivery with Tanzu	30 min	A
 ###### Module 6:	Introduction to Cloud-Native Runtimes
 
+## More labs and Workshops:
+
 <!-- Check with Kunal. I don't think this link works
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
-
 
 Containers Basics [Workshop](https://tanzu.vmware.com/developer/workshops/lab-container-basics/)
 
