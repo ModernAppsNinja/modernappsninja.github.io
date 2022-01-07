@@ -29,19 +29,24 @@ Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catal
 ######     Module 2: Access policies
 ######     Module 3: Conformance testing
 
-vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
-
 Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW)
-> Module 1: Spring overview \
-> Module 2: Tanzu Build Service and VMware Application Catalog \
-> Module 3: Cloud-Native runtimes
+###### Module 1: Spring overview 
+###### Module 2: Tanzu Build Service and VMware Application Catalog 
+###### Module 3: Cloud-Native runtimes
 
 Tanzu for Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW)
-> Module 1: Deep dive into Tanzu Mission Control policies\
-> Module 2: Hands-on with Tanzu Observability
+###### Module 1: Deep dive into Tanzu Mission Control policies
+###### Module 2: Hands-on with Tanzu Observability
+
+Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657) (NEW)
+###### Module 1: Walk thru the most commonly used docker and kubernetes commands
+###### Module 2: Learn how to deploy simple applications with Docker and Kubernetes
+###### Module 3: Experience scaling a sample application using the command and Yaml file (new for 2021)
 
 <!---update [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8087)_-->
 <!--Checked with Kunal for Guided Demos | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)-->
+
+vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
@@ -55,10 +60,6 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 <!-- Check with Kunal
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
 
-Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657) (NEW)
-> Module 1: Walk thru the most commonly used docker and kubernetes commands\
-> Module 2: Learn how to deploy simple applications with Docker and Kubernetes\
-> Module 3: Experience scaling a sample application using the command and Yaml file (new for 2021)
 
 Containers Basics [Workshop](https://tanzu.vmware.com/developer/workshops/lab-container-basics/)
 
