@@ -47,17 +47,45 @@ Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com
 <!--Checked with Kunal for Guided Demos | [Guided Demo 1](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraCPMK) | [Guided Demo 2](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTMC)-->
 
 vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu_standard)
+###### Module 1: What is vSphere with Tanzu?
+###### Module 2: What is Tanzu Mission Control (TMC)?
+###### Module 3: Create and configure a Tanzu Kubernetes Cluster
+###### Module 4: Assign permissions to the Kubernetes cluster
+###### Module 5: Install Kubeapps using Helm
+###### Module 6: Deploy WordPress
 
-vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/7811) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/10402) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+###### Module 1: Introduction to vSphere with Tanzu	
+###### Module 2: Managing vSphere with Tanzu	
+###### Module 3: Working with Tanzu Kubernetes Clusters	
+###### Module 4: AI/ML Workloads with GPU in Tanzu
 
 VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.com/HOL/catalogs/lab/8743)
 
-<!-- Edition specific labs launched instead of this - VMware Tanzu Kubernetes Grid [Hands-on Lab](http://labs.hol.vmware.com/HOL/catalogs/lab/8525) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)-->
+###### Module 1: Activate VMware-Managed Kubernetes	
+###### Module 2: Create Namespaces for Workload Clusters	 
+###### Module 3: Create the Tanzu Kubernetes Cluster	
+###### Module 4: Login to the Kubernetes Clusters
+
+<!-- Edition specific labs launched instead of this - VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](http://labs.hol.vmware.com/HOL/catalogs/lab/8664)-->
+
+###### Module 1: Introduction to Tanzu Kubernetes Grid
+###### Module 2: Working with TKG Clusters 	45 min	I
+###### Module 3:	Deploying a Microservice Based Application	45 min	I
+###### Module 4:	TKG Extension & Integrations 	45 min	I
+###### Module 5:	Deploying Management & Workload clusters	30 min	I
+###### Module 6:	Octant - Kubernetes Visual Interface 
 
 <!--checked with Kunal [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)-->
-VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/8526) 
+VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) 
+###### Module 1: Introduction to Tanzu
+###### Module 2:	Spring Overview 	30 min	A
+###### Module 3:	Automated Container Creation with Tanzu	30 min	A
+###### Module 4:	VMware Application Catalog (VAC)	30 min	A
+###### Module 5:	Continuous Delivery with Tanzu	30 min	A
+###### Module 6:	Introduction to Cloud-Native Runtimes
 
-<!-- Check with Kunal
+<!-- Check with Kunal. I don't think this link works
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
 
 
