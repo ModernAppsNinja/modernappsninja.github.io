@@ -85,7 +85,8 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 ###### Module 5:	Continuous Delivery with Tanzu	30 min	A
 ###### Module 6:	Introduction to Cloud-Native Runtimes
 
-###
+\
+\
 ### More labs and Workshops:
 
 <!-- Check with Kunal. I don't think this link works
