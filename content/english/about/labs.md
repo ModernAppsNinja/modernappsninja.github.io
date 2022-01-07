@@ -85,6 +85,7 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 ###### Module 5:	Continuous Delivery with Tanzu	30 min	A
 ###### Module 6:	Introduction to Cloud-Native Runtimes
 
+###
 ### More labs and Workshops:
 
 <!-- Check with Kunal. I don't think this link works
@@ -107,7 +108,7 @@ Tanzu Service Mesh [Interactive Simulation](http://labs.hol.vmware.com/HOL/catal
 Octant [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-started-with-octant/)
 
 
-### Lab and Workshop Collections
+### Useful links
 
 [Link to all Tanzu Hands-on labs](https://labs.hol.vmware.com/HOL/catalogs/catalog/1886)
 
