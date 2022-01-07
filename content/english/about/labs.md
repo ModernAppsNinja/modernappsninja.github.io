@@ -67,7 +67,7 @@ VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.
 ###### Module 3: Create the Tanzu Kubernetes Cluster	
 ###### Module 4: Login to the Kubernetes Clusters
 
-VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge (http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
+VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge] (http://labs.hol.vmware.com/HOL/catalogs/lab/8664)
 
 ###### Module 1: Introduction to Tanzu Kubernetes Grid
 ###### Module 2: Working with TKG Clusters 	45 min	I
