@@ -70,24 +70,24 @@ VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.
 VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
 
 ###### Module 1: Introduction to Tanzu Kubernetes Grid
-###### Module 2: Working with TKG Clusters 	45 min	I
-###### Module 3:	Deploying a Microservice Based Application	45 min	I
-###### Module 4:	TKG Extension & Integrations 	45 min	I
-###### Module 5:	Deploying Management & Workload clusters	30 min	I
+###### Module 2: Working with TKG Clusters 	
+###### Module 3:	Deploying a Microservice Based Application	
+###### Module 4:	TKG Extension & Integrations 	
+###### Module 5:	Deploying Management & Workload clusters
 ###### Module 6:	Octant - Kubernetes Visual Interface 
 
 <!--checked with Kunal [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)-->
 VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) 
 ###### Module 1: Introduction to Tanzu
-###### Module 2:	Spring Overview 	30 min	A
-###### Module 3:	Automated Container Creation with Tanzu	30 min	A
-###### Module 4:	VMware Application Catalog (VAC)	30 min	A
-###### Module 5:	Continuous Delivery with Tanzu	30 min	A
-###### Module 6:	Introduction to Cloud-Native Runtimes
+###### Module 2: Spring Overview
+###### Module 3:	Automated Container Creation with Tanzu	
+###### Module 4:	VMware Application Catalog (VAC)	
+###### Module 5:	Continuous Delivery with Tanzu
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ###### Module 6:	Introduction to Cloud-Native Runtimes
 
-\
+<br />
 
-### More labs and Workshops:
+### More labs and workshops:
 
 <!-- Check with Kunal. I don't think this link works
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
