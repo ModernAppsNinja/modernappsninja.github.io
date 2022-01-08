@@ -20,13 +20,8 @@ Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.c
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4:	Tanzu Observability Advanced
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5:	Introduction to Tanzu Service Mesh
 
-<href="https://youtu.be/Uqtx282a0LQ"><img src="https://i.ytimg.com/vi/Uqtx282a0LQ/mqdefault.jpg" width="50">
-[![Tanzu for Kubernetes Platform Operators](https://img.youtube.com/vi/Uqtx282a0LQ/0.jpg =250x)](https://youtu.be/Uqtx282a0LQ)
-[![Tanzu for Kubernetes Platform Operators](https://img.youtube.com/vi/Uqtx282a0LQ/1.jpg)](https://youtu.be/Uqtx282a0LQ)
-[![Tanzu for Kubernetes Platform Operators](https://img.youtube.com/vi/Uqtx282a0LQ/2.jpg)](https://youtu.be/Uqtx282a0LQ)
-[![Tanzu for Kubernetes Platform Operators](https://img.youtube.com/vi/Uqtx282a0LQ/3.jpg)](https://youtu.be/Uqtx282a0LQ)
 
-[![Tanzu for Kubernetes Platform Operators](https://i.ytimg.com/vi/Uqtx282a0LQ/mqdefault.jpg)](https://youtu.be/Uqtx282a0LQ)
+[![Tanzu for Kubernetes Platform Operators](https://i.ytimg.com/vi/Uqtx282a0LQ/mqdefault.jpg){ width=50% }](https://youtu.be/Uqtx282a0LQ)
 
 
 
