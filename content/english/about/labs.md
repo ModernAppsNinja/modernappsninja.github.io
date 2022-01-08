@@ -11,6 +11,7 @@ description : ""
 
 ### Featured Hands-on Labs and Workshops 
 #### These labs are broken down into small, consumable modules which roll up into the lab objectives
+---
 
 
 Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW)
@@ -108,6 +109,8 @@ Octant [Workshop](https://tanzu.vmware.com/developer/workshops/lab-getting-start
 
 <!-- Check with Kunal. I don't think this link works
 # VMware Tanzu Oberservability [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTOK)-->
+
+---
 
 
 ### Useful links
