@@ -19,6 +19,7 @@ Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.c
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3:	Introduction to Tanzu Observability
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4:	Tanzu Observability Advanced
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5:	Introduction to Tanzu Service Mesh
+[![Tanzu for Kubernetes Platform Operators](https://img.youtube.com/vi/Uqtx282a0LQ/0.jpg)](https://youtu.be/Uqtx282a0LQ)
 
 
 Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW 2022)
