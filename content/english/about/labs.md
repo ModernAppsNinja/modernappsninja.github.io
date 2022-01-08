@@ -9,9 +9,8 @@ image: "/about/hol2.png"
 description : ""
 ---
 
-### Featured Hands-on Labs and Workshops 
-#### Gain practical hands-on experience or evaluate the key features of Tanzu products by taking these labs. All these labs are broken down into small, consumable modules that can be taken indipendetly. Choose from from live labs, workshops and interactive simulations. Up and running on any browser in minutes and 100% free.
-No installation, licenses, or special hardware required.
+## Featured Hands-on Labs and Workshops 
+#### Gain practical hands-on experience or evaluate the key features of Tanzu products by taking these labs. All these labs are broken down into small, consumable modules that can be taken indipendetly. Choose from from live labs, workshops and interactive simulations. Up and running on any browser in minutes and 100% free. No installation, licenses, or special hardware required.
 ---
 
 
