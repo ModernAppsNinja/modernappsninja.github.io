@@ -22,9 +22,6 @@ Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.c
 
 [![Tanzu for Kubernetes Platform Operators](https://i.ytimg.com/vi/Uqtx282a0LQ/mqdefault.jpg)](https://youtu.be/Uqtx282a0LQ)
 
-<div style="width:50%">[![Tanzu for Kubernetes Platform Operators](https://i.ytimg.com/vi/Uqtx282a0LQ/mqdefault.jpg)](https://youtu.be/Uqtx282a0LQ)</div>
-
-
 
 
 Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW 2022)
