@@ -26,16 +26,15 @@ Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Tanzu Build Service and VMware Application Catalog 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Introduction to Cloud-Native runtimes
 
-Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW 2022)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Working with Management & workload clusters, scale clusters up and down
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Walkthrough using the GUI to deploy a TKG management and workload cluster
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Deploy a modular container based application using spring-petclinic
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: Review of NSX Advanced Load Balancer
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Walkthrough using VRealize Log Insight to review Kubernetes logs
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Deep dive on Harbor Container Registry
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 7: Walkthrough Octant and use Octant to troubleshoot a multi-tiered application
   
+VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu Kubernetes Grid
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Working with TKG Clusters 	
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3:	Deploying a Microservice Based Application	
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4:	TKG Extension & Integrations 	
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5:	Deploying Management & Workload clusters
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6:	Octant - Kubernetes Visual Interface 
+
 
 Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 ######     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Cluster lifecycle management
@@ -66,20 +65,11 @@ vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/cat
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: AI/ML Workloads with GPU in Tanzu
 
 VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.com/HOL/catalogs/lab/8743)
-
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Activate VMware-Managed Kubernetes	
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Create Namespaces for Workload Clusters	 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Create the Tanzu Kubernetes Cluster	
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: Login to the Kubernetes Clusters
 
-VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu Kubernetes Grid
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Working with TKG Clusters 	
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3:	Deploying a Microservice Based Application	
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4:	TKG Extension & Integrations 	
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5:	Deploying Management & Workload clusters
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6:	Octant - Kubernetes Visual Interface 
 
 <!--checked with Kunal [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)-->
 VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) 
