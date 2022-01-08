@@ -82,7 +82,7 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 ###### Module 2: Spring Overview
 ###### Module 3:	Automated Container Creation with Tanzu	
 ###### Module 4:	VMware Application Catalog (VAC)	
-###### Module 5:	Continuous Delivery with Tanzu
+:   ###### Module 5:	Continuous Delivery with Tanzu
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ###### Module 6:	Introduction to Cloud-Native Runtimes
 
 <br />
