@@ -13,8 +13,20 @@ description : ""
 #### Gain practical hands-on experience or evaluate the key features of Tanzu products by taking these labs. All these labs are broken down into small, consumable modules that can be taken indipendetly. Choose from from live labs, workshops and interactive simulations. Up and running on any browser in minutes and 100% free. No installation, licenses, or special hardware required.
 ---
 
+Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Platform Operators
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2:	Working with Comprehensive Tanzu Mission Control Policies
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3:	Introduction to Tanzu Observability
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4:	Tanzu Observability Advanced
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5:	Introduction to Tanzu Service Mesh
 
-Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW)
+
+Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW 2022)
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Spring 
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Tanzu Build Service and VMware Application Catalog 
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Introduction to Cloud-Native runtimes
+
+Tanzu Kubernetes Grid (TKG) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) (NEW 2022)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Working with Management & workload clusters, scale clusters up and down
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Walkthrough using the GUI to deploy a TKG management and workload cluster
@@ -30,14 +42,6 @@ Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catal
 ######     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Access policies
 ######     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Conformance testing
 
-Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW)
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Spring overview 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Tanzu Build Service and VMware Application Catalog 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Cloud-Native runtimes
-
-Tanzu for Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW)
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Deep dive into Tanzu Mission Control policies
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Hands-on with Tanzu Observability
 
 Containers, Docker and Kubernetes 101 [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10657) (NEW)
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Walk thru the most commonly used docker and kubernetes commands
