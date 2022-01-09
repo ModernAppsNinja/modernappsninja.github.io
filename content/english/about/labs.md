@@ -17,7 +17,7 @@ description: ""
 
 Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
 
-{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 40 Uqtx282a0LQ >}}
+{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 Uqtx282a0LQ >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Platform Operators
 
@@ -39,6 +39,8 @@ Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab
 
 VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
 
+{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 fr1zDbObd70 >}}
+
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu Kubernetes Grid
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Working with TKG Clusters
@@ -52,6 +54,8 @@ VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/cata
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Octant - Kubernetes Visual Interface
 
 Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
+
+{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 1ZWlwSGfKeE >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Cluster lifecycle management
 
@@ -85,6 +89,8 @@ vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://path
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Deploy WordPress
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/10402) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
+
+{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 Rm3jKLqzfCE >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to vSphere with Tanzu
 
