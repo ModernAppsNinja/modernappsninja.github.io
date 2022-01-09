@@ -17,7 +17,7 @@ description: ""
 
 Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
 
-{{< imgsizer "https://imgur.com/OglhvIS" "Tanzu for Kubernetes Platform Operators" 40 Uqtx282a0LQ >}}
+{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 40 Uqtx282a0LQ >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Platform Operators
 
