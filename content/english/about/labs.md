@@ -126,6 +126,13 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Introduction to Cloud-Native Runtimes
 
+
+Tanzu Observability [Free Trial with embedded workshop](https://tanzu.vmware.com/observability-trial)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Create your first Metric
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Create your first Dashboard
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Create Alerts
+
 ---
 
 ### More labs and workshops:
