@@ -1,15 +1,8 @@
-<script type="text/javascript">
-  function displayIframe() {
-    document.getElementById("iframeDisplay").innerHTML =
-      '<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ index .Params 3}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;';
-  }
-</script>
-
-<div id="iframeDisplay">
+<div id="{{ index .Params 3}}">
   <img
     src="{{ index .Params 0 }}"
     alt="{{ index .Params 1 }}"
     style="width:{{index .Params 2 }}%;height:auto;"
-    onclick="displayIframe()"
+    onclick="displayIframe({{ index .Params 3}})"
   />
 </div>
