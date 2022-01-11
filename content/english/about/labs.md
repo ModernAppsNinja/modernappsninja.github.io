@@ -9,6 +9,8 @@ image: "/about/hol2.png"
 description: ""
 ---
 
+{{< displayIframe >}}
+
 ## Featured Hands-on Labs and Workshops
 
 #### Gain practical hands-on experience or evaluate the key features of Tanzu products by taking these labs. All these labs are broken down into small, consumable modules that can be taken indipendetly. Choose from from live labs, workshops and interactive simulations. Up and running on any browser in minutes and 100% free. No installation, licenses, or special hardware required.
@@ -17,7 +19,7 @@ description: ""
 
 Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
 
-{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 Uqtx282a0LQ >}}
+{{< utube Uqtx282a0LQ >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Platform Operators
 
@@ -39,7 +41,7 @@ Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab
 
 VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
 
-{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 fr1zDbObd70 >}}
+{{< utube fr1zDbObd70 >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu Kubernetes Grid
 
@@ -55,7 +57,7 @@ VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/cata
 
 Tanzu Mission Control (TMC) [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10506) (NEW) | [TestDrive Lab](https://pathfinder.vmware.com/path/tanzu) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8516)
 
-{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 1ZWlwSGfKeE >}}
+{{< utube 1ZWlwSGfKeE >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Cluster lifecycle management
 
@@ -90,7 +92,7 @@ vSphere with Tanzu with Tanzu Mission Control (TMC) [TestDrive Lab](https://path
 
 vSphere with Tanzu [Hands-on Lab](https://www.vmwarelearningplatform.com/HOL/catalogs/lab/10402) | [Interactive Simulation](http://labs.hol.vmware.com/HOL/catalogs/lab/8897)
 
-{{< imgsizer "https://i.imgur.com/OglhvIS.png" "Tanzu for Kubernetes Platform Operators" 50 Rm3jKLqzfCE >}}
+{{< utube Rm3jKLqzfCE >}}
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to vSphere with Tanzu
 
@@ -126,11 +128,12 @@ VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Introduction to Cloud-Native Runtimes
 
-
 Tanzu Observability [Free Trial with embedded workshop](https://tanzu.vmware.com/observability-trial)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Create your first Metric
+
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Create your first Dashboard
+
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Create Alerts
 
 ---
