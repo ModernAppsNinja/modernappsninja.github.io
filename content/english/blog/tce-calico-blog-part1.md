@@ -10,4 +10,6 @@ location: "https://www.sevenlogic.io/post/calico-networking-with-tanzu-community
 type: "post"
 ---
 
-### Learn how to install Calico CNI with TCE
+
+### Learn how to install the Calico CNI with TCE
+
