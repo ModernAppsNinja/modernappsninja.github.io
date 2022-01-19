@@ -28,6 +28,10 @@ type: "course"
 
 This course provides a high level introduction to the the Tanzu Family of products, the vision for the portfolio, and a brief introduction to each of the products & solutions in the portfolio. 
 
+## Important Notice: 
+
+**The Enrollment, testing and digital badge features will be removed from all courses on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.**
+
 ### About Course
 
 Welcome to the Introduction to the VMware Tanzu Portfolio Course.
