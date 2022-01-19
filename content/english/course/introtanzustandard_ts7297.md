@@ -27,7 +27,11 @@ course_short_title: introtanzustandard
 course_navbar_title: Intro to Tanzu Standard
 course_repo_name: introtanzustandard_ts7297
 ---  
-  
+
+## Important Notice: 
+
+**The Enrollment, testing and digital badge features will be removed on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.**
+
 ### About Course
 
 This course provides a technical introduction to VMware Tanzu Standard edition, including vSphere with Tanzu, Tanzu Kubernetes Grid, and Tanzu Mission Control. 
