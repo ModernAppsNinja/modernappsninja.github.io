@@ -26,6 +26,9 @@ apply_url : "https://modernapps.ninja/vspheretanzu101_vt7301/"
 type: "course"
 ---
 
+## Important Notice: 
+
+**The Enrollment, testing and digital badge features will be removed on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.**
 
 ### About Course
 
