@@ -27,7 +27,10 @@ course_short_title: modernappsskills101
 course_navbar_title: ModernApps Skills 101
 course_repo_name: modernappsskills101_ms4043
 ---  
-  
+
+## Important Notice: 
+
+**The Enrollment, testing and digital badge features will be removed on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.**
   
 ### About Course
 This course provides an introduction to the ModernApps Learning community. The community is much more than just content and is really intended to be an active community of professionals learning and working towards applying new skills in cloud native technologies.
