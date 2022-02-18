@@ -1,6 +1,6 @@
 ---
 title: "Managing Kubernetes clusters in Tanzu Mission Control using Terraform provider"
-date: 2021-01-23
+date: 2022-02-17
 draft: false
 author: "Ninja Admins #changeme"
 # taxonomy
