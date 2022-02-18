@@ -2,7 +2,7 @@
 title: "Managing Kubernetes clusters in Tanzu Mission Control using Terraform provider"
 date: 2022-02-17
 draft: false
-author: "Ninja Admins #changeme"
+author: "Dinesh Tripathi"
 # taxonomy
 tags: ["Tanzu Portfolio", "Tanzu Mission Control", "Terraform", "DevOps"]
 location: "https://mappslearning.com/2022/02/15/managing-kubernetes-clusters-in-tanzu-mission-control-tmc-using-this-terraform-provider/"
