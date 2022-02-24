@@ -1,0 +1,7 @@
+name: 'install yq'
+description: 'install the yq tool in current VM'
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/run.sh
+      shell: bash
