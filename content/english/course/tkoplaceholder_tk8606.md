@@ -30,52 +30,52 @@ course_repo_name: tkoplaceholder_tk8606
   
 ### About Course
 
-This course provides a technical introduction to VMware Tanzu Kubernetes Operations (TKO)
+This course provides a technical introduction to VMware Tanzu Kubernetes Operations (TKO)  
 
-Tanzu for Kubernetes Operations (TKO) aims to meet the needs of on-premise and public cloud infrastructure teams.  
+Tanzu for Kubernetes Operations (TKO) aims to meet the needs of on-premise and public cloud infrastructure teams.    
 
-TKO addresses Developer self-service to the right infrastructure abstraction and app building blocks:
+TKO addresses Developer self-service to the right infrastructure abstraction and app building blocks:  
 
-Automation and monitoring of cloud platform operations
-Enforcement of Networking, security and compliance requirements
-Platform operation cost optimization
+Automation and monitoring of cloud platform operations. 
+Enforcement of Networking, security and compliance requirements. 
+Platform operation cost optimization.  
 
-Tanzu Kubernetes Operations Contains:  
+Tanzu Kubernetes Operations Contains:    
 
-Tanzu Mission Control (TMC) Advanced - Includes additional functionality around policies.  (https://docs.vmware.com/en/VMware-Tanzu-Mission-Control/services/tanzumc-concepts/GUID-2CA211CD-E62C-46E1-918F-B511C80F906D.html)
-Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features. See Link highlighting TSM Advanced vs Enterprise editions.
-Antrea Advanced - Offers Tier RBAC policy control and Wavefront Integration. See Datasheet for different Antrea offerings and details. See tech talk on Antrea Networking & Tier RBAC.a
-AVI Enterprise (aka AVI Vantage/NSX Advanced Load Balancer) - Full featured L7 Container Ingress with WAF support for On-Premise. See Datasheet for complete feature list and editions comparison.
+Tanzu Mission Control (TMC) Advanced - Includes additional functionality around policies.  (https://docs.vmware.com/en/VMware-Tanzu-Mission-Control/services/tanzumc-concepts/GUID-2CA211CD-E62C-46E1-918F-B511C80F906D.html).  
+Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features. See Link highlighting TSM Advanced vs Enterprise editions.   
+Antrea Advanced - Offers Tier RBAC policy control and Wavefront Integration.   
+AVI Enterprise (aka AVI Vantage/NSX Advanced Load Balancer) - Full featured L7 Container Ingress with WAF support for On-Premise. See Datasheet for complete feature list and editions comparison.  
 
-Thank you for investing your time!
+Thank you for investing your time!  
 
 
 ### Requirements/Pre-requisites
 
 We recommend taking the [Introduction to VMware Tanzu
 Portfolio](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/course/) course
-prior to taking this course.
+prior to taking this course.  
 
-This course assumes familiarity witha the basic components which make up Tanzu Kubernetes Operations:
-- Tanzu Kubernetes Grid
-- Tanzu Mission Control
-- Tanzu Observability
-- Tanzu Service Mesh
-- Avi/NSX Load Balancer
+This course assumes familiarity witha the basic components which make up Tanzu Kubernetes Operations:  
+- Tanzu Kubernetes Grid. 
+- Tanzu Mission Control. 
+- Tanzu Observability. 
+- Tanzu Service Mesh. 
+- Avi/NSX Load Balancer. 
 
-If you do not have a conversational level of knowledge about these technologies you may benefit from reviewing the following:
+If you do not have a conversational level of knowledge about these technologies you may benefit from reviewing the following:   
 
-For Tanzu Kubernetes Grid (https://tanzu.vmware.com/kubernetes-grid) and the Hands On Lab #2234
-For Tanzu Mission Control (https://tanzu.vmware.com/mission-control) and the Hands On Lab #2234
-For Tanzu Observability
-For Tanzu Service Mesh
-For Avi: (https://avinetworks.com/education/)
+For Tanzu Kubernetes Grid (https://tanzu.vmware.com/kubernetes-grid) and the Hands On Lab #2234. 
+For Tanzu Mission Control (https://tanzu.vmware.com/mission-control) and the Hands On Lab #2234. 
+For Tanzu Observability. 
+For Tanzu Service Mesh.  
+For Avi: (https://avinetworks.com/education/).  
 
-You may also want to familarize yourself with the Tanzu portfolio and  TKO labs on Pathfinder:
+You may also want to familarize yourself with the Tanzu portfolio and  TKO labs on Pathfinder:   
 
-Tanzu Standard [https://pathfinder.vmware.com/path/tanzu_standard] (https://pathfinder.vmware.com/path/tanzu_standard)
-TKO (https://pathfinder.vmware.com/v3/path/tko_path)
-AVI/NSX Load Balancer (https://pathfinder.vmware.com/v3/path/nsxbc)
+Tanzu Standard [https://pathfinder.vmware.com/path/tanzu_standard] (https://pathfinder.vmware.com/path/tanzu_standard).  
+TKO (https://pathfinder.vmware.com/v3/path/tko_path).  
+AVI/NSX Load Balancer (https://pathfinder.vmware.com/v3/path/nsxbc).  
 
 
 Additonally some  familarity with  Kubernetes and Cloud Native
