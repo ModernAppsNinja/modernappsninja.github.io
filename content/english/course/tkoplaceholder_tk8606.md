@@ -90,4 +90,4 @@ administration. If you need additional background in vSphere, we
 recommend checking out [VMware Hands on Labs](https://hol.vmware.com),
 which offers a number of vSphere labs and content including labs which cover TKO and the components which comprise the bundle.
 
-### [Please Click Here to Start the Course!](https://modernapps.ninja/${course_repo_name}/)
+### [Please Click Here to Start the Course!](https://modernapps.ninja/tkoplaceholder_tk8606/)
