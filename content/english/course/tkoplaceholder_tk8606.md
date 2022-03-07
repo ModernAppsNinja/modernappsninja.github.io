@@ -8,7 +8,7 @@ weight: 5014
 # meta description
 description: "Tanzu Kubernetes Operations"
 # course thumbnail
-image: "images/courses/intrototko.png"
+image: "images/courses/IntroToTko.png"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
