@@ -5,9 +5,9 @@ title: "Introduction to Tanzu Kubernetes Operations"
 date: "2022-02-14T21:43:12Z"
 draft: false
 # meta description
-description: "TKO Placeholder"
+description: "Tanzu Kubernetes Operations"
 # course thumbnail
-image: "https://modernapps.ninja/tkoplaceholder_tk8606/admin/assets/images/tkoplaceholder_tk8606.jpg"
+image: "images/courses/introtanzustandard_ts7297.jpg"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
