@@ -7,7 +7,7 @@ draft: false
 # meta description
 description: "Tanzu Kubernetes Operations"
 # course thumbnail
-image: "images/courses/introtanzustandard_ts7297.jpg"
+image: "images/courses/TKOImage.png"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
