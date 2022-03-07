@@ -43,9 +43,9 @@ Platform operation cost optimization.
 Tanzu Kubernetes Operations Contains:    
 
 Tanzu Mission Control (TMC) Advanced - Includes additional functionality around policies.  (https://docs.vmware.com/en/VMware-Tanzu-Mission-Control/services/tanzumc-concepts/GUID-2CA211CD-E62C-46E1-918F-B511C80F906D.html).  
-Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features. See Link highlighting TSM Advanced vs Enterprise editions.   
+Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features. 
 Antrea Advanced - Offers Tier RBAC policy control and Wavefront Integration.   
-AVI Enterprise (aka AVI Vantage/NSX Advanced Load Balancer) - Full featured L7 Container Ingress with WAF support for On-Premise. See Datasheet for complete feature list and editions comparison.  
+AVI Enterprise (aka AVI Vantage/NSX Advanced Load Balancer) - Full featured L7 Container Ingress with WAF support for On-Premise. 
 
 Thank you for investing your time!  
 
@@ -67,8 +67,6 @@ If you do not have a conversational level of knowledge about these technologies 
 
 For Tanzu Kubernetes Grid (https://tanzu.vmware.com/kubernetes-grid) and the Hands On Lab #2234. 
 For Tanzu Mission Control (https://tanzu.vmware.com/mission-control) and the Hands On Lab #2234. 
-For Tanzu Observability. 
-For Tanzu Service Mesh.  
 For Avi: (https://avinetworks.com/education/).  
 
 You may also want to familarize yourself with the Tanzu portfolio and  TKO labs on Pathfinder:   
