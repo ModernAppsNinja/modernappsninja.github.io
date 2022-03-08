@@ -1,12 +1,12 @@
 ---
 ## This Document Provides the Front Matter and Metadata for the Course Information page used in the modernapps.ninja homepage and the member profile page.
 ### Hugo Template Metadata
-title: "Introduction to Tanzu Kubernetes Operations"
+title: "Introduction to Tanzu for Kubernetes Operations"
 date: "2022-02-14T21:43:12Z"
 draft: false
 weight: 5014
 # meta description
-description: "Tanzu Kubernetes Operations"
+description: "Tanzu for Kubernetes Operations"
 # course thumbnail
 image: "images/courses/IntroToTko.png"
 # taxonomy
@@ -30,7 +30,7 @@ course_repo_name: tkoplaceholder_tk8606
 
 ### About Course
 
-This course provides a technical introduction to VMware Tanzu Kubernetes Operations (TKO)
+This course provides a technical introduction to VMware Tanzu for Kubernetes Operations (TKO)
 
 Tanzu for Kubernetes Operations (TKO) aims to meet the needs of on-premise and public cloud infrastructure teams.
 
@@ -40,7 +40,7 @@ Automation and monitoring of cloud platform operations.
 Enforcement of Networking, security and compliance requirements.
 Platform operation cost optimization.
 
-Tanzu Kubernetes Operations Contains:
+Tanzu for Kubernetes Operations Contains:
 
 Tanzu Mission Control (TMC) Advanced - Includes additional functionality around policies.
 Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features.
@@ -63,17 +63,7 @@ This course assumes familiarity witha the basic components which make up Tanzu K
 - Tanzu Service Mesh.
 - Avi/NSX Load Balancer.
 
-If you do not have a conversational level of knowledge about these technologies you may benefit from reviewing the following:
 
-For Tanzu Kubernetes Grid (https://tanzu.vmware.com/kubernetes-grid) and the Hands On Lab #2234.
-For Tanzu Mission Control (https://tanzu.vmware.com/mission-control) and the Hands On Lab #2234.
-For Avi: (https://avinetworks.com/education/).
-
-You may also want to familarize yourself with the Tanzu portfolio and TKO labs on Pathfinder:
-
-Tanzu Standard [https://pathfinder.vmware.com/path/tanzu_standard] (https://pathfinder.vmware.com/path/tanzu_standard).  
-TKO (https://pathfinder.vmware.com/v3/path/tko_path).  
-AVI/NSX Load Balancer (https://pathfinder.vmware.com/v3/path/nsxbc).
 
 Additonally some familarity with Kubernetes and Cloud Native
 Technologies. If you are not familiar with these technologies, we
