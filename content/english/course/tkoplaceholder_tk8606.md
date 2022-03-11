@@ -18,7 +18,7 @@ duration: "0 Hours"
 # course fee
 fee: "Free!"
 # apply url
-apply_url: "https://modernapps.github.io/tkoplaceholder_tk8606"
+apply_url: "https://modernapps.github.io/intrototko_tk5598"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
@@ -69,4 +69,4 @@ administration. If you need additional background in vSphere, we
 recommend checking out [VMware Hands on Labs](https://hol.vmware.com),
 which offers a number of vSphere labs and content including labs which cover TKO and the components which comprise the bundle.
 
-### [Please Click Here to Start the Course!](https://modernapps.ninja/tkoplaceholder_tk8606/)
+### [Please Click Here to Start the Course!](https://modernapps.ninja/intrototko_tk5598/)
