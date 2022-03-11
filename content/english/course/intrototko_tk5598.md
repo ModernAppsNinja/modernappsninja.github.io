@@ -1,13 +1,14 @@
 ---
 ## This Document Provides the Front Matter and Metadata for the Course Information page used in the modernapps.ninja homepage and the member profile page.
 ### Hugo Template Metadata
-title: "Intro to Tanzu for Kubernetes Operations"
-date: "2022-03-11T17:02:24Z"
-draft: true
+title: "Introduction to Tanzu for Kubernetes Operations"
+date: "2022-02-14T21:43:12Z"
+draft: false
+weight: 5014
 # meta description
-description: "Introduction to VMware Tanzu for Kubernetes Operations"
+description: "Tanzu for Kubernetes Operations"
 # course thumbnail
-image: "https://modernapps.ninja/intrototko_tk5598/admin/assets/images/intrototko_tk5598.jpg"
+image: "images/courses/IntroToTko.png"
 # taxonomy
 tags: ["Tanzu Portfiolio"]
 # teacher
@@ -21,25 +22,51 @@ apply_url: "https://modernapps.github.io/intrototko_tk5598"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
-content_id: tk5598
-course_short_title: intrototko
-course_navbar_title: Intro to TKO
-course_repo_name: intrototko_tk5598
----  
-  
-  
+content_id: tk8606
+course_short_title: tkoplaceholder
+course_navbar_title: TKO Placeholder
+course_repo_name: tkoplaceholder_tk8606
+---
+
 ### About Course
 
-vSphere with Tanzu: application-focused management for streamlined development, agile operations, and accelerated innovation. Applications can be deployed using any combination of virtual machines, containers and Kubernetes.
+This course provides a technical introduction to VMware Tanzu for Kubernetes Operations (TKO)
 
-### Requirements
+Tanzu for Kubernetes Operations (TKO) aims to meet the needs of on-premise and public cloud infrastructure teams.
 
-We recommend taking the Introduction to VMware Tanzu Portfolio course prior to taking the vSphere with Tanzu 101 course.
+TKO addresses Developer self-service to the right infrastructure abstraction and app building blocks:
 
-We also recommend completing the ModernApps Ninja 101 course to learn about the community resources available to support this course and maximize your learning experience.
+Automation and monitoring of cloud platform operations.
+Enforcement of Networking, security and compliance requirements.
+Platform operation cost optimization.
 
-This course assumes familiarity with Kubernetes and Cloud Native Technologies. If you are not familiar with these technologies, we recommend checking out KubeAcademy by VMware, which has a terrific set of free, bite-size video resources on the basics of containers, Kubernetes and cloud native that are great for beginners.
+Tanzu for Kubernetes Operations Contains:
 
-Before taking this course, you should also have familiarity with vSphere administration. If you need additional background in vSphere, we recommend checking out VMware Hands on Labs, which offers a number of vSphere labs and content.
+- Tanzu Kubernetes Grid (TKG).  
+- Tanzu Mission Control (TMC) Advanced - Includes additional functionality around policies.
+- Tanzu Service Mesh (TSM) Advanced - The base offering of TSM. TSM Enterprise is the upgraded offering providing additional features.
+- Antrea Advanced - Offers Tier RBAC policy control and Wavefront Integration.  
+- AVI Enterprise (aka AVI Vantage/NSX Advanced Load Balancer) - Full featured L7 Container Ingress with WAF support for On-Premise.
 
-### [Please Click Here to Start the Course!](https://modernapps.ninja/${course_repo_name}/)
+Thank you for investing your time!
+
+### Requirements/Pre-requisites
+
+We recommend taking the [Introduction to VMware Tanzu
+Portfolio](https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/course/) course
+prior to taking this course.
+
+
+Additonally some familarity with Kubernetes and Cloud Native
+Technologies. If you are not familiar with these technologies, we
+recommend checking out [KubeAcademy](https://kube.academy/) by VMware,
+which has a terrific set of free, bite-size video resources on the
+basics of containers, Kubernetes and cloud native that are great for
+beginners.
+
+Before taking this course, you should also have familiarity with vSphere
+administration. If you need additional background in vSphere, we
+recommend checking out [VMware Hands on Labs](https://hol.vmware.com),
+which offers a number of vSphere labs and content including labs which cover TKO and the components which comprise the bundle.
+
+### [Please Click Here to Start the Course!](https://modernapps.ninja/intrototko_tk5598/)
