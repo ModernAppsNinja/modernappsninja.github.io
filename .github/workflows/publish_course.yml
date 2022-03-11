@@ -1,0 +1,477 @@
+name: publish course workfow
+
+# enable branch protection
+# generate new/updated course catalog card with draft on temp branch = false
+# open pull request post new course card to catalog
+# open pr review request to maintainers group
+
+on:
+  workflow_dispatch:
+    inputs:
+      course_title:
+        description: 'Course Title'
+        required: true
+        default: 'The title of your course'
+      course_short_title:
+        description: 'Course Short Title - up to 26 chars, no spaces, chars must be valid to use in URL'
+        required: true
+        default: 'introtoicesculpting'
+      code_stub:
+        description: 'Enter Two lowercase letters of your choice, no special chars. This will be prepended to a random number to create your content ID'
+        required: true
+        default: 'ab'
+      course_description:
+        description: 'One line Course Description'
+        required: true
+        default: 'The description of your course'
+
+jobs:
+  create_new_course:
+
+# no need to verify membership as only members can initiate workflow_dispatch actions
+# create unique course ID
+# create new repository for the course
+# clone course repository template to runner
+# hydrate course configuration files with variables for the new course
+# update the git config for the cloned template setting the origin as the new course repository
+# push hydrated template contents to new course repository
+# Hugo setup for gh-pages branch
+# Hugo Build
+# push for gh-pages
+# ensure github pages is enabled for new repository
+# set course creation requestor github account as admin for new course repository
+# create course card
+# upload course card to modernapps.ninja course catalog with draft status set to true
+# enable discussions on course repository
+# Open an issue ticket on new course repository addressing the course creation requestor github account to notify them the new course repo is ready and any additional instructions
+
+    name: create new course job
+    runs-on: ubuntu-latest
+    steps:
+      - name: cat payload file
+        run: cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: initialize git
+        run: |
+          git config --global user.name modernappsninjabot
+          git config --global user.email modernappsninjabot@gmail.com
+          git init
+      - name: set envar current_date with current date
+        run: |
+          echo current_date=$(date -u +"%Y-%m-%dT%TZ") >> $GITHUB_ENV
+      - name: set envars for inputs
+        run: |
+          echo course_title=${{ github.event.inputs.course_title }} >> $GITHUB_ENV
+          echo course_short_title=${{ github.event.inputs.course_short_title }} >> $GITHUB_ENV
+          echo code_stub=${{ github.event.inputs.code_stub }} >> $GITHUB_ENV
+          echo course_description=${{ github.event.inputs.course_description }} >> $GITHUB_ENV
+      - name: check envars for inputs
+        run: |
+          echo course_title:
+          echo $course_title
+          echo course_short_title:
+          echo $course_short_title
+          echo code_stub:
+          echo $code_stub
+          echo course_description:
+          echo $course_description
+## For content ID creation, he while based logic below is preferred over current method, however, actions does not currently support while loops in bash
+## Leaving the logic here for reference as in future use this if actins adds loop support or move to similar in container or javascript action
+      # - name: create content ID
+      #   run: |
+      #     # set content loop counter to 0
+      #     export content_id_loop=0
+      #     # use while loop to repeat content id random selection until unique value is found
+      #     while [ $content_id_loop -eq 0 ]; do
+      #       export content_id_random=$(echo $(shuf -i 1001-9799 -n1))
+      #       echo $content_id_random
+      #       export content_id_candidate=$(echo $code_stub$content_id_random)
+      #       echo $content_id_candidate
+      #       # curl content id index to see if candidate ID is available
+      #       curl \
+      #         -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #         -H "Accept: application/vnd.github.v3+json" \
+      #         "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/$content_id_candidate" \
+      #         > /tmp/check_content_id_response
+      #       cat /tmp/check_content_id_response
+      #       # extract name field from curl, which is returned if the content id candidate is already present in index
+      #       cat /tmp/check_content_id_response | jq -r '.name' >> /tmp/check_content_id_response name
+      #       # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
+      #       if [ "$(cat /tmp/check_content_id_response_name)" = "$content_id_candidate" ]
+      #       then
+      #         echo "this ID is in use, the loop will now attempt to find a new, unused ID Value"
+      #       else
+      #         echo "this id value is not yet in use, please proceed"
+      #         export content_id=$content_id_candidate
+      #         echo content_id=$content_id_candidate >> $GITHUB_ENV
+      #         # set the content id ready value to 1
+      #         export content_id_ready=1
+      #         echo content_id_ready=1 >> $GITHUB_ENV
+      #         # create course_repo_name
+      #         echo course_repo_name=$course_short_title_$content_id >> $GITHUB_ENV
+      #         export course_repo_name=$course_short_title_$content_id >> $GITHUB_ENV
+      #         # post the new content id file to the content id index collection
+      #         curl -X PUT \
+      #           -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #           -H "Accept: application/vnd.github.v3+json" \
+      #           -d '{"message": "Adding new content ID: '$content_id' For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+      #           "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/$content_id" \
+      #           -o /tmp/content_id_post_response.json
+      #         cat /tmp/content_id_post_response.json
+      #       fi
+      #     done
+
+
+      - name: initialize variables for course id creation
+        run: |
+          echo content_id_ready=0 >> $GITHUB_ENV
+          echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+      - name: initialize content_id_candidate value for course id creation
+        run: |
+          echo $content_id_ready
+          echo $content_id_random
+          echo content_id_candidate=${{ github.event.inputs.code_stub }}${{ env.content_id_random }} >> $GITHUB_ENV
+      - name: Course ID create Attempt 1
+        run: |
+          echo $content_id_candidate
+          # curl content id index to see if content_id_candidate is already present
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id
+          # extract name field from response - note that name field is only present if id is found in index
+          cat /tmp/check_content_id | jq -r '.name' >> /tmp/check_content_id_response_name
+          # if the file exists, return will include a name field with the name which should match the content_id_candidate value
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
+          then
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+          else
+            echo "this id value is not yet in use, please proceed"
+            echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # set the content id ready value to 1
+            echo content_id_ready=1 >> $GITHUB_ENV
+            # create course_repo_name
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # post the new content id file to the content id index collection
+            curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+          fi
+      - name: initialize content_id_candidate value for course id creation attempt 2
+        if: env.content_id_ready == '0'
+        run: |
+          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+      - name: Course ID create Attempt 2
+        if: env.content_id_ready == '0'
+        run: |
+          echo $content_id_random
+          echo $content_id_candidate
+          # curl content id index to see if candidate ID is available
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
+          # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
+          then
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+          else
+            echo "this id value is not yet in use, please proceed"
+            echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # set the content id ready value to 1
+            echo content_id_ready=1 >> $GITHUB_ENV
+            # create course_repo_name
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # post the new content id file to the content id index collection
+            curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+          fi
+      - name: initialize content_id_candidate value for course id creation attempt 3
+        if: env.content_id_ready == '0'
+        run: |
+          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+      - name: Course ID create Attempt 3
+        if: env.content_id_ready == '0'
+        run: |
+          echo $content_id_random
+          echo $content_id_candidate
+          # curl content id index to see if candidate ID is available
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
+          # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
+          then
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+          else
+            echo "this id value is not yet in use, please proceed"
+            echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # set the content id ready value to 1
+            echo content_id_ready=1 >> $GITHUB_ENV
+            # create course_repo_name
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # post the new content id file to the content id index collection
+            curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+          fi
+      - name: initialize content_id_candidate value for course id creation attempt 4
+        if: env.content_id_ready == '0'
+        run: |
+          echo content_id_candidate=$(echo ${{ github.event.inputs.code_stub }}${{ env.course_id_random }}) >> $GITHUB_ENV
+      - name: Course ID create Attempt 4
+        if: env.content_id_ready == '0'
+        run: |
+          echo $content_id_random
+          echo $content_id_candidate
+          # curl content id index to see if candidate ID is available
+          curl \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" >> /tmp/check_content_id_response_name
+          # if the response is less than 5 lines, the file was not found, if 5 or more lines, the candidate content id was found
+          if [ "$(cat /tmp/check_content_id_response_name)" = "${{ env.content_id_candidate }}" ]
+          then
+            echo "this ID is in use, resetting variables for next step to try again"
+            echo content_id_random=$(shuf -i 1001-9799 -n1) >> $GITHUB_ENV
+          else
+            echo "this id value is not yet in use, please proceed"
+            echo content_id=${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # set the content id ready value to 1
+            echo content_id_ready=1 >> $GITHUB_ENV
+            # create course_repo_name
+            echo course_repo_name=${{ github.event.inputs.course_short_title }}_${{ env.content_id_candidate }} >> $GITHUB_ENV
+            # post the new content id file to the content id index collection
+            curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new content ID: ${{ env.content_id_candidate }} For Course Title: ${{ github.event.inputs.course_title }}", "content": ""}' \
+              "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/content_id_index/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+          fi
+
+
+
+      - name: create new course repository
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -d '{"name":"${{ env.course_repo_name }}"}' \
+          "https://api.github.com/orgs/modernappsninja/repos" \
+          -o /tmp/course_repo_create_curl_response.json
+          cat /tmp/course_repo_create_curl_response.json
+      - name: set repository name for source template to be copied as source_repo_name
+        run: |
+          echo source_repo_name=course_repo_template_ct8279 >> $GITHUB_ENV
+      # - name: curl member record file
+      #   run: |
+      #     curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #     "https://raw.githubusercontent.com/modernappsninja/admin-private/main/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.json" \
+      #     -o /tmp/member_record.json
+      - name: clone ninja_course_template
+        run: |
+          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/${{ env.source_repo_name }}.git
+      
+      
+      # - name: create hub config file
+      #   run: |
+      #     echo "---" > ~/.config/hub
+      #     echo "github.com: " >> ~/.config/hub
+      #     echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
+      #     echo "  user: modernappsninjabot" >> ~/.config/hub
+      #     cat ~/.config/hub
+      # - name: extract firstName from member_record and set as first_name
+      #   run: |
+      #     echo first_name=$(cat /tmp/member_record.json | jq '.firstName' | sed 's/"//g' ) >> $GITHUB_ENV
+      # - name: extract lastName from member_record and set as last_name
+      #   run: |
+      #     echo last_name=$(cat /tmp/member_record.json | jq '.lastName' | sed 's/"//g' ) >> $GITHUB_ENV
+      #     echo $last_name
+
+      - name: envsubst config.toml file
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"config.toml" > config.toml.tmp
+          mv -f config.toml.tmp config.toml
+          cat config.toml
+      - name: envsubst homepage index.html file
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"content/en/index.html" > /tmp/index.html.tmp
+          mv -f /tmp/index.html.tmp content/en/index.html
+          cat content/en/index.html
+      - name: envsubst course metadata file
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"static/admin/assets/coursecards/course_meta.yml" > /tmp/course_meta.yml.tmp
+          mv -f /tmp/course_meta.yml.tmp static/admin/assets/coursecards/course_meta.yml
+          cat static/admin/assets/coursecards/course_meta.yml
+      - name: envsubst course introduction - member registration instructions
+        run: |
+          cd ${{ env.source_repo_name }}
+          envsubst <"content/en/docs/courseIntroduction/membershipRegistration.md" > /tmp/membershipRegistration.md.tmp
+          mv -f /tmp/membershipRegistration.md.tmp content/en/docs/courseIntroduction/membershipRegistration.md
+          cat content/en/docs/courseIntroduction/membershipRegistration.md
+      - name: set git origin to new course repo and push
+        run: |
+          cd ${{ env.source_repo_name }}
+          git remote set-url origin https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/${{ env.course_repo_name }}.git
+          cat .git/config
+          git branch -M main
+          git push -u origin main
+          git add .
+          git commit -m "initial push"
+          git push
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: initial hugo build
+        run: |
+          cd ${{ env.source_repo_name }}
+          echo "public" >> .gitignore
+          git checkout --orphan gh-pages
+          git reset --hard
+          git commit --allow-empty -m "Initializing gh-pages branch"
+          git push origin gh-pages
+          git checkout main
+          sudo rm -rf public
+          git worktree add -B gh-pages public origin/gh-pages
+          hugo --minify
+          cd public
+          git add --all
+          git commit -m "Publishing to gh-pages"
+          cd ..
+          git push origin gh-pages
+      - name: enable github pages for new course repo
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.switcheroo-preview+json" \
+          -d '{"source":{"branch":"gh-pages","path":"/"}}' \
+          "https://api.github.com/repos/modernappsninja/${{ env.course_repo_name }}/pages" \
+          -o /tmp/member_repo_enable_pages_response.json
+          cat /tmp/member_repo_enable_pages_response.json
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: initial hugo build
+        run: |
+          cd ${{ env.source_repo_name }}
+          echo "public" >> .gitignore
+          git checkout --orphan gh-pages
+          git reset --hard
+          git commit --allow-empty -m "Initializing gh-pages branch"
+          git push origin gh-pages
+          git checkout main
+          sudo rm -rf public
+          git worktree add -B gh-pages public origin/gh-pages
+          hugo --minify
+          cd public
+          git add --all
+          git commit -m "Publishing to gh-pages"
+          cd ..
+          git push origin gh-pages
+      - name: add course creation requesting github user account as maintainer permission for course repo
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.switcheroo-preview+json" \
+          -d '{"source":{"permission":"maintain"}}' \
+          "https://api.github.com/repos/modernappsninja/${{ env.course_repo_name }}/collaborators/${{ github.event.sender.login }}" \
+          -o /tmp/course_repo_enable_admin_response.json
+          cat /tmp/member_repo_enable_admin_response.json
+      - name: create course card
+        run: |
+          cd ${{ env.source_repo_name }}
+          cat static/admin/assets/coursecards/course_meta.yml > /tmp/${{ env.course_repo_name }}.md
+          cat static/admin/assets/coursecards/catalogcard/catalog_course_card >> /tmp/${{ env.course_repo_name }}.md
+          cat /tmp/${{ env.course_repo_name }}.md | base64 -w 0 > /tmp/${{ env.course_repo_name }}.md.base64
+      - name: post course card to catalog
+        run: |
+          curl -X PUT \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              -d '{"message": "Adding new course card for: ${{ env.course_repo_name }}", "content": "'$(cat /tmp/${{ env.source_repo_name }}.md.base64)'"' \
+              "https://api.github.com/repos/modernappsninja/mdernappsninja.github.io/contents/course/${{ env.content_id_candidate }}" \
+              -o /tmp/content_id_post_response.json
+            cat /tmp/content_id_post_response.json
+      # - name: any other scaffolding needed? tests? (create test key, publish/update course catalog)
+      #   run: |
+         
+      # - name: add course publishing workflow to template
+      # - name: add issue ticket to new repo
+
+
+
+      ### unused
+      # - name: create new member repository
+      #   run: |
+      #     curl -X POST \
+      #     -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #     -d '{"name":"${{ github.event.client_payload.member_login }}"}' \
+      #     "https://api.github.com/orgs/modernappsninja/repos" \
+      #     -o /tmp/member_repo_create_curl_response.json
+      #     cat /tmp/member_repo_create_curl_response.json
+      # - name: prep local directory for new member repo content
+      #   run: |
+      #     cp -R member_repo_template ${{ github.event.client_payload.member_login }}
+      #     cd ${{ github.event.client_payload.member_login }}
+      #     sudo rm -r .git/
+      #     git init
+      #     git add .
+      #     git commit -m "initial setup for ${{ github.event.client_payload.member_login }} member repo"
+      #     git branch -M main
+      #     git remote add origin https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninjas/${{ github.event.client_payload.member_login }}.git
+      #     git push -u origin main
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: 'latest'
+      #     extended: true
+      # - name: initial hugo build
+      #   run: |
+      #     cd ${{ github.event.client_payload.member_login }}
+      #     echo "public" >> .gitignore
+      #     git checkout --orphan gh-pages
+      #     git reset --hard
+      #     git commit --allow-empty -m "Initializing gh-pages branch"
+      #     git push origin gh-pages
+      #     git checkout main
+      #     sudo rm -rf public
+      #     git worktree add -B gh-pages public origin/gh-pages
+      #     hugo --minify
+      #     cd public
+      #     git add --all
+      #     git commit -m "Publishing to gh-pages"
+      #     cd ..
+      #     git push origin gh-pages
+      # - name: enable github pages for new member repo
+      #   run: |
+      #     curl -X POST \
+      #     -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+      #     -H "Accept: application/vnd.github.switcheroo-preview+json" \
+      #     -d '{"source":{"branch":"gh-pages","path":"/"}}' \
+      #     "https://api.github.com/repos/modernappsninjas/${{ github.event.client_payload.member_login }}/pages" \
+      #     -o /tmp/member_repo_enable_pages_response.json
+      #     cat /tmp/member_repo_enable_pages_response.json

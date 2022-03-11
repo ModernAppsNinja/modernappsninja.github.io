@@ -1,0 +1,196 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro to VMware Tanzu Standard – Tanzu Observability</title>
+    <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/</link>
+    <description>Recent content in Tanzu Observability on Intro to VMware Tanzu Standard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 12 Oct 2020 18:34:25 -0700</lastBuildDate>
+    
+	  <atom:link href="https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Welcome to the Course</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/welcometothecourse/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/welcometothecourse/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This course provides a technical introduction to VMware Tanzu Standard&lt;/p&gt;
+&lt;p&gt;If you complete all steps in this course, you can request a certificate
+of completion, by following the instructions provided at the end of the
+course. &lt;/p&gt;
+&lt;p&gt;This course is a community effort, to be able to keep up the material,
+we really need your help to report issues, suggest improvements, or help
+with the many volunteer opportunities available to support the
+community.&lt;/p&gt;
+&lt;p&gt;Thank you for investing your time!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5V03CSMkm2c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Community Membership and Course Registration</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/membershipregistration/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/membershipregistration/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;important-notice&#34;&gt;Important Notice:&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The Enrollment, testing and digital badge features will be removed on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Ad4ObhsOaJk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;requirements-for-tests-and-course-completion-certificates&#34;&gt;Requirements for tests and course completion certificates&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Please note, the tests and completion certificate for this course are still under development and should be posted within a few days.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ModernApps Ninja learning content is free and open to anyone to view, however to take tests and recieve certificates of completion for courses, you must sign up for a free community membership, &lt;strong&gt;and&lt;/strong&gt; register for this course, per the instructions below.&lt;/p&gt;
+&lt;h3 id=&#34;join-the-modernapps-ninja-community&#34;&gt;Join the ModernApps Ninja Community!&lt;/h3&gt;
+&lt;p&gt;In addition to unlocking the ability to take tests and recieve course completion certificates, joining the ModernApps Ninja Community has a number of other benefits, and is a completely free program.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://modernapps.ninja/about/membership.html&#34;&gt;Please click here to learn more about member benefits and to join the community!&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;register-for-this-course&#34;&gt;Register for this course&lt;/h3&gt;
+&lt;p&gt;You must first be a member of the community before you can register for this course. Ensure that you have fully completed the community member registration process before proceeding.&lt;/p&gt;
+&lt;p&gt;To register for this course, follow the detailed instructions below to post a simple file with your github username to this repository. This process, while simple to follow, helps participants to gain experience and comfort, and validate their knowledge with foundational devops tools and process.&lt;/p&gt;
+&lt;p&gt;Posting a file to register uses the git pull request process, which is one of the most important and common foundational skills for participating in devops, cloud native, and infrastructure modernization initiatives.&lt;/p&gt;
+&lt;p&gt;This process will also show on your public github profile that you have made a commit, the course also provides several additional exercises throughout where you will make commits to gain additional git experience while enhancing your github and professional profiles.&lt;/p&gt;
+&lt;h4 id=&#34;step-1---open-the-new-course-registration-document-link&#34;&gt;Step 1 - Open the new course registration document link&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The Course Registration Process Requires that you have a github account, and that you are signed in using the github account you want to be registered for the course. If you attempt to register a different account than the account you are signed in as, the process will fail.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The following link will direct your browser to a github web-based document editor that is used to submit new files or updates to this github repository. You will need to type in a few values and then submit the document as detailed in the following steps.&lt;/p&gt;
+&lt;p&gt;Please right click the following link and select the option to open it in a new browser tab, so you can keep this instruction page open in the current tab to guide you through the process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ModernAppsNinja/introtanzustandard_ts7297/tree/main/static/admin/userdata/registered_members&#34;&gt;Right Click Here and select the option to open link in new tab&lt;/a&gt; and click on &lt;code&gt;Add File &amp;gt; Create new file&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;step-2---name-your-file&#34;&gt;Step 2 - Name your file&lt;/h4&gt;
+&lt;p&gt;Note the page displays a message that &lt;code&gt;You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork YOUR_GITHUB_USERNAME/COURSE_REPOSITORY_NAME, so you can send a pull request.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The pull request process works by submitting a copy of your new or updated file to the repository, which will only be applied to the course repository if a course administrator approves the request. Because you do not have write access to the repository, github will create a special copy called a &lt;code&gt;fork&lt;/code&gt; of the course repository within your github account with your new or updated files, and use your copy to save the updates you&amp;rsquo;re submitting to the official course repository as shown in the following steps.&lt;/p&gt;
+&lt;p&gt;In your browser tab to the new registration document, above the document editor in the file name field, type in the name of the file in the format &lt;code&gt;your_github_username.yml&lt;/code&gt;, replacing the value &lt;strong&gt;your_github_username&lt;/strong&gt; with the username for your github account.&lt;/p&gt;
+&lt;p&gt;The following screenshot shows an example of this step using the github username &lt;code&gt;Oni-no-Hanzo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If needed, you can verify your github username by clicking on your github profile menu, which can be found on the upper right hand corner on any github page if you are signed in.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://modernapps.ninja/course_repo_template_ct8279/admin/assets/images/course_registration_file_naming.png&#34; alt=&#34;Screenshot of File Naming&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;step-3---add-a-line-to-your-file&#34;&gt;Step 3 - Add a line to your file&lt;/h4&gt;
+&lt;p&gt;On line 1 in the document editor, type &lt;code&gt;status: in-progress&lt;/code&gt; as shown in the following screenshot:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://modernapps.ninja/course_repo_template_ct8279/admin/assets/images/course_registration_file_editing.png&#34; alt=&#34;Screenshot of File Editing&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;step-4---submit-your-registration-document&#34;&gt;Step 4 - Submit your registration document&lt;/h4&gt;
+&lt;p&gt;Scroll to the bottom of the registration document page and click &lt;code&gt;Propose New File&lt;/code&gt; as shown in the following image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/ModernAppsNinja/course_repo_template_ct8279/blob/main/static/admin/assets/images/propose_changes.png&#34; alt=&#34;Propose New File Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After you click &lt;code&gt;Propose New File&lt;/code&gt;, your browser will be redirected to the &lt;code&gt;Comparing Changes&lt;/code&gt; page with all the configuration all setup so all you sould need to do is click &lt;code&gt;Create Pull Request&lt;/code&gt; &amp;mdash; but before you click, please review the other details shown on the comparing changes and observe that the file you created and the lines added are shown, so you can easily review and verify your proposed changes before submitting.&lt;/p&gt;
+&lt;p&gt;After you click &lt;code&gt;Create pull request&lt;/code&gt;, an automated GitHub Action worklow will initiate that will do the following actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;verify that your github account is a member of the modernappsninja organization&lt;/li&gt;
+&lt;li&gt;verify the filename of the submitted document matches the github username of the logged-in user that submitted the pull request&lt;/li&gt;
+&lt;li&gt;if the above items are successfully validated:
+&lt;ul&gt;
+&lt;li&gt;add the course record page to the members profile repository to display course progress and completion records&lt;/li&gt;
+&lt;li&gt;add a message to the pull request ticket with the URL for the members course record page&lt;/li&gt;
+&lt;li&gt;trigger github to send an email from github to the email address for the github user account that submitted the pull request including the message from the previous step&lt;/li&gt;
+&lt;li&gt;approve and merge the new document you submitted into the registered members directory for this course&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This completes the course registration process, once you have completed the above steps, you can proceed through the course and participate in any steps such as tests and completion certificates that require course registration.&lt;/p&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Target Audience</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/targetaudience/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/targetaudience/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This course is designed for Information Technology Professionals
+interested in learning more about VMware vSphere with Tanzu, Tanzu Kubernetes Grid and Tanzu Mission Control.&lt;/p&gt;
+&lt;p&gt;Please complete the course prerequisites to ensure you are fully prepared to succeed in this course.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Prerequisites</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/prerequisites/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/prerequisites/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We recommend taking the &lt;a href=&#34;https://lms.modernapps.ninja/courses/course-v1:modernapps+COU-TP6539+Perpetual/course/&#34;&gt;Introduction to VMware Tanzu
+Portfolio&lt;/a&gt; course
+prior to taking the Intro to Tanzu Standard course. &lt;/p&gt;
+&lt;p&gt;This course assumes familiarity with Kubernetes and Cloud Native
+Technologies. If you are not familiar with these technologies, we
+recommend checking out &lt;a href=&#34;https://kube.academy/&#34;&gt;KubeAcademy&lt;/a&gt; by VMware,
+which has a terrific set of free, bite-size video resources on the
+basics of containers, Kubernetes and cloud native that are great for
+beginners.&lt;/p&gt;
+&lt;p&gt;Before taking this course, you should also have familiarity with vSphere
+administration. If you need additional background in vSphere, we
+recommend checking out &lt;a href=&#34;https://hol.vmware.com&#34;&gt;VMware Hands on Labs&lt;/a&gt;,
+which offers a number of vSphere labs and content.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Course Updates and Freshness</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/courseupdatesandfreshness/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/courseupdatesandfreshness/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We make a strong effort to keep the content in this course as current as
+possible, however the Tanzu Portfolio is rapidly growing and there may
+be times where this course may not include the newest updates. Always
+please refer to the official &lt;a href=&#34;https://tanzu.vmware.com/tanzu&#34;&gt;VMware Tanzu Portfiolio
+Website&lt;/a&gt; and your VMware account team
+for the latest details on products covered in this course. &lt;/p&gt;
+&lt;p&gt;As part of our effort to keep this course as up-to-date as possible,
+this course is on a continuous update lifecycle. This means that the
+course can be updated at any time, and new content and requirements may
+be added while you are taking your course. We will make effort to notify
+students in advance of any significant updates are made to minimize any
+changes to course completion requirements. &lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Welcome to the Community</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/welcometotheninjacommunity/</link>
+      <pubDate>Mon, 12 Oct 2020 18:34:25 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/tanzuobservability/welcometotheninjacommunity/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please watch the video below to learn more about the ModernApps Ninja Community!
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GlVSmFtIs1s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,211 @@
+name: course_registration
+on:
+  pull_request_target:
+    types: [opened]
+    paths:
+    - 'static/admin/userdata/registered_members/**.yml'
+
+jobs:
+  job_verify_membership:
+    name: verify_membership
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.ismember.outputs.ismember }}
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: curl member record file
+        run: |
+          echo "org_repo is ${{ env.org_repo }}"
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://api.github.com/repos/modernappsninja/admin-private/contents/userdata/members/${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" \
+          -o /tmp/raw_member_record_curl.json
+          cat /tmp/raw_member_record_curl.json
+      - name: set envar raw_member_curl_name
+        run: |
+          cat /tmp/raw_member_record_curl.json | jq -r '.name' >> /tmp/raw_member_record_curl_name
+          echo raw_member_curl_name=$(cat /tmp/raw_member_record_curl_name) >> $GITHUB_ENV
+      - name: check if member record alredy exists to determine if this is a duplicate request
+        run: |
+          echo "curl name is: ${{ env.raw_member_curl_name }}"
+          echo "login + id is ${{ github.event.sender.login }}_${{ github.event.sender.id }}"
+          cat /tmp/raw_member_record_curl.json
+          if [ "${{ env.raw_member_curl_name }}" = "${{ github.event.sender.login }}_${{ github.event.sender.id }}.yml" ]
+          then
+            echo ismember=true >> $GITHUB_ENV
+            echo "the requesting user is a member"
+          else
+            echo ismember=false >> $GITHUB_ENV
+            echo "the requesting user is not a member"
+          fi
+      - id: ismember
+        if: env.ismember == 'true'
+        run: echo "::set-output name=ismember::true"
+      - name: if not member, post message to pr
+        if: env.ismember == 'false'
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"event": "COMMENT", "body": "@${{ github.event.sender.login }} You must first join the ModernApps Ninja Organization at https://modernapps.ninja before you can register for a course. Please open a new course registration request after you have completed the free modernapps.ninja community registration. This Pull Request will now be closed, thank you!"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}/reviews" \
+          -o /tmp/pr_comment_post_response.json
+          cat /tmp/pr_comment_post_response.json
+      - name: if not member, close pr
+        if: env.ismember == 'false'
+        run: |
+          curl -X PATCH \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"state": "closed"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}" \
+          -o /tmp/close_pr_response.json
+          cat /tmp/close_pr_response.json
+  job_course_registration:
+    name: course_registration
+    needs: job_verify_membership
+    runs-on: ubuntu-latest
+    if: needs.job_verify_membership.outputs.output1 == 'true'
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - name: set org/repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+          org_repo="$GITHUB_REPOSITORY"
+          echo $org_repo
+      - name: pull course meta file
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/coursecards/course_meta.yml" \
+          -o /tmp/course_meta.yml
+          cat /tmp/course_meta.yml
+      - name: pull member course card stub
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/coursecards/memberrepocard/member_course_card_stub.md" \
+          -o /tmp/member_course_card_stub.md
+          cat /tmp/member_course_card_stub.md
+      - name: pull member course record top
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/coursecards/memberrepocard/member_course_record_top.yml" \
+          -o /tmp/member_course_record_top.yml
+          cat /tmp/member_course_record_top.yml
+      - name: pull member course record bottom
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/${{ env.org_repo }}/main/static/admin/assets/coursecards/memberrepocard/member_course_record_bottom.yml" \
+          -o /tmp/member_course_record_bottom.yml
+          cat /tmp/member_course_record_bottom.yml
+      - name: create member course record card
+        run: |
+          cd ${{ env.source_repo_name }}
+          sed -i '/^draft:/c\draft: false' /tmp/course_meta.yml
+          cat /tmp/course_meta.yml > /tmp/${{ github.event.repository.name }}.md
+          cat /tmp/member_course_card_stub.md >> /tmp/${{ github.event.repository.name }}.md
+          cat /tmp/member_course_record_top.yml >> /tmp/${{ github.event.repository.name }}.md
+          cat /tmp/member_course_record_bottom.yml >> /tmp/${{ github.event.repository.name }}.md
+          cat /tmp/${{ github.event.repository.name }}.md
+          cat /tmp/${{ github.event.repository.name }}.md | base64 -w 0 > /tmp/${{ github.event.repository.name }}.md.base64
+          echo record_card_string=$(cat /tmp/${{ github.event.repository.name }}.md.base64)
+          echo record_card_string=$(cat /tmp/${{ github.event.repository.name }}.md.base64) >> $GITHUB_ENV
+      - name: post member course record card to requesting member repo
+        run: |
+          echo $record_card_string
+          echo ${{ env.record_card_string }}
+          curl -X PUT \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"message": "Adding new member course record card for: ${{ github.event.repository.name }}", "content": "${{ env.record_card_string }}"}' \
+            "https://api.github.com/repos/modernappsninjas/${{ github.event.sender.login }}/contents/content/english/course/${{ github.event.repository.name }}.md" \
+            -o /tmp/record_card_post_response.json
+          cat /tmp/record_card_post_response.json
+      - name: merge_pull_request
+        run: |
+          curl -X PUT \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"commit_title": "Course Registration for ${{ github.event.sender.login }}"}'                                                        \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}/merge" \
+          -o /tmp/merge_post_response.json
+          cat /tmp/merge_post_response.json
+      - name: curl file list for pr
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}/files" \
+          -o /tmp/pr_file_list.json
+          cat /tmp/pr_file_list.json
+      - name: set envar pr_filename as filename value
+        run: |
+          cat /tmp/pr_file_list.json | jq -r '.[0].filename'
+          cat /tmp/pr_file_list.json | jq -r '.[0].filename' > /tmp/pr_filename
+          echo pr_filename=$(cat /tmp/pr_filename) >> $GITHUB_ENV
+      - name: gather merged member registration file sha
+        run: |
+          echo "pr_filename is: ${{ env.pr_filename }}"
+          curl \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/${{ env.pr_filename }}" \
+          -o /tmp/merge_sha.tmp
+          cat /tmp/merge_sha.tmp
+          cat /tmp/merge_sha.tmp | jq '.sha' > /tmp/merge_sha
+      # - name: set merged member record sha
+      #   run: |
+      #     cat /tmp/merge_sha
+      #     echo filemergesha="$(cat /tmp/merge_sha)"
+      #     echo $(echo filemergesha=$(cat /tmp/merge_sha)) >> GITHUB_ENV
+      - name: delete_merged_member_registration_file
+        run: |
+          cat /tmp/merge_sha
+          echo 
+          filemergesha=$(cat /tmp/merge_sha)
+          echo "filemergesha is: $filemergesha"
+          curl -X DELETE \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"message": "deleting member provided registration file to replace with valid autogenerated file","sha":'$filemergesha'}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/${{ env.pr_filename }}" \
+          -o /tmp/file_delete_response.json
+          cat /tmp/file_delete_response.json
+          echo inprogress=$(echo "status: in-progress" | base64 -w 0) >> $GITHUB_ENV         
+      - name: create new member registration file from validated github metadata
+        run: |
+          echo "inprogress is: ${{ env.inprogress }}"
+          curl -X PUT \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"message": "Updating Member Record File For '${{ github.event.sender.login }}'","content":"${{ env.inprogress }}"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/static/admin/userdata/registered_members/${{ github.event.sender.login }}.yml" \
+          -o /tmp/member_repo_post_response.json
+          cat /tmp/member_repo_post_response.json     
+      - name: post message to pr
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"event": "COMMENT", "body": "@'${{ github.event.sender.login }}' you have successfully registered for this course. A new member record card for this course has been posted to your member repository at https://github.com/modernappsninjas/${{ github.event.sender.login }}/tree/main/content/english/course/${{ github.event.repository.name }}.md. This PR will now be closed."}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}/reviews" \
+          -o /tmp/pr_comment_post_response.json
+          cat /tmp/pr_comment_post_response.json
+      - name: close pr
+        run: |
+          curl -X PATCH \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"state": "closed"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/pulls/${{ github.event.number }}" \
+          -o /tmp/close_pr_response.json
+          cat /tmp/close_pr_response.json

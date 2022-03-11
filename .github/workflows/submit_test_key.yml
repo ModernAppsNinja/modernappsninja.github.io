@@ -1,0 +1,253 @@
+name: submit_test_key
+on:
+  issues:
+    types: [opened]
+
+# verify user is maintainer, admin, or owner team member
+# extract body from payload
+# decode body
+# extract test name and set envar testname
+# post answer_key_string to admin-private
+# create answer response sheet
+# post answer response sheet
+# post response to issue ticket
+# transfer issue ticket
+# close issue ticket
+
+jobs:
+  job_verify_membership:
+    name: verify_membership
+    runs-on: ubuntu-latest
+    if: contains( toJson(github), 'submit_test_key' )
+    outputs:
+      isprivileged: ${{ steps.isprivileged.outputs.isprivileged }}
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: curl member record file
+        run: |
+          echo "org_repo is ${{ env.org_repo }}"
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://api.github.com/orgs/modernappsninja/teams/maintainers/memberships/${{ github.event.issue.user.login }}" \
+          -o /tmp/raw_team_record_curl.json
+          cat /tmp/raw_team_record_curl.json
+      - name: set envar raw_team_curl_state
+        run: |
+          cat /tmp/raw_team_record_curl.json | jq -r '.state' >> /tmp/raw_team_record_curl_state
+          echo raw_team_curl_state=$(cat /tmp/raw_team_record_curl_state) >> $GITHUB_ENV
+      - name: check if member record alredy exists to determine if this is a duplicate request
+        run: |
+          echo "team curl state is: ${{ env.raw_team_curl_state }}"
+          cat /tmp/raw_team_record_curl.json
+          if [ "${{ env.raw_team_curl_state }}" = "active" ]
+          then
+            echo isprivileged=true >> $GITHUB_ENV
+            echo "the requesting user has at least maintainer level membership"
+          else
+            echo isprivileged=false >> $GITHUB_ENV
+            echo "the requesting user does not have maintainer level membership"
+          fi
+      - id: isprivileged
+        if: env.isprivileged == 'true'
+        run: echo "::set-output name=isprivileged::true"
+      - name: if not privileged, post message to issue ticket
+        if: env.isprivileged == 'false'
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"body": "@${{ github.event.issue.user.login }} You must be a member of the maintainers team or higher privilege level to submit an answer key. Please contact a maintainer for the course for assistance, or if you are unsure who is a maintainer, open a support issue ticket and @ mention the modernappsninja/maintainers team. This ticket will now be closed."}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/issues/${{ github.event.issue.number }}/comments" \
+          -o /tmp/issue_comment_post_response.json
+          cat /tmp/issue_comment_post_response.json
+      - name: if not privileged, close issue ticket
+        if: env.isprivileged == 'false'
+        run: |
+          curl -X PATCH \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"state": "closed"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/issues/${{ github.event.issue.number }}" \
+          -o /tmp/close_issue_response.json
+          cat /tmp/close_issue_response.json
+  job_submit_test_key:
+    name: submit_test_key
+    needs: job_verify_membership
+    runs-on: ubuntu-latest
+    if: needs.job_verify_membership.outputs.isprivileged == 'true'
+    steps:
+      - name: review event details
+        run: |
+          env
+          cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: set git configuration
+        run: |
+          git config --global user.name modernappsninjabot
+          git config --global user.email modernappsninjabot@gmail.com
+      - name: set source repo as org_repo
+        run: |
+          echo $(echo org_repo="$GITHUB_REPOSITORY") >> $GITHUB_ENV
+      - name: install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_amd64 -O /usr/bin/yq &&\
+          sudo chmod +x /usr/bin/yq
+      - name: extract payload data from issue body
+        run: |
+          echo -e '${{ github.event.issue.body }}' > /tmp/answer_key_string_raw
+          echo "the issuebody base64 string is: $(cat /tmp/answer_key_string_raw)"
+          echo answer_key_string_raw=$(cat /tmp/answer_key_string_raw) >> $GITHUB_ENV
+          echo "the issuebody decoded content is: $(cat /tmp/answer_key_string_raw | base64 -d)"
+          cat /tmp/answer_key_string_raw | base64 -d > /tmp/issuebody.yml.raw
+      - name: clean answer key file
+        run: |
+          # remove all whitespace and newlines
+          cat /tmp/issuebody.yml.raw | tr -d '[:space:]' > /tmp/issuebody.yml.ns
+          echo "response with spaces removed: $(cat /tmp/issuebody.yml.ns)"
+          # add newline before each question
+          cat /tmp/issuebody.yml.ns | sed 's/Question/\nQuestion/g' > /tmp/issuebody.yml.lined
+          echo "response with newlines added: $(cat /tmp/issuebody.yml.lined)"
+          # add single space after each colon
+          cat /tmp/issuebody.yml.lined | sed 's/:/: /g' > /tmp/issuebody.yml
+          echo "fully cleaned response: $(cat /tmp/issuebody.yml)"
+          # encode cleaned answer file
+          cat /tmp/issuebody.yml | base64 -w 0 > /tmp/answer_key_string
+          echo "response single encoded: $(cat /tmp/answer_key_string)"
+          echo answer_key_string=$(cat /tmp/answer_key_string) >> $GITHUB_ENV
+          # double encode cleaned answer file
+          cat /tmp/answer_key_string | base64 -w 0 > /tmp/answer_key_double
+          echo "response double encoded: $(cat /tmp/answer_key_double)"
+          echo answer_key_double=$(cat /tmp/answer_key_double) >> $GITHUB_ENV
+      - name: extract test name and set as envar testname
+        run: |
+          yq e '.testName' /tmp/issuebody.yml
+          echo testname=$(yq e '.testName' /tmp/issuebody.yml) >> $GITHUB_ENV
+      - name: curl answer string file to determine if exists and gather sha 
+        run: |
+          echo "testname is: ${{ env.testname }}"
+          curl \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/courses/${{ github.event.repository.name }}/answer_strings/${{ env.testname }}.string" \
+          -o /tmp/string_exists
+          cat /tmp/string_exists
+          cat /tmp/string_exists | jq '.name' > /tmp/string_exists_name
+          if [ $(cat /tmp/string_exists | jq '.name') == 'null' ]
+          then
+            echo string_exists=false >> $GITHUB_ENV
+            string_exists=false
+            echo "the string does not exist"
+            echo "string exists value: $string_exists"            
+          else
+            echo string_exists=true >> $GITHUB_ENV
+            string_exists=true
+            echo "the string does exist"
+            echo "string exists value: $string_exists"
+            cat /tmp/string_exists | jq '.sha' > /tmp/string_exists_sha
+            cat /tmp/string_exists_sha
+            echo string_exists_sha=$(cat /tmp/string_exists_sha) >> $GITHUB_ENV
+          fi
+      - name: post encoded answer key string #to admin-private/appdata/courses/$org_repo/answer_strings/{{ env.testname }}.string
+        # if updating file, include sha, otherwise post new file
+        run: |
+          echo ${{ env.string_exists }}
+          if [ "${{ env.string_exists }}" == "true" ]
+          then
+            echo "answer_key_string is: ${{ env.answer_key_string }}"
+            echo "answer_key_double is: ${{ env.answer_key_double }}"
+            echo "string_exists_sha is: ${{ env.string_exists_sha }}"
+            curl -X PUT \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"message": "Updating answer key string for ${{ env.testname }} for ${{ github.event.repository.name }}","content":"${{ env.answer_key_double }}", "sha":${{ env.string_exists_sha }}}' \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/courses/${{ github.event.repository.name }}/answer_strings/${{ env.testname }}.string" \
+            -o /tmp/update_key_post_response.json
+            cat /tmp/update_key_post_response.json     
+          else
+            echo "answer_key_string is: ${{ env.answer_key_string }}"
+            echo "answer_key_double is: ${{ env.answer_key_double }}"
+            curl -X PUT \
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"message": "Updating answer key string for ${{ env.testname }} for ${{ github.event.repository.name }}","content":"${{ env.answer_key_double }}"}' \
+            "https://api.github.com/repos/modernappsninja/admin-private/contents/appdata/courses/${{ github.event.repository.name }}/answer_strings/${{ env.testname }}.string" \
+            -o /tmp/new_key_post_response.json
+            cat /tmp/new_key_post_response.json
+          fi   
+      - name: remove answers and create answer response sheet #for each line in file, remove all space from colon to end of line
+        run: |
+          cat /tmp/issuebody.yml
+          # remove testName line for now
+          sed -i '1,1d' /tmp/issuebody.yml
+          # clean file by removing all text on eacy line after the colon
+          sed 's/\:.*/:/' /tmp/issuebody.yml >> /tmp/${{ env.testname }}.yml
+          # add testname back to file
+          sed -i '1s/^/testName: ${{ env.testname }}\n/' /tmp/${{ env.testname }}.yml
+          # encode file as base64
+          cat /tmp/${{ env.testname }}.yml | base64 -w 0 > /tmp/${{ env.testname }}.yml.base64
+          # set envar with answer response sheet base64 string
+          cat /tmp/${{ env.testname }}.yml.base64
+          echo clean_answer_response_sheet=$(cat /tmp/${{ env.testname }}.yml.base64) >> $GITHUB_ENV
+      - name: if update, gather sha from existing answer response sheet 
+        if: env.string_exists == 'true'
+        # gather sha of existing response sheet as needed to delete it in next step
+        run: |
+          curl \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/static/admin/userdata/tests/${{ env.testname }}.yml" \
+          -o /tmp/existing_response_sheet
+          cat /tmp/existing_response_sheet
+          cat /tmp/existing_response_sheet | jq '.sha' > /tmp/existing_response_sheet_sha
+          cat /tmp/existing_response_sheet_sha
+          echo existing_response_sheet_sha=$(cat /tmp/existing_response_sheet_sha) >> $GITHUB_ENV          
+      - name: if update, delete existing answer response sheet 
+        if: env.string_exists == 'true'
+        run: |
+          echo ${{ env.delete_response_sheet_sha }}
+          curl -X DELETE \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"message": "deleting existing answer response file in preparation to post updated file","sha":${{ env.existing_response_sheet_sha }}}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/static/admin/userdata/tests/${{ env.testname }}.yml" \
+          -o /tmp/response_sheet_delete_response.json
+          cat /tmp/response_sheet_delete_response.json
+      - name: post answer response sheet    
+        run: |
+          echo ${{ env.clean_answer_response_sheet }}
+          curl -X PUT \
+          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"message": "Updating answer key string for ${{ env.testname }} for ${{ github.event.repository.name }}","content":"${{ env.clean_answer_response_sheet }}"}' \
+          "https://api.github.com/repos/${{ env.org_repo }}/contents/static/admin/userdata/tests/${{ env.testname }}.yml" \
+          -o /tmp/new_response_sheet_post_response.json
+          cat /tmp/new_response_sheet_post_response.json
+      - name: clone course repository 
+      # we clone the repository rather than just rest calls because the logic to transfer the ticket is a github api v4/graphql statement that is exposed as a feature in hub natively. At some point want to update logic to native graphql calls and remove hub dependency
+        run: |
+          # brief sleep to ensure above post is complete before cloning
+          sleep 10
+          git clone https://${{ secrets.NINJABOTGURU }}:x-oauth-basic@github.com/modernappsninja/${{ github.event.repository.name }}.git
+          cd ${{ github.event.repository.name }}
+          pwd
+      - name: create hub config file
+        run: |
+          echo "---" > ~/.config/hub
+          echo "github.com: " >> ~/.config/hub
+          echo "- oauth_token: ${{ secrets.NINJABOTGURU }}" >> ~/.config/hub
+          echo "  user: modernappsninjabot" >> ~/.config/hub
+          cat ~/.config/hub
+      - name: append message to issue ticket and close ticket
+        run: |
+          cd ${{ github.event.repository.name }}
+          hub issue update ${{ github.event.issue.number }} --message "@${{ github.event.issue.user.login }} the updated answer key for ${{ env.testname }} has been processed" \
+          --message "The answer response sheet for ${{ env.testname }} has been posted to [https://github.com/${{ env.org_repo }}/blob/main/static/admin/userdata/tests/${{ env.testname }}.yml](https://github.com/${{ env.org_repo }}/blob/main/static/admin/userdata/tests/${{ env.testname }}.yml). Please update your test page to ensure it provides the correct link to students for test submission. ${{ env.testname}} is now usable and this issue ticket will now be closed."
+          hub issue update ${{ github.event.issue.number }} -s closed
+      - name: transfer issue ticket to admin-private
+        run: |
+          cd ${{ github.event.repository.name }}
+          hub issue transfer ${{ github.event.issue.number }} ${{ github.event.organization.login }}/admin-private

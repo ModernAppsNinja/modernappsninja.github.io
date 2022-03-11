@@ -1,0 +1,226 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro to VMware Tanzu Standard – vSphere 7 With Tanzu Technical Overview</title>
+    <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/</link>
+    <description>Recent content in vSphere 7 With Tanzu Technical Overview on Intro to VMware Tanzu Standard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 09 Oct 2020 03:24:25 -0700</lastBuildDate>
+    
+	  <atom:link href="https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Introducing vSphere with Tanzu</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/introvspheretanzu/</link>
+      <pubDate>Mon, 12 Oct 2020 18:43:58 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/introvspheretanzu/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fGZT6wMXPOo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: vSphere with Tanzu - How it Works</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuhowitworks/</link>
+      <pubDate>Mon, 12 Oct 2020 18:44:38 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuhowitworks/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gx1_Tdo5ue0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: vSphere Namespaces Overview</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspherenamespaces/</link>
+      <pubDate>Mon, 12 Oct 2020 18:46:50 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspherenamespaces/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KDybu8Bna6g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: vSphere with Tanzu Services Overview</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuservices/</link>
+      <pubDate>Mon, 12 Oct 2020 18:44:48 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuservices/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/m4pAZKA-8lg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: vSphere with Tanzu Consumer and Operator Experience</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuconsumption/</link>
+      <pubDate>Mon, 12 Oct 2020 20:02:44 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/vspheretanzuconsumption/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O_RR0O5iDGM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Demo - vSphere with Tanzu</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/demovspherewithtanzu/</link>
+      <pubDate>Mon, 12 Oct 2020 20:05:26 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/demovspherewithtanzu/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XjCbIHlaMR4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: vSphere with Tanzu Section Summary</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/sectionsummary/</link>
+      <pubDate>Mon, 12 Oct 2020 18:40:26 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/sectionsummary/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You have reached the end of this section. Please use the navigation bar to proceed to the next section.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Section 3 Test</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/section3test/</link>
+      <pubDate>Fri, 09 Oct 2020 03:15:26 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/vsphere7withtanzutechnicaloverview/section3test/</guid>
+      <description>
+        
+        
+        &lt;p&gt;All Modernapps Ninja learning content is publicly accessible and available openly, however a free membership is required to take tests and recieve a certificate of completion for the course. You must first &lt;a href=&#34;https://modernapps.ninja/about/membership/&#34;&gt;join the community&lt;/a&gt; and register for this course per the instructions in the course introduction section before attempting to submit a test.&lt;/p&gt;
+&lt;p&gt;Ninja tests use devops tools and processes so the testing system itself provides both experience with and validation of foundational devops skills.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#instructions&#34;&gt;Instructions&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#full-test-instructions&#34;&gt;Full Test Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#test-answer-response-sheet&#34;&gt;Test Answer Response Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#section-3-test-questions&#34;&gt;Section 3 Test Questions&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#this-concludes-the-section-3-test-please-use-the-navigation-bar-to-proceed-to-the-next-page&#34;&gt;This concludes the section 3 test. Please use the navigation bar to proceed to the next page.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J_nV5YPypqs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;This test uses automated grading, you must follow the instructions exactly to ensure automated grading will complete successfully.&lt;/p&gt;
+&lt;p&gt;To complete the test you must review the questions on this page, and fill in your answers on a seperate answer sheet provided below. We recommend opening the answer sheet for the test in a seperate browser tab so you can fill in the answers as you proceed through the questions.&lt;/p&gt;
+&lt;p&gt;Every question in this test is titled &amp;ldquo;Question&amp;rdquo; followed by its order, for example Question1, Question2 etc&amp;hellip;&lt;/p&gt;
+&lt;p&gt;All questions will provide a list of possible answers. Each possible answer is represented by a lowercase letter, the first response is option &amp;ldquo;a&amp;rdquo;, the second is option &amp;ldquo;b&amp;rdquo; and so on, as shown in the example questions below.&lt;/p&gt;
+&lt;p&gt;The Answer sheet will open in Github&amp;rsquo;s web-based editor, similar to the image shown below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://modernappsninja.github.io/tkoplaceholder_tk8606/introtanzustandard_ts7297/admin/assets/images/blank_test_screen_example.png&#34; alt=&#34;Example Test Response Sheet&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After you fill in your answer sheet, you will submit  your responses as a git &lt;a href=&#34;https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests&#34;&gt;pull request&lt;/a&gt; following the instructions provided below, which will trigger a workflow that will grade your responses and provide your test grading sheet.&lt;/p&gt;
+&lt;h3 id=&#34;full-test-instructions&#34;&gt;Full Test Instructions&lt;/h3&gt;
+&lt;p&gt;If this is the first test you have taken, or if you have an questions at all about how to propely complete the test answer sheet or the test grading service, please review the full &lt;a href=&#34;https://modernapps.ninja/course_repo_template_ct8279/docs/reference/testinstructions/&#34;&gt;How to Take a Test Instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is important that you follow the instructions carefully to ensure the automated grading process completes successfully.&lt;/p&gt;
+&lt;h3 id=&#34;test-answer-response-sheet&#34;&gt;Test Answer Response Sheet&lt;/h3&gt;
+&lt;p&gt;Please right click the following link to the test answer response sheet and select to open it in a new tab. The questions for this test will be provided below in this page, but you will need to enter your responses in the answer response sheet.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/modernappsninja/introtanzustandard_ts7297/edit/main/static/admin/userdata/tests/test3.yml&#34;&gt;test3 Answer Response Sheet&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-3-test-questions&#34;&gt;Section 3 Test Questions&lt;/h3&gt;
+&lt;h4 id=&#34;question1-please-select-the-most-correct-statement-from-the-options-below----omit-in-toc---&#34;&gt;&lt;strong&gt;Question1:&lt;/strong&gt; Please select the most correct statement from the options below &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Use the Tanzu Kubernetes Grid Installer to install TKG on vSphere 7&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TKG Service is embedded in vSphere 7 with Kubernetes&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;question2-which-of-the-following-commands-is-used-to-create-a-tanzu-kubernetes-cluster-using-the-tkg-cli-----omit-in-toc---&#34;&gt;&lt;strong&gt;Question2:&lt;/strong&gt; Which of the following commands is used to create a Tanzu Kubernetes Cluster using the TKG CLI  &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Please select the best response:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;tkgi create-cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;tkg cluster install&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;tkg create cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;clusterctl init&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;question3-for-tanzu-kubernetes-grid-service-on-vsphere-7-the-tkg-management-services-run-on-the-________-cluster----omit-in-toc---&#34;&gt;&lt;strong&gt;Question3:&lt;/strong&gt; For Tanzu Kubernetes Grid service on vSphere 7, the TKG Management Services run on the ________ Cluster &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Please select the best response to fill in the blank word in the statement above:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Workload Cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;vSphere Cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Workload Platform Service Cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Supervisor Cluster&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;question4-tanzu-kubernetes-grid-uses-the-_____-open-source-software-for-data-protection-to-backup-and-restore-kubernetes-objects----omit-in-toc---&#34;&gt;&lt;strong&gt;Question4:&lt;/strong&gt; Tanzu Kubernetes Grid uses the _____ Open Source Software for Data Protection to backup and restore Kubernetes objects. &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Please select the best response to fill in the blank word in the statement above:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Sonobuoy&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Velero&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Contour&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;question5-_________-______-is-a-kubernetes-project-to-bring-declarative-kubernetes-style-apis-to-cluster-creation-configuration-and-management----omit-in-toc---&#34;&gt;&lt;strong&gt;Question5:&lt;/strong&gt; _________ ______ is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Please select the best response to fill in the blank word in the statement above:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Cluster API&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CloudFoundry BOSH&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Project Pacific&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Cloud Config&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;question6-please-select-the-most-correct-statement-from-the-options-below----omit-in-toc---&#34;&gt;&lt;strong&gt;Question6:&lt;/strong&gt; Please select the most correct statement from the options below &lt;!-- omit in toc --&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Please select the best response:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;Answers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Use the Tanzu Kubernetes Grid Installer to install TKG on vSphere 7&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TKG Service is embedded in vSphere 7 with Kubernetes&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;this-concludes-the-section-3-test-please-use-the-navigation-bar-to-proceed-to-the-next-page&#34;&gt;This concludes the section 3 test. Please use the navigation bar to proceed to the next page.&lt;/h5&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

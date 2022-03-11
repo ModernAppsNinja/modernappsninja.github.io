@@ -1,0 +1,8 @@
+<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+  {{ range first 1 .Pages.ByWeight }}
+    <li>
+      <a href="{{.Permalink}}" class="btn btn-primary"><span class="ml-1"></span> Click Here to Start This Section</a>
+    </li>
+    {{ end }}  
+</ul>
+<h2>Section Table of Contents:</h2>

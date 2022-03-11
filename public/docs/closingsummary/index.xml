@@ -1,0 +1,119 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro to VMware Tanzu Standard – Closing Summary</title>
+    <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/</link>
+    <description>Recent content in Closing Summary on Intro to VMware Tanzu Standard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 12 Oct 2020 20:17:08 -0700</lastBuildDate>
+    
+	  <atom:link href="https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Resources and References</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/resourcesandreferences/</link>
+      <pubDate>Mon, 12 Oct 2020 20:18:29 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/resourcesandreferences/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Links to additional materials:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For more information on vSphere with Tanzu check out the &lt;a href=&#34;https://www.vmware.com/products/vsphere.html&#34;&gt;vSphere
+product&lt;/a&gt; page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.vmware.com/vsphere/2020/09/announcing-vsphere-with-tanzu.html&#34;&gt;vSphere with
+Tanzu&lt;/a&gt; by
+Kit Colbert&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=d6Hc2ceghIk&amp;amp;feature=youtu.be&#34;&gt;vSphere with Tanzu -
+YouTube&lt;/a&gt; by
+Sheldon D&#39;Paiva &lt;/li&gt;
+&lt;li&gt;ebook: &lt;a href=&#34;https://www.vmware.com/learn/648341_REG.html&#34;&gt;Deliver Developer-Ready Infrastructure Using vSphere with
+Tanzu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kube.academy/&#34;&gt;KubeAcademy&lt;/a&gt; courses are composed of a
+series of bite-size video lessons - terrific resource for learning
+about containers, Kubernetes, and Cloud Native Concepts.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tanzu.vmware.com/content/blog/simply-scaling-a-tanzu-kubernetes-cluster-with-the-tkg-service-for-vsphere&#34;&gt;Scaling a Tanzu
+Kubernetes&lt;/a&gt; Cluster
+by Kenny Coleman&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tanzu.vmware.com/content/blog/an-elevated-view-of-the-tanzu-kubernetes-grid-service-architecture&#34;&gt;An Elevated View of the Tanzu Kubernetes Kubernetes Grid Service
+Architecture&lt;/a&gt; by
+Kenny Coleman&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tanzu.vmware.com/content/blog/dissecting-a-tanzu-kubernetes-cluster-spec-with-the-tkg-service-for-vsphere&#34;&gt;Dissecting a Tanzu Kubernetes Cluster Spec with the TKG Service for
+vSphere&lt;/a&gt; by
+Kenny Coleman&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Web:&lt;/strong&gt; &lt;a href=&#34;https://tanzu.vmware.com&#34;&gt;https://tanzu.vmware.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blog:&lt;/strong&gt; &lt;a href=&#34;https://tanzu.vmware.com/blog&#34;&gt;https://tanzu.vmware.com/blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Twitter:&lt;/strong&gt; @vmwaretanzu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; asktanzu@vmware.com&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Course Completion Certificate</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/completioncertificate/</link>
+      <pubDate>Fri, 09 Oct 2020 03:15:26 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/completioncertificate/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;important-notice&#34;&gt;Important Notice:&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The Enrollment, testing and digital badge features will be removed on Friday February 18th, 2022. Please ensure you have completed any test and digital badge requests prior to this date. The course materials will still be available.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you have completed all tests in the course and recieved over 70% correct responses, you can make an automated request to recieve a certificate of completion for this course.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ywLPw0QdU08&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To request your certificate of completion:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In a seperate browser tab navigate to: &lt;a href=&#34;https://github.com/ModernAppsNinja/introtanzustandard_ts7297/tree/main/static/admin/userdata/certs_awarded&#34;&gt;https://github.com/ModernAppsNinja/introtanzustandard_ts7297/tree/main/static/admin/userdata/certs_awarded&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click on the &lt;code&gt;Add file&lt;/code&gt; button to add a new file&lt;/li&gt;
+&lt;li&gt;Name the file using your own github username in the format &lt;code&gt;yourgithubusername.yml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In the body of the file type: &lt;code&gt;Status: Completed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;code&gt;Propose new file&lt;/code&gt; and then &lt;code&gt;Create pull request&lt;/code&gt; to submit your new file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When you submit your new file as described in the steps above (also called making a pull request) it will trigger an automated github action workflow that will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compare the total quantity of tests in the course with the quantity of tests you have completed to ensure you have completed all required tests for the course&lt;/li&gt;
+&lt;li&gt;Tabulate the total quantity of all test questions from all tests&lt;/li&gt;
+&lt;li&gt;Compare the quantity of questions you have answered correctly against the total quantity of questions for all tests to ensure you have attained a minimum of 70% correct answers&lt;/li&gt;
+&lt;li&gt;Post grade report and updated course record card to your member repository&lt;/li&gt;
+&lt;li&gt;Append a message to the pull request to notify the requesting user the course grading is complete, the result, and links to the updated grade report and course record card.
+&lt;ul&gt;
+&lt;li&gt;The requesting members github account will be mentioned in the posted message, which will trigger a github notification to the requestors github account and associated email address.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the event that a user requests a certificate and does not have the minimum required grade to pass, a grade report will be provided that will include details on the percent of correct answers for each test in the course, highlighting which test(s) may need to be retaken to achieve a passing grade. Members can then retake any tests necesarry to increase their grade, and then repeat the above process again to request that the certificate service run again.&lt;/p&gt;
+&lt;p&gt;If you encounter any problems with testing or with the certificate process, please open an issue ticket on this course.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Course Complete</title>
+      <link>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/coursecomplete/</link>
+      <pubDate>Mon, 12 Oct 2020 20:20:53 -0700</pubDate>
+      
+      <guid>https://modernappsninja.github.io/tkoplaceholder_tk8606/docs/closingsummary/coursecomplete/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Thank you for completing the course!&lt;/p&gt;
+&lt;p&gt;Please check out &lt;a href=&#34;https://modernapps.ninja/&#34;&gt;modernapps.ninja&lt;/a&gt; to see
+additional courses, tutorials and more!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+name: manual_tweet
+on:
+  workflow_dispatch:
+    inputs:
+      tweet:
+        description: 'Enter your Tweet'
+        required: true
+        default: ''
+
+jobs:
+  job_manual_tweet:
+
+    name: Post a tweet
+    runs-on: ubuntu-latest
+    steps:
+      - name: cat payload file
+        run: cat /home/runner/work/_temp/_github_workflow/event.json
+      - name: install dependencies for tweet.sh
+        run: |
+          sudo apt-get -y install nkf
+      - name: pull tweet.sh script
+        run: |
+          curl -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+          "https://raw.githubusercontent.com/piroor/tweet.sh/trunk/tweet.sh" \
+          -o tweet.sh
+          cat tweet.sh
+          chmod +x tweet.sh
+      - name: post a tweet
+        env: 
+          MY_SCREEN_NAME: modernappsninja
+          MY_LANGUAGE: EN
+          CONSUMER_KEY: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_KEY }}
+          CONSUMER_SECRET: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_API_SECRET_KEY  }}
+          ACCESS_TOKEN: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_MODERNAPPSBYTANZU_ACCESS_TOKEN_SECRET }}
+        run: |
+          ./tweet.sh post "${{ github.event.inputs.tweet }}" 
