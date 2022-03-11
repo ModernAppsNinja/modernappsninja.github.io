@@ -1,7 +1,7 @@
 ---
 title: "Additional Tanzu Kubernetes Operations Resources"
 date: 2020-10-12T18:34:25-07:00
-weight: 2095
+weight: 2090
 
 ---
 
