@@ -3,7 +3,7 @@
 ### Hugo Template Metadata
 title: "Introduction to Tanzu for Kubernetes Operations"
 date: "2022-02-14T21:43:12Z"
-draft: false
+draft: true
 weight: 5014
 # meta description
 description: "Tanzu for Kubernetes Operations"
