@@ -1,138 +1,131 @@
 ################################# Slider #####################################
 slider:
-  enable : true
-  bg_image : #"images/banner/banner-1.jpg"
+  enable: true
+  bg_image: #"images/banner/banner-1.jpg"
   slider_item:
     # slider item loop
-    - title : "Welcome to ModernApps Learning by VMware Tanzu"
-      content : "Free Courses with an active Expert Community powered by VMware Tanzu"
-      animation_in : "left"
-      animation_out : "right"
+    - title: "Welcome to ModernApps Learning by VMware Tanzu"
+      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      animation_in: "left"
+      animation_out: "right"
       # available animation : left, right, up, down
       button:
-        enable : true
-        label : "REGISTER NOW"
-        link : "https://modernapps.ninja/about/membership/"
+        enable: false
+        label: "REGISTER NOW"
+        link: "https://modernapps.ninja/about/membership/"
 
     # slider item loop
-    - title : "Welcome to ModernApps Learning by VMware Tanzu"
-      content : "Free Courses with an active Expert Community powered by VMware Tanzu"
-      animation_in : "left"
-      animation_out : "right"
+    - title: "Welcome to ModernApps Learning by VMware Tanzu"
+      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      animation_in: "left"
+      animation_out: "right"
       # available animation : left, right, up, down
       button:
-        enable : true
-        label : "REGISTER NOW"
-        link : "https://modernapps.ninja/about/membership/"
+        enable: false
+        label: "REGISTER NOW"
+        link: "https://modernapps.ninja/about/membership/"
 
     # slider item loop
-    - title : "Welcome to ModernApps Learning by VMware Tanzu"
-      content : "Free Courses with an active Expert Community powered by VMware Tanzu"
-      animation_in : "left"
-      animation_out : "right"
+    - title: "Welcome to ModernApps Learning by VMware Tanzu"
+      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      animation_in: "left"
+      animation_out: "right"
       # available animation : left, right, up, down
       button:
-        enable : true
-        label : "REGISTER NOW"
-        link : "https://modernapps.ninja/about/membership/"
-
+        enable: false
+        label: "REGISTER NOW"
+        link: "https://modernapps.ninja/about/membership/"
 
 ############################### Banner feature ###############################
 banner_feature:
-  enable : false
-  image : "images/banner/banner-feature.png"
+  enable: false
+  image: "images/banner/banner-feature.png"
   feature_item:
     # feature item loop
-    - name : "Free Tanzu Courses"
-      icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Learning by VMware Tanzu provides free elearning **[courses](https://modernapps.ninja/course/)** for the **[VMware Tanzu Portfolio](https://tanzu.vmware.com/)** and Cloud Native Technologies"
+    - name: "Free Tanzu Courses"
+      icon: "ti-book" # icon pack : https://themify.me/themify-icons
+      content: "ModernApps Learning by VMware Tanzu provides free elearning **[courses](https://modernapps.ninja/course/)** for the **[VMware Tanzu Portfolio](https://tanzu.vmware.com/)** and Cloud Native Technologies"
 
     # feature item loop
-    - name : "Hands On Training"
-      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Learning Courses are focused on hands-on skills and feature robust demos and **[hands-on labs](https://modernapps.ninja/about/labs/)**"
+    - name: "Hands On Training"
+      icon: "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      content: "ModernApps Learning Courses are focused on hands-on skills and feature robust demos and **[hands-on labs](https://modernapps.ninja/about/labs/)**"
 
     # feature item loop
-    - name : "Robust Online Labs"
-      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "ModernApps Learning by VMware Tanzu partners with **[VMware Hands-on Labs](https://hol.vmware.com/)** and **[Educates](https://docs.edukates.io/en/latest/)** to provide free and robust online lab environments"
+    - name: "Robust Online Labs"
+      icon: "ti-agenda" # icon pack : https://themify.me/themify-icons
+      content: "ModernApps Learning by VMware Tanzu partners with **[VMware Hands-on Labs](https://hol.vmware.com/)** and **[Educates](https://docs.edukates.io/en/latest/)** to provide free and robust online lab environments"
 
     # feature item loop
-    - name : "Learn Practical Devops"
-      icon : "ti-write" # icon pack : https://themify.me/themify-icons
-      content : "Get real experience with devops, learn to make github commits and enhance your professional portfolio"
-
+    - name: "Learn Practical Devops"
+      icon: "ti-write" # icon pack : https://themify.me/themify-icons
+      content: "Get real experience with devops, learn to make github commits and enhance your professional portfolio"
 
 ############################## about ##################################
 about:
-  enable : true
-  title : "About ModernApps Learning by VMware Tanzu"
-  image : "images/about/about-us.png"
-  content : "ModernApps Learning by VMware Tanzu is a community program for students and practitioners of Cloud Native Technologies. The community seeks to provide practical educational experiences that help enrich and maximize the knowledge sharing potential for community participants and contributors."
+  enable: true
+  title: "About ModernApps Learning by VMware Tanzu"
+  image: "images/about/about-us.png"
+  content: "ModernApps Learning by VMware Tanzu is a community program for students and practitioners of Cloud Native Technologies. The community seeks to provide practical educational experiences that help enrich and maximize the knowledge sharing potential for community participants and contributors."
   button:
-    enable : true
-    label : "Learn more"
-    link : "about"
-
+    enable: true
+    label: "Learn more"
+    link: "about"
 
 ############################# Course ################################
 course:
-  enable : true
-  title : "Our Courses"
+  enable: true
+  title: "Our Courses"
   # course item comes from "content/**/course" folder.
 
 ########################## Call to action ############################
 cta:
-  enable : false
-  subtitle : "Click to learn about Tanzu sessions and activities at VMworld 2021!"
-  title : "Join Team Tanzu at VMworld!"
+  enable: false
+  subtitle: "Click to learn about Tanzu sessions and activities at VMworld 2021!"
+  title: "Join Team Tanzu at VMworld!"
   button:
-    enable : true
-    label : "Learn More"
-    link : "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
+    enable: true
+    label: "Learn More"
+    link: "https://modernapps.ninja/tanzu-at-vmworld2021/docs/"
 
 ######################## Success story #############################
 success_story:
-  enable : true
-  bg_image : "images/backgrounds/success-story.jpg"
-  title : "Success Stories"
-  content : "Many of our participants learned to make their first Github Commit through the ModernApps Program. One participant reported that he had never made a Github commit and learned how to as he became an active contributor in the ModernApps Community - and has since gone on to become a committer to Kubernetes and other leading open source projects!"
+  enable: true
+  bg_image: "images/backgrounds/success-story.jpg"
+  title: "Success Stories"
+  content: "Many of our participants learned to make their first Github Commit through the ModernApps Program. One participant reported that he had never made a Github commit and learned how to as he became an active contributor in the ModernApps Community - and has since gone on to become a committer to Kubernetes and other leading open source projects!"
   # video link
-  video_link : "https://www.youtube.com/watch?v=GlVSmFtIs1s&t=5s"
-
+  video_link: "https://www.youtube.com/watch?v=GlVSmFtIs1s&t=5s"
 
 ############################# event ################################
 event:
-  enable : true
-  title : "Upcoming Events"
+  enable: true
+  title: "Upcoming Events"
   # event item comes from "content/**/event" folder.
 
-  
 ########################### funfacts ############################
 funfacts:
-  enable : true
+  enable: true
   funfact_item:
     # funfact item loop
-    - name : "Project Contributors"
-      count : "227"
+    - name: "Project Contributors"
+      count: "227"
 
     # funfact item loop
-    - name : "COURSES"
-      count : "7"
+    - name: "COURSES"
+      count: "7"
 
     # funfact item loop
-    - name : "Participants"
-      count : "1013"
+    - name: "Participants"
+      count: "1013"
 
     # funfact item loop
 #    - name : "SATISFIED CLIENT"
 #      count : "1400"
 # funfact is for about page
 
-
-
 ############################# blog ################################
 blog:
-  enable : True
-  title : "Latest Tutorials "
+  enable: True
+  title: "Latest Tutorials "
   # blog item comes from "content/**/blog" folder.

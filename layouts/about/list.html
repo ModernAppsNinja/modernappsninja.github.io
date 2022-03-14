@@ -1,6 +1,4 @@
-{{ define "main" }}
-
-{{ $data := index site.Data site.Language.Lang }}
+{{ define "main" }} {{ $data := index site.Data site.Language.Lang }}
 
 <!-- about -->
 <section class="section bg-gray">
@@ -8,22 +6,24 @@
     <div class="row">
       <div class="col-12">
         {{ with .Params.Image }}
-        <img class="img-fluid w-100 mb-4" src="{{ . | relURL }}" alt="about image">
-        {{ end }}
-        {{ .Content }}
+        <img
+          class="img-fluid w-100 mb-4"
+          src="{{ . | relURL }}"
+          alt="about image"
+        />
+        {{ end }} {{ .Content }}
       </div>
     </div>
   </div>
 </section>
 <!-- /about -->
 
-<!-- funfacts -->
+<!-- funfacts
 {{ if $data.homepage.funfacts.enable }}
 {{ with $data.homepage.funfacts }}
 <section class="section-sm bg-secondary">
   <div class="container">
     <div class="row">
-      <!-- funfacts item -->
       {{ range .funfact_item }}
       <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
         <div class="text-center">
@@ -36,7 +36,7 @@
   </div>
 </section>
 {{ end }}
-{{ end }}
+{{ end }} -->
 <!-- /funfacts -->
 
 <!-- success story -->
@@ -55,9 +55,7 @@
     <div class="row justify-content-center">
       <!-- teacher -->
       {{ range first 3 (where site.RegularPages "Type" "teacher")}}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "teacher" }}
-      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">{{ .Render "teacher" }}</div>
       {{ end }}
     </div>
   </div>
