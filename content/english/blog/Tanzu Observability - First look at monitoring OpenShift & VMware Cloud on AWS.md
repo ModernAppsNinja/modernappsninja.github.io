@@ -1,6 +1,6 @@
 ---
 title: "Tanzu Observability - First look at monitoring OpenShift & VMware Cloud on AWS"
-date: 2022-22-26
+date: 2022-2-26
 draft: false
 author: "Dean Lewis"
 # taxonomy
