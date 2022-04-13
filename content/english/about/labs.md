@@ -15,6 +15,27 @@ description: ""
 
 ---
 
+Tanzu Application Platform [HOL & Pathfinder](https://pathfinder.vmware.com/activity/tanzu-app-platform-vlp-lab) (NEW 2022)
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: Introduction to Tanzu Application Platform
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: Creating an app using App Accelerator
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: Committing an application in git to be picked up by Supply Chain Choreographer
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4: Monitoring Supply Chain Execution
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5: Deployment of application images to Harbor
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6: Verify deployment of Application
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7: Accessing the Application
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8: Monitoring Operations of the Application with App-Live-View
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9: Updating the Application code
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10: Verifying the Application update
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11: Introduction to data services using the Services Toolkit in Tanzu Application Platform
+
+
+Tanzu for Kubernetes Operations live environment [Pathfinder](https://pathfinder.vmware.com/v3/path/tko_path)
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Cluster craetion on TKGs and access
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TO Overview
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TSM Overview
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Policies deepdive, Backup and Upgrades
+
+
 Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
 
 {{< utube Uqtx282a0LQ >}}
