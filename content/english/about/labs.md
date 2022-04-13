@@ -31,9 +31,9 @@ Tanzu Application Platform [HOL & Pathfinder](https://pathfinder.vmware.com/acti
 
 Tanzu for Kubernetes Operations live environment [Pathfinder](https://pathfinder.vmware.com/v3/path/tko_path)
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Cluster craetion on TKGs and access
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TO Overview
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TSM Overview
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Policies deepdive, Backup and Upgrades
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: TO Overview
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: TSM Overview
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4: TMC Policies deepdive, Backup and Upgrades
 
 
 Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
