@@ -30,33 +30,43 @@ Tanzu Application Platform [HOL & Pathfinder](https://pathfinder.vmware.com/acti
 
 
 Tanzu for Kubernetes Operations live environment [Pathfinder](https://pathfinder.vmware.com/v3/path/tko_path)
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Cluster craetion on TKGs and access
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Cluster creation on TKGs and access
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: TO Overview
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: TSM Overview
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4: TMC Policies deepdive, Backup and Upgrades
 
 
-Tanzu for Kubernetes Platform Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
+Tanzu for Kubernetes Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10414) (NEW 2022)
 
 {{< utube Uqtx282a0LQ >}}
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Platform Operators
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Operators
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Working with Comprehensive Tanzu Mission Control Policies
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Introduction to Tanzu Kubernetes GridŒ
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Introduction to Tanzu Observability
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: VMware Tanzu Mission Control
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: Tanzu Observability Advanced
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: Tanzu Observability Basics
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Introduction to Tanzu Service Mesh
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Introduction to NSX Advanced Load Balancer (Avi)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Introduction to Tanzu Service Mesh
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Introduction to Harbor
 
 Tanzu for Developers [Hands-on-lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426) (NEW 2022)
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Spring
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Tanzu Build Service and VMware Application Catalog
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Spring Overview
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Introduction to Cloud-Native runtimes
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Automated Container Creation with Tanzu
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: VMware Application Catalog (VAC)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Continuous Delivery with Tanzu
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Introduction to Cloud-Native Runtimes
 
 VMware Tanzu Kubernetes Grid [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10659) | [Odyssey Challenge](https://labs.hol.vmware.com/HOL/catalogs/lab/10667)
 
@@ -133,19 +143,6 @@ VMware Cloud on AWS with Tanzu [Interactive Simulation](https://labs.hol.vmware.
 
 <!--checked with Kunal [Guided Demo](https://cloudcity.pathfinder.vmware.com/event-space/explore-demos/use-cases/application-transformation/demo/AppTraTAC)-->
 
-VMware Application Catalog (Bitnami) [Hands-on Lab](https://labs.hol.vmware.com/HOL/catalogs/lab/10426)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Spring Overview
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: Automated Container Creation with Tanzu
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 4: VMware Application Catalog (VAC)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 5: Continuous Delivery with Tanzu
-
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 6: Introduction to Cloud-Native Runtimes
 
 Tanzu Observability [Free Trial with embedded workshop](https://tanzu.vmware.com/observability-trial)
 
