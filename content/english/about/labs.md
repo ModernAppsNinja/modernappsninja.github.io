@@ -42,7 +42,7 @@ Tanzu for Kubernetes Operators [Hands-on-lab](https://labs.hol.vmware.com/HOL/ca
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 1: Introduction to Tanzu for Kubernetes Operators
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Introduction to Tanzu Kubernetes GridŒ
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 2: Introduction to Tanzu Kubernetes Grid
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module 3: VMware Tanzu Mission Control
 
