@@ -1,5 +1,5 @@
 ---
-title: "Tanzu Mission Control - Upgrading attached Tanzu Kubernetes Grid Clusters fails with error "updates to immutable fields are not allowed""
+title: 'Tanzu Mission Control - Upgrading attached Tanzu Kubernetes Grid Clusters fails with error "updates to immutable fields are not allowed"'
 date: 2021-05-31
 draft: false
 author: "Dean Lewis"
