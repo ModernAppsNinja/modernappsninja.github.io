@@ -5,7 +5,7 @@ draft: false
 author: "Masanori Nara"
 # taxonomy
 tags: ["Tanzu Application Platform", "TAP"]
-location: "https://www.netone.co.jp/knowledge-center/netone-blog/20220526-1/"
+location: "https://www.netone.co.jp/knowledge-center/netone-blog/20220601_01/"
 # type
 type: "post"
 ---
