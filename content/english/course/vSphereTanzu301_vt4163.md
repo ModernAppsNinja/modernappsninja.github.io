@@ -18,7 +18,7 @@ duration: "0 Hours"
 # course fee
 fee: "Free!"
 # apply url
-apply_url: "https://modernapps.github.io/vSphereTanzu301_vt4163"
+apply_url: "https://learning.customerconnect.vmware.com/oltpublish/site/program.do?dispatch=showCourseSession&id=65110ea6-c070-11ec-b5a6-0cc47a352292"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
