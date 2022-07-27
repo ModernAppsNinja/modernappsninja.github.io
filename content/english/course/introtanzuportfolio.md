@@ -21,7 +21,7 @@ duration : "~3 Hours"
 # course fee
 fee : "Free!"
 # apply url
-apply_url : "https://modernapps.ninja/intrototanzuportfolio_tp3617/"
+apply_url : "https://learning.customerconnect.vmware.com/oltpublish/site/program.do?dispatch=showCourseSession&id=64b0476e-c070-11ec-b5a6-0cc47a352292"
 # type
 type: "course"
 ---
