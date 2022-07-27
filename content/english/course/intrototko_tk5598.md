@@ -18,7 +18,7 @@ duration: "0 Hours"
 # course fee
 fee: "Free!"
 # apply url
-apply_url: "https://modernapps.github.io/intrototko_tk5598"
+apply_url: "https://learning.customerconnect.vmware.com/oltpublish/site/program.do?dispatch=showCourseSession&id=35907b2a-e0dd-11ec-b5a6-0cc47a352292"
 # type
 type: "course"
 ### Extended Ninja Course Metadata
