@@ -14,7 +14,7 @@ description: ""
 #### Gain practical hands-on experience or evaluate the key features of Tanzu products by taking these labs. All these labs are broken down into small, consumable modules that can be taken indipendetly. Choose from from live labs, workshops and interactive simulations. Up and running on any browser in minutes and 100% free. No installation, licenses, or special hardware required.
 
 ---
-
+[//]:<>#(
 Tanzu Application Platform [HOL & Pathfinder](https://pathfinder.vmware.com/activity/tanzu-app-platform-vlp-lab) (NEW 2022)
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: Introduction to Tanzu Application Platform
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: Creating an app using App Accelerator
@@ -27,7 +27,7 @@ Tanzu Application Platform [HOL & Pathfinder](https://pathfinder.vmware.com/acti
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9: Updating the Application code
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10: Verifying the Application update
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11: Introduction to data services using the Services Toolkit in Tanzu Application Platform
-
+)
 
 Tanzu for Kubernetes Operations live environment [Pathfinder](https://pathfinder.vmware.com/v3/path/tko_path)
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: TMC Cluster creation on TKGs and access
