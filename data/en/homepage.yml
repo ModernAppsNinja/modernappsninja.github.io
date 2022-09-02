@@ -5,7 +5,7 @@ slider:
   slider_item:
     # slider item loop
     - title: "Welcome to ModernApps Learning by VMware Tanzu"
-      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      content: "This project is in the process of being decommissioned. Please feel free to look around, however please note that it is no longer being actively maintained or monitored. Please check out our new content portal, the Tanzu Tech Zone, where we will migrate our efforts and continue to serve and engage with the Tanzu Community."
       animation_in: "left"
       animation_out: "right"
       # available animation : left, right, up, down
@@ -16,7 +16,7 @@ slider:
 
     # slider item loop
     - title: "Welcome to ModernApps Learning by VMware Tanzu"
-      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      content: "This project is in the process of being decommissioned. Please feel free to look around, however please note that it is no longer being actively maintained or monitored. Please check out our new content portal, the Tanzu Tech Zone, where we will migrate our efforts and continue to serve and engage with the Tanzu Community."
       animation_in: "left"
       animation_out: "right"
       # available animation : left, right, up, down
@@ -27,7 +27,7 @@ slider:
 
     # slider item loop
     - title: "Welcome to ModernApps Learning by VMware Tanzu"
-      content: "Free Courses with an active Expert Community powered by VMware Tanzu"
+      content: "This project is in the process of being decommissioned. Please feel free to look around, however please note that it is no longer being actively maintained or monitored. Please check out our new content portal, the Tanzu Tech Zone, where we will migrate our efforts and continue to serve and engage with the Tanzu Community."
       animation_in: "left"
       animation_out: "right"
       # available animation : left, right, up, down
